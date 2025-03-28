@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Jupyter Notebooks
+*.ipynb_checkpoints
+
+# Logs
+logs/*
+!logs/example-training-run.txt
+
+# Virtual environments
+venv/
+env/
+
+# Data
+dataset/*
+data/*
+!data/sample-small.csv
+images.tar
+lists.tar
