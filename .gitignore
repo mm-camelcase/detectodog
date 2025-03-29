@@ -20,3 +20,4 @@ data/*
 !data/sample-small.csv
 images.tar
 lists.tar
+experiments/epoch_metrics_*.csv
