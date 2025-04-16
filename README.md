@@ -87,6 +87,6 @@ The next step will involve:
 - `README.md`: Project summary and roadmap
 
 
-[![View in nbviewer](https://img.shields.io/badge/View%20Notebook-nbviewer-orange)](https://nbviewer.org/github/mm-camelcase/detectodog/blob/main/detectodog_final_structured.ipynb)
+[![View detectodog notebook in nbviewer](https://img.shields.io/badge/View%20Notebook-nbviewer-orange)](https://nbviewer.org/github/mm-camelcase/detectodog/blob/main/detectodog_final_structured.ipynb)
 
 
