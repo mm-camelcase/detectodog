@@ -83,7 +83,7 @@ The next step will involve:
 ## 📁 Files
 
 - `detectodog_final_structured.ipynb`: Full training notebook
-- `model.pth`: Exported model (after training)
+- `expiriments/models/model.pt`: Exported model (after training)
 - `README.md`: Project summary and roadmap
 
 
