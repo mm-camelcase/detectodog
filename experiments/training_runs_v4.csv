@@ -20,3 +20,12 @@ run_id,timestamp,experiment_name,backbone,dropout_rate,freeze_backbone,lr_strate
 1743086136,2025-03-27 14:35,"Run 21 - EfficientNet larger cyclic_max_lr=0.0001, 30 epochs",efficientnet,0.3,False,cyclic,0.0001,1e-05,0.0001,30,16,240x240,Yes,cuda,79.18,79.18,0.6503,0.6503,54.865,109.73,16.16,4161268.0
 1743092734,2025-03-27 16:25,"Run 22 - EfficientNet  cyclic_max_lr slight increase, 35 epochs, Slightly reduced dropout 0.25, Slightly larger image size",efficientnet,0.25,False,cyclic,0.0001,1e-05,0.00012,35,16,260x260,Yes,cuda,80.08,80.08,0.5344,0.5344,67.11716666666668,115.058,16.16,4161268.0
 1743248676,29/03/2025 12:28,"Run 23 - larger image 300, 40 epochs",efficientnet,0.25,FALSE,cyclic,,1.00E-05,0.00012,40,16,300x300,Yes,cuda,84.39,84.39,0.3965,0.5217,43.38,64.73,18.19,4724980
+1743413863,2025-03-31 10:39,detectodog_improved,efficientnet,0.3,False,cyclic,,1e-05,5e-05,3,8,128x128,Yes,cpu,81.0,81.0,1.512,1.4314,2.0,37.43,17.96,4665985
+1743416420,2025-03-31 11:22,detectodog_improved,efficientnet,0.3,False,cyclic,,1e-05,5e-05,3,8,128x128,Yes,cpu,81.0,81.0,1.512,1.4314,1.86,35.46,17.96,4665985
+1743417847,2025-03-31 11:45,detectodog_improved,efficientnet,0.3,False,cyclic,,1e-05,5e-05,3,8,128x128,Yes,cpu,81.0,81.0,1.512,1.4314,1.79,34.09,17.96,4665985
+1743418191,2025-03-31 11:51,detectodog_improved,efficientnet,0.3,False,cyclic,,1e-05,5e-05,3,8,128x128,Yes,cpu,81.0,81.0,1.512,1.4314,1.76,33.55,17.96,4665985
+1743418940,2025-03-31 12:03,detectodog_improved,efficientnet,0.3,False,cyclic,,1e-05,5e-05,3,8,128x128,Yes,cpu,81.0,81.0,1.512,1.4314,1.09,20.7,17.96,4665985
+1743419364,2025-03-31 12:10,detectodog_improved,efficientnet,0.3,False,cyclic,,1e-05,5e-05,3,8,128x128,Yes,cpu,81.0,81.0,1.512,1.4314,1.1,21.04,17.96,4665985
+1743425731,2025-03-31 13:56,detectodog_improved,efficientnet,0.3,False,cyclic,,1e-05,5e-05,3,8,128x128,Yes,cpu,81.0,81.0,1.512,1.4314,1.15,21.83,17.96,4665985
+1743426458,2025-03-31 14:08,detectodog_improved,efficientnet,0.3,False,cyclic,,1e-05,5e-05,3,8,128x128,Yes,cpu,81.0,81.0,1.512,1.4314,1.09,20.76,17.96,4665985
+1743428690,2025-03-31 14:46,detectodog_improved,efficientnet,0.3,False,cyclic,,1e-05,5e-05,3,8,128x128,Yes,cpu,81.0,81.0,1.512,1.4314,1.23,23.36,17.96,4665985
