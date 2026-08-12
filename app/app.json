@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "DetectoDog",
+    "slug": "detectodog",
+    "version": "1.0.3",
+    "scheme": "detectodog",
+    "icon": "./assets/icon.png",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ie.detectodog.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "DetectoDog uses your camera only to take a dog photo you choose to identify.",
+        "NSPhotoLibraryUsageDescription": "DetectoDog opens only the photo you choose for breed identification."
+      }
+    },
+    "android": {
+      "package": "ie.detectodog.app",
+      "versionCode": 4,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#2E1257"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "name": "DetectoDog"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "DetectoDog opens only the photo you choose for breed identification.",
+          "cameraPermission": "DetectoDog uses your camera only to take a dog photo you choose to identify."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "96f70a64-8cdd-4890-9256-9304f64087d1"
+      }
+    },
+    "owner": "markm451s-team"
+  }
+}

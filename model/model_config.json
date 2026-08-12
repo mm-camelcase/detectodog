@@ -1,0 +1,14 @@
+{
+  "model_version": "detectodog-1.0",
+  "architecture": "efficientnet_b0",
+  "classes": 120,
+  "dropout_rate": 0.3,
+  "input_size": [300, 300],
+  "normalization_mean": [0.485, 0.456, 0.406],
+  "normalization_std": [0.229, 0.224, 0.225],
+  "checkpoint": "best_model.pt",
+  "serving_model": "detectodog.onnx",
+  "serving_runtime": "onnxruntime-cpu",
+  "reported_best_validation_accuracy": 84.36,
+  "evaluation_note": "The original notebook reused its test split for epoch validation; this is not an untouched final-test metric."
+}

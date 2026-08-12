@@ -21,3 +21,22 @@ data/*
 images.tar
 lists.tar
 experiments/epoch_metrics_*.csv
+
+# Expo / Node
+node_modules/
+app/.expo/
+app/dist/
+app/.env
+npm-debug.log*
+
+# Python
+.pytest_cache/
+.ruff_cache/
+.venv/
+.tmp-*/
+
+# Terraform
+infrastructure/terraform/.terraform/
+infrastructure/terraform/*.tfstate*
+infrastructure/terraform/*.tfplan
+infrastructure/terraform/terraform.tfvars

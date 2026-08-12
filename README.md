@@ -1,92 +1,63 @@
-# 🐕 DetectoDog: Dog Breed Classification
+# DetectoDog
 
-DetectoDog is a deep learning project that classifies dog breeds from images using transfer learning. The primary goal is to power a mobile application capable of identifying dog breeds from user-submitted photos.
+DetectoDog identifies the likely breed of a dog from a photograph. The model recognises 120 breeds and returns its three closest matches.
 
-## 📱 Project Goal
+## App
 
-The final deliverable for this project is a **mobile application** that:
-- Accepts an image of a dog
-- Runs an optimised on-device model
-- Displays the predicted breed with confidence score
-- Optionally provides breed-related information
+The Expo app runs on Android and the web. It can take a photo or use one from the photo library, submit it for classification, save results locally and share a result.
 
-The training in this notebook prepares the model for deployment on resource-constrained environments (e.g. phones or tablets), using lightweight architectures and efficient inference strategies.
+The web app is an installable PWA. Android preview builds are produced as APK files through Expo EAS.
 
----
+## Model and API
 
-## 🧠 Model Training (Notebook Overview)
+The classifier is an EfficientNet-B0 model trained on the Stanford Dogs data set. The production model runs as an 18 MB ONNX graph behind a small FastAPI service.
 
-This notebook covers the training process for the DetectoDog classifier:
+Photos are processed in memory and are not stored by the API.
 
-- ✅ Dataset download and preparation (Stanford Dogs Dataset)
-- ✅ Data exploration and augmentation
-- ✅ Transfer learning with ResNet50, MobileNetV2, and EfficientNet
-- ✅ Accuracy evaluation and performance visualisation
-- ✅ Exporting the final trained model
+## AWS
 
----
+Terraform provisions one production environment in `eu-west-1`:
 
-## 🔍 Dataset Summary
+- API Gateway and Lambda for inference
+- ECR for the API container
+- S3 and CloudFront for the web app
+- CloudWatch logs and an AWS budget alert
 
-- **Dataset**: [Stanford Dogs Dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/)
-- **Classes**: 120 breeds
-- **Images**: 20,580 total
-- **Challenges**: Varying image quality, backgrounds, and angles
+The Lambda scales to zero when unused. Expected portfolio usage is approximately €0–€5 per month.
 
----
+## Development
 
-## 📦 Dependencies
+Use Node.js 20 or newer.
 
-```python
-import torch
-import torchvision
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from PIL import Image
-from sklearn.metrics import classification_report
+```bash
+cd app
+cp .env.example .env
+npm install
+npm start
 ```
 
-Also uses: `tqdm`, `yaml`, `tarfile`, `os`, `scipy.io`, etc.
+Set `EXPO_PUBLIC_API_URL` in `app/.env` before running the app.
 
----
+Run the API with Python 3.12:
 
-## 🛠 Notebook Features
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r api/requirements-dev.txt
+PYTHONPATH=api uvicorn app.main:app --reload
+```
 
-- Visualisation of class distributions
-- Model training and validation curves
-- Confusion matrix and metrics
-- Sample inferences on unseen images
-- Saving the best-performing model for export
+## Checks
 
----
+GitHub Actions checks the app, API and Terraform on every push and pull request. It also builds and launches the Android release on an emulator to catch startup crashes.
 
-## 📲 Mobile Deployment (Next Phase)
+```bash
+cd app
+npm run verify
+```
 
-The next step will involve:
-- Converting the model to **TorchScript** or **ONNX**
-- Reducing size via pruning or quantisation
-- Integrating the model into a mobile app via **React Native**, **Flutter**, or **Android Studio (Java/Kotlin)**
-- Performing inference using a mobile-optimised runtime like **PyTorch Mobile** or **TensorFlow Lite**
+## Current limits
 
----
-
-## 🔮 Future Work
-
-- Ensemble modelling to improve accuracy
-- More advanced augmentations
-- Real-time inference benchmarks
-- Breed information popups in app
-
----
-
-## 📁 Files
-
-- `detectodog_final_structured.ipynb`: Full training notebook
-- `expiriments/models/model.pt`: Exported model (after training)
-- `README.md`: Project summary and roadmap
-
-
-[![View detectodog notebook in nbviewer](https://img.shields.io/badge/View%20Notebook-nbviewer-orange)](https://nbviewer.org/github/mm-camelcase/detectodog/blob/main/detectodog_final_structured.ipynb)
-
-
+- Breed profiles are placeholders.
+- Results are visual estimates, not genetic tests.
+- The model only classifies the 120 breeds it was trained on.

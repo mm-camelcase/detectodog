@@ -1,0 +1,602 @@
+[
+  {
+    "id": "chihuahua",
+    "name": "Chihuahua",
+    "source_label": "n02085620-Chihuahua"
+  },
+  {
+    "id": "japanese-spaniel",
+    "name": "Japanese Spaniel",
+    "source_label": "n02085782-Japanese_spaniel"
+  },
+  {
+    "id": "maltese-dog",
+    "name": "Maltese Dog",
+    "source_label": "n02085936-Maltese_dog"
+  },
+  {
+    "id": "pekinese",
+    "name": "Pekinese",
+    "source_label": "n02086079-Pekinese"
+  },
+  {
+    "id": "shih-tzu",
+    "name": "Shih-Tzu",
+    "source_label": "n02086240-Shih-Tzu"
+  },
+  {
+    "id": "blenheim-spaniel",
+    "name": "Blenheim Spaniel",
+    "source_label": "n02086646-Blenheim_spaniel"
+  },
+  {
+    "id": "papillon",
+    "name": "Papillon",
+    "source_label": "n02086910-papillon"
+  },
+  {
+    "id": "toy-terrier",
+    "name": "Toy Terrier",
+    "source_label": "n02087046-toy_terrier"
+  },
+  {
+    "id": "rhodesian-ridgeback",
+    "name": "Rhodesian Ridgeback",
+    "source_label": "n02087394-Rhodesian_ridgeback"
+  },
+  {
+    "id": "afghan-hound",
+    "name": "Afghan Hound",
+    "source_label": "n02088094-Afghan_hound"
+  },
+  {
+    "id": "basset",
+    "name": "Basset",
+    "source_label": "n02088238-basset"
+  },
+  {
+    "id": "beagle",
+    "name": "Beagle",
+    "source_label": "n02088364-beagle"
+  },
+  {
+    "id": "bloodhound",
+    "name": "Bloodhound",
+    "source_label": "n02088466-bloodhound"
+  },
+  {
+    "id": "bluetick",
+    "name": "Bluetick",
+    "source_label": "n02088632-bluetick"
+  },
+  {
+    "id": "black-and-tan-coonhound",
+    "name": "Black-And-Tan Coonhound",
+    "source_label": "n02089078-black-and-tan_coonhound"
+  },
+  {
+    "id": "walker-hound",
+    "name": "Walker Hound",
+    "source_label": "n02089867-Walker_hound"
+  },
+  {
+    "id": "english-foxhound",
+    "name": "English Foxhound",
+    "source_label": "n02089973-English_foxhound"
+  },
+  {
+    "id": "redbone",
+    "name": "Redbone",
+    "source_label": "n02090379-redbone"
+  },
+  {
+    "id": "borzoi",
+    "name": "Borzoi",
+    "source_label": "n02090622-borzoi"
+  },
+  {
+    "id": "irish-wolfhound",
+    "name": "Irish Wolfhound",
+    "source_label": "n02090721-Irish_wolfhound"
+  },
+  {
+    "id": "italian-greyhound",
+    "name": "Italian Greyhound",
+    "source_label": "n02091032-Italian_greyhound"
+  },
+  {
+    "id": "whippet",
+    "name": "Whippet",
+    "source_label": "n02091134-whippet"
+  },
+  {
+    "id": "ibizan-hound",
+    "name": "Ibizan Hound",
+    "source_label": "n02091244-Ibizan_hound"
+  },
+  {
+    "id": "norwegian-elkhound",
+    "name": "Norwegian Elkhound",
+    "source_label": "n02091467-Norwegian_elkhound"
+  },
+  {
+    "id": "otterhound",
+    "name": "Otterhound",
+    "source_label": "n02091635-otterhound"
+  },
+  {
+    "id": "saluki",
+    "name": "Saluki",
+    "source_label": "n02091831-Saluki"
+  },
+  {
+    "id": "scottish-deerhound",
+    "name": "Scottish Deerhound",
+    "source_label": "n02092002-Scottish_deerhound"
+  },
+  {
+    "id": "weimaraner",
+    "name": "Weimaraner",
+    "source_label": "n02092339-Weimaraner"
+  },
+  {
+    "id": "staffordshire-bullterrier",
+    "name": "Staffordshire Bullterrier",
+    "source_label": "n02093256-Staffordshire_bullterrier"
+  },
+  {
+    "id": "american-staffordshire-terrier",
+    "name": "American Staffordshire Terrier",
+    "source_label": "n02093428-American_Staffordshire_terrier"
+  },
+  {
+    "id": "bedlington-terrier",
+    "name": "Bedlington Terrier",
+    "source_label": "n02093647-Bedlington_terrier"
+  },
+  {
+    "id": "border-terrier",
+    "name": "Border Terrier",
+    "source_label": "n02093754-Border_terrier"
+  },
+  {
+    "id": "kerry-blue-terrier",
+    "name": "Kerry Blue Terrier",
+    "source_label": "n02093859-Kerry_blue_terrier"
+  },
+  {
+    "id": "irish-terrier",
+    "name": "Irish Terrier",
+    "source_label": "n02093991-Irish_terrier"
+  },
+  {
+    "id": "norfolk-terrier",
+    "name": "Norfolk Terrier",
+    "source_label": "n02094114-Norfolk_terrier"
+  },
+  {
+    "id": "norwich-terrier",
+    "name": "Norwich Terrier",
+    "source_label": "n02094258-Norwich_terrier"
+  },
+  {
+    "id": "yorkshire-terrier",
+    "name": "Yorkshire Terrier",
+    "source_label": "n02094433-Yorkshire_terrier"
+  },
+  {
+    "id": "wire-haired-fox-terrier",
+    "name": "Wire-Haired Fox Terrier",
+    "source_label": "n02095314-wire-haired_fox_terrier"
+  },
+  {
+    "id": "lakeland-terrier",
+    "name": "Lakeland Terrier",
+    "source_label": "n02095570-Lakeland_terrier"
+  },
+  {
+    "id": "sealyham-terrier",
+    "name": "Sealyham Terrier",
+    "source_label": "n02095889-Sealyham_terrier"
+  },
+  {
+    "id": "airedale",
+    "name": "Airedale",
+    "source_label": "n02096051-Airedale"
+  },
+  {
+    "id": "cairn",
+    "name": "Cairn",
+    "source_label": "n02096177-cairn"
+  },
+  {
+    "id": "australian-terrier",
+    "name": "Australian Terrier",
+    "source_label": "n02096294-Australian_terrier"
+  },
+  {
+    "id": "dandie-dinmont",
+    "name": "Dandie Dinmont",
+    "source_label": "n02096437-Dandie_Dinmont"
+  },
+  {
+    "id": "boston-bull",
+    "name": "Boston Bull",
+    "source_label": "n02096585-Boston_bull"
+  },
+  {
+    "id": "miniature-schnauzer",
+    "name": "Miniature Schnauzer",
+    "source_label": "n02097047-miniature_schnauzer"
+  },
+  {
+    "id": "giant-schnauzer",
+    "name": "Giant Schnauzer",
+    "source_label": "n02097130-giant_schnauzer"
+  },
+  {
+    "id": "standard-schnauzer",
+    "name": "Standard Schnauzer",
+    "source_label": "n02097209-standard_schnauzer"
+  },
+  {
+    "id": "scotch-terrier",
+    "name": "Scotch Terrier",
+    "source_label": "n02097298-Scotch_terrier"
+  },
+  {
+    "id": "tibetan-terrier",
+    "name": "Tibetan Terrier",
+    "source_label": "n02097474-Tibetan_terrier"
+  },
+  {
+    "id": "silky-terrier",
+    "name": "Silky Terrier",
+    "source_label": "n02097658-silky_terrier"
+  },
+  {
+    "id": "soft-coated-wheaten-terrier",
+    "name": "Soft-Coated Wheaten Terrier",
+    "source_label": "n02098105-soft-coated_wheaten_terrier"
+  },
+  {
+    "id": "west-highland-white-terrier",
+    "name": "West Highland White Terrier",
+    "source_label": "n02098286-West_Highland_white_terrier"
+  },
+  {
+    "id": "lhasa",
+    "name": "Lhasa",
+    "source_label": "n02098413-Lhasa"
+  },
+  {
+    "id": "flat-coated-retriever",
+    "name": "Flat-Coated Retriever",
+    "source_label": "n02099267-flat-coated_retriever"
+  },
+  {
+    "id": "curly-coated-retriever",
+    "name": "Curly-Coated Retriever",
+    "source_label": "n02099429-curly-coated_retriever"
+  },
+  {
+    "id": "golden-retriever",
+    "name": "Golden Retriever",
+    "source_label": "n02099601-golden_retriever"
+  },
+  {
+    "id": "labrador-retriever",
+    "name": "Labrador Retriever",
+    "source_label": "n02099712-Labrador_retriever"
+  },
+  {
+    "id": "chesapeake-bay-retriever",
+    "name": "Chesapeake Bay Retriever",
+    "source_label": "n02099849-Chesapeake_Bay_retriever"
+  },
+  {
+    "id": "german-short-haired-pointer",
+    "name": "German Short-Haired Pointer",
+    "source_label": "n02100236-German_short-haired_pointer"
+  },
+  {
+    "id": "vizsla",
+    "name": "Vizsla",
+    "source_label": "n02100583-vizsla"
+  },
+  {
+    "id": "english-setter",
+    "name": "English Setter",
+    "source_label": "n02100735-English_setter"
+  },
+  {
+    "id": "irish-setter",
+    "name": "Irish Setter",
+    "source_label": "n02100877-Irish_setter"
+  },
+  {
+    "id": "gordon-setter",
+    "name": "Gordon Setter",
+    "source_label": "n02101006-Gordon_setter"
+  },
+  {
+    "id": "brittany-spaniel",
+    "name": "Brittany Spaniel",
+    "source_label": "n02101388-Brittany_spaniel"
+  },
+  {
+    "id": "clumber",
+    "name": "Clumber",
+    "source_label": "n02101556-clumber"
+  },
+  {
+    "id": "english-springer",
+    "name": "English Springer",
+    "source_label": "n02102040-English_springer"
+  },
+  {
+    "id": "welsh-springer-spaniel",
+    "name": "Welsh Springer Spaniel",
+    "source_label": "n02102177-Welsh_springer_spaniel"
+  },
+  {
+    "id": "cocker-spaniel",
+    "name": "Cocker Spaniel",
+    "source_label": "n02102318-cocker_spaniel"
+  },
+  {
+    "id": "sussex-spaniel",
+    "name": "Sussex Spaniel",
+    "source_label": "n02102480-Sussex_spaniel"
+  },
+  {
+    "id": "irish-water-spaniel",
+    "name": "Irish Water Spaniel",
+    "source_label": "n02102973-Irish_water_spaniel"
+  },
+  {
+    "id": "kuvasz",
+    "name": "Kuvasz",
+    "source_label": "n02104029-kuvasz"
+  },
+  {
+    "id": "schipperke",
+    "name": "Schipperke",
+    "source_label": "n02104365-schipperke"
+  },
+  {
+    "id": "groenendael",
+    "name": "Groenendael",
+    "source_label": "n02105056-groenendael"
+  },
+  {
+    "id": "malinois",
+    "name": "Malinois",
+    "source_label": "n02105162-malinois"
+  },
+  {
+    "id": "briard",
+    "name": "Briard",
+    "source_label": "n02105251-briard"
+  },
+  {
+    "id": "kelpie",
+    "name": "Kelpie",
+    "source_label": "n02105412-kelpie"
+  },
+  {
+    "id": "komondor",
+    "name": "Komondor",
+    "source_label": "n02105505-komondor"
+  },
+  {
+    "id": "old-english-sheepdog",
+    "name": "Old English Sheepdog",
+    "source_label": "n02105641-Old_English_sheepdog"
+  },
+  {
+    "id": "shetland-sheepdog",
+    "name": "Shetland Sheepdog",
+    "source_label": "n02105855-Shetland_sheepdog"
+  },
+  {
+    "id": "collie",
+    "name": "Collie",
+    "source_label": "n02106030-collie"
+  },
+  {
+    "id": "border-collie",
+    "name": "Border Collie",
+    "source_label": "n02106166-Border_collie"
+  },
+  {
+    "id": "bouvier-des-flandres",
+    "name": "Bouvier Des Flandres",
+    "source_label": "n02106382-Bouvier_des_Flandres"
+  },
+  {
+    "id": "rottweiler",
+    "name": "Rottweiler",
+    "source_label": "n02106550-Rottweiler"
+  },
+  {
+    "id": "german-shepherd",
+    "name": "German Shepherd",
+    "source_label": "n02106662-German_shepherd"
+  },
+  {
+    "id": "doberman",
+    "name": "Doberman",
+    "source_label": "n02107142-Doberman"
+  },
+  {
+    "id": "miniature-pinscher",
+    "name": "Miniature Pinscher",
+    "source_label": "n02107312-miniature_pinscher"
+  },
+  {
+    "id": "greater-swiss-mountain-dog",
+    "name": "Greater Swiss Mountain Dog",
+    "source_label": "n02107574-Greater_Swiss_Mountain_dog"
+  },
+  {
+    "id": "bernese-mountain-dog",
+    "name": "Bernese Mountain Dog",
+    "source_label": "n02107683-Bernese_mountain_dog"
+  },
+  {
+    "id": "appenzeller",
+    "name": "Appenzeller",
+    "source_label": "n02107908-Appenzeller"
+  },
+  {
+    "id": "entlebucher",
+    "name": "EntleBucher",
+    "source_label": "n02108000-EntleBucher"
+  },
+  {
+    "id": "boxer",
+    "name": "Boxer",
+    "source_label": "n02108089-boxer"
+  },
+  {
+    "id": "bull-mastiff",
+    "name": "Bull Mastiff",
+    "source_label": "n02108422-bull_mastiff"
+  },
+  {
+    "id": "tibetan-mastiff",
+    "name": "Tibetan Mastiff",
+    "source_label": "n02108551-Tibetan_mastiff"
+  },
+  {
+    "id": "french-bulldog",
+    "name": "French Bulldog",
+    "source_label": "n02108915-French_bulldog"
+  },
+  {
+    "id": "great-dane",
+    "name": "Great Dane",
+    "source_label": "n02109047-Great_Dane"
+  },
+  {
+    "id": "saint-bernard",
+    "name": "Saint Bernard",
+    "source_label": "n02109525-Saint_Bernard"
+  },
+  {
+    "id": "eskimo-dog",
+    "name": "Eskimo Dog",
+    "source_label": "n02109961-Eskimo_dog"
+  },
+  {
+    "id": "malamute",
+    "name": "Malamute",
+    "source_label": "n02110063-malamute"
+  },
+  {
+    "id": "siberian-husky",
+    "name": "Siberian Husky",
+    "source_label": "n02110185-Siberian_husky"
+  },
+  {
+    "id": "affenpinscher",
+    "name": "Affenpinscher",
+    "source_label": "n02110627-affenpinscher"
+  },
+  {
+    "id": "basenji",
+    "name": "Basenji",
+    "source_label": "n02110806-basenji"
+  },
+  {
+    "id": "pug",
+    "name": "Pug",
+    "source_label": "n02110958-pug"
+  },
+  {
+    "id": "leonberg",
+    "name": "Leonberg",
+    "source_label": "n02111129-Leonberg"
+  },
+  {
+    "id": "newfoundland",
+    "name": "Newfoundland",
+    "source_label": "n02111277-Newfoundland"
+  },
+  {
+    "id": "great-pyrenees",
+    "name": "Great Pyrenees",
+    "source_label": "n02111500-Great_Pyrenees"
+  },
+  {
+    "id": "samoyed",
+    "name": "Samoyed",
+    "source_label": "n02111889-Samoyed"
+  },
+  {
+    "id": "pomeranian",
+    "name": "Pomeranian",
+    "source_label": "n02112018-Pomeranian"
+  },
+  {
+    "id": "chow",
+    "name": "Chow",
+    "source_label": "n02112137-chow"
+  },
+  {
+    "id": "keeshond",
+    "name": "Keeshond",
+    "source_label": "n02112350-keeshond"
+  },
+  {
+    "id": "brabancon-griffon",
+    "name": "Brabancon Griffon",
+    "source_label": "n02112706-Brabancon_griffon"
+  },
+  {
+    "id": "pembroke",
+    "name": "Pembroke",
+    "source_label": "n02113023-Pembroke"
+  },
+  {
+    "id": "cardigan",
+    "name": "Cardigan",
+    "source_label": "n02113186-Cardigan"
+  },
+  {
+    "id": "toy-poodle",
+    "name": "Toy Poodle",
+    "source_label": "n02113624-toy_poodle"
+  },
+  {
+    "id": "miniature-poodle",
+    "name": "Miniature Poodle",
+    "source_label": "n02113712-miniature_poodle"
+  },
+  {
+    "id": "standard-poodle",
+    "name": "Standard Poodle",
+    "source_label": "n02113799-standard_poodle"
+  },
+  {
+    "id": "mexican-hairless",
+    "name": "Mexican Hairless",
+    "source_label": "n02113978-Mexican_hairless"
+  },
+  {
+    "id": "dingo",
+    "name": "Dingo",
+    "source_label": "n02115641-dingo"
+  },
+  {
+    "id": "dhole",
+    "name": "Dhole",
+    "source_label": "n02115913-dhole"
+  },
+  {
+    "id": "african-hunting-dog",
+    "name": "African Hunting Dog",
+    "source_label": "n02116738-African_hunting_dog"
+  }
+]

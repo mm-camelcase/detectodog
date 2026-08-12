@@ -1,0 +1,13 @@
+.git
+.github
+.venv
+.tmp-*
+app
+design
+infrastructure
+detectodog_final_structured.ipynb
+experiments/*.csv
+experiments/*.md
+**/__pycache__
+**/.pytest_cache
+**/node_modules

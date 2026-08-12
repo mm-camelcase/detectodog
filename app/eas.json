@@ -1,0 +1,25 @@
+{
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://t0vt5ibxn2.execute-api.eu-west-1.amazonaws.com"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://t0vt5ibxn2.execute-api.eu-west-1.amazonaws.com"
+      },
+      "android": {
+        "buildType": "app-bundle"
+      }
+    }
+  }
+}
