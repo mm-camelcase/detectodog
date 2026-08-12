@@ -19,6 +19,7 @@ jobs:
           cache-dependency-path: app/package-lock.json
       - run: npm ci
       - run: npm run verify
+      - run: node node_modules/expo-modules-autolinking/bin/expo-modules-autolinking.js resolve --platform android --json | grep -q 'expo-file-system'
       - run: npx expo export --platform android
 
   android-startup:

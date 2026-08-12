@@ -1,15 +1,19 @@
 import { createRequire } from "node:module";
 
 const require = createRequire(import.meta.url);
-const expectedMajor = 13;
-const version = require("expo-font/package.json").version;
-const major = Number(version.split(".")[0]);
+const expected = {
+  "expo-font": 13,
+  "expo-file-system": 18,
+};
 
-if (major !== expectedMajor) {
-  throw new Error(
-    `Expo SDK 53 requires expo-font 13.x, but npm resolved ${version}. ` +
-      "Run npm install before building the native app.",
-  );
+for (const [name, expectedMajor] of Object.entries(expected)) {
+  const version = require(`${name}/package.json`).version;
+  const major = Number(version.split(".")[0]);
+  if (major !== expectedMajor) {
+    throw new Error(
+      `Expo SDK 53 requires ${name} ${expectedMajor}.x, but npm resolved ${version}. ` +
+        "Run npm install before building the native app.",
+    );
+  }
+  console.log(`Native dependency check passed: ${name} ${version}`);
 }
-
-console.log(`Native dependency check passed: expo-font ${version}`);

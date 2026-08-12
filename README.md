@@ -1,20 +1,28 @@
-# DetectoDog
+# 🐕 DetectoDog
 
 DetectoDog identifies the likely breed of a dog from a photograph. The model recognises 120 breeds and returns its three closest matches.
 
-## App
+## 📱 App
 
 The Expo app runs on Android and the web. It can take a photo or use one from the photo library, submit it for classification, save results locally and share a result.
 
 The web app is an installable PWA. Android preview builds are produced as APK files through Expo EAS.
 
-## Model and API
+## 🧠 Model and API
 
-The classifier is an EfficientNet-B0 model trained on the Stanford Dogs data set. The production model runs as an 18 MB ONNX graph behind a small FastAPI service.
+The classifier is an EfficientNet-B0 model trained on the [Stanford Dogs data set](http://vision.stanford.edu/aditya86/ImageNetDogs/):
+
+- 20,580 images
+- 120 breeds
+- 84.36% best validation accuracy
+
+The notebook covers data preparation, augmentation, transfer learning, evaluation and model export. The production model runs as an 18 MB ONNX graph behind a small FastAPI service.
 
 Photos are processed in memory and are not stored by the API.
 
-## AWS
+[![View the training notebook in nbviewer](https://img.shields.io/badge/View%20Notebook-nbviewer-orange)](https://nbviewer.org/github/mm-camelcase/detectodog/blob/main/detectodog_final_structured.ipynb)
+
+## ☁️ AWS
 
 Terraform provisions one production environment in `eu-west-1`:
 
@@ -25,7 +33,7 @@ Terraform provisions one production environment in `eu-west-1`:
 
 The Lambda scales to zero when unused. Expected portfolio usage is approximately €0–€5 per month.
 
-## Development
+## 🛠 Development
 
 Use Node.js 20 or newer.
 
@@ -47,7 +55,7 @@ pip install -r api/requirements-dev.txt
 PYTHONPATH=api uvicorn app.main:app --reload
 ```
 
-## Checks
+## ✅ Checks
 
 GitHub Actions checks the app, API and Terraform on every push and pull request. It also builds and launches the Android release on an emulator to catch startup crashes.
 
@@ -56,7 +64,7 @@ cd app
 npm run verify
 ```
 
-## Current limits
+## 🔮 Current limits
 
 - Breed profiles are placeholders.
 - Results are visual estimates, not genetic tests.
