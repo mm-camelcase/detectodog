@@ -9,6 +9,8 @@ adb logcat -c
 adb shell am force-stop "$package"
 adb shell monkey -p "$package" -c android.intent.category.LAUNCHER 1
 sleep 8
+mkdir -p artifacts
+adb exec-out screencap -p > artifacts/home.png
 
 if ! adb shell pidof "$package" >/dev/null; then
   adb logcat -d '*:E'
@@ -47,6 +49,7 @@ PY
 read -r tap_x tap_y <<<"$coords"
 adb shell input tap "$tap_x" "$tap_y"
 sleep 5
+adb exec-out screencap -p > artifacts/photo-picker.png
 
 if adb logcat -d | grep -A 30 'FATAL EXCEPTION' | grep -q "$package"; then
   adb logcat -d '*:E'

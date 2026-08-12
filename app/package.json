@@ -15,6 +15,7 @@
     "verify": "npm run typecheck && npm run check:native-deps && expo install --check"
   },
   "dependencies": {
+    "@expo-google-fonts/playfair-display": "^0.4.2",
     "@expo/metro-runtime": "~5.0.5",
     "@expo/vector-icons": "^14.1.0",
     "@react-native-async-storage/async-storage": "2.1.2",
@@ -29,11 +30,12 @@
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-native": "0.79.6",
+    "react-native-safe-area-context": "5.4.0",
     "react-native-web": "~0.20.0"
   },
   "devDependencies": {
-    "eas-cli": "^16.17.4",
     "@types/react": "~19.0.10",
+    "eas-cli": "^16.17.4",
     "typescript": "~5.8.3"
   }
 }

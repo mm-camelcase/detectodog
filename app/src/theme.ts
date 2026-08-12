@@ -1,6 +1,6 @@
 export const theme = {
-  bg: "#161826",
-  surface: "#222438",
+  bg: "#7B3FE4",
+  surface: "#2E1257",
   surfaceSoft: "rgba(255,255,255,0.07)",
   text: "#F6F1FF",
   muted: "#DCCFF7",

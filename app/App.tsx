@@ -1,4 +1,11 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import {
+  PlayfairDisplay_400Regular,
+  PlayfairDisplay_500Medium,
+  PlayfairDisplay_600SemiBold,
+  PlayfairDisplay_700Bold,
+  useFonts,
+} from "@expo-google-fonts/playfair-display";
 import { Ionicons } from "@expo/vector-icons";
 import * as ImagePicker from "expo-image-picker";
 import * as ImageManipulator from "expo-image-manipulator";
@@ -11,13 +18,13 @@ import {
   Image,
   Platform,
   Pressable,
-  SafeAreaView,
   ScrollView,
   Share,
   StyleSheet,
   Text,
   View,
 } from "react-native";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
 import { identifyDog } from "./src/api";
 import { theme } from "./src/theme";
@@ -25,6 +32,33 @@ import type { Prediction, SavedResult } from "./src/types";
 
 type Screen = "home" | "preview" | "analysing" | "results" | "profile" | "history" | "error";
 const HISTORY_KEY = "detectodog.history.v1";
+
+const pawTrail = [
+  { left: "3%", bottom: 5, size: 24, opacity: 0.2, rotate: "-24deg" },
+  { left: "15%", bottom: 31, size: 31, opacity: 0.34, rotate: "-8deg" },
+  { left: "28%", bottom: 1, size: 40, opacity: 0.5, rotate: "14deg" },
+  { left: "43%", bottom: 39, size: 20, opacity: 0.26, rotate: "-32deg" },
+  { left: "52%", bottom: 5, size: 52, opacity: 0.45, rotate: "6deg" },
+  { left: "70%", bottom: 35, size: 27, opacity: 0.32, rotate: "26deg" },
+  { left: "80%", bottom: 1, size: 34, opacity: 0.42, rotate: "-14deg" },
+  { right: "1%", bottom: 29, size: 22, opacity: 0.22, rotate: "18deg" },
+] as const;
+
+function PawTrail() {
+  return (
+    <View pointerEvents="none" style={styles.pawTrail} accessibilityElementsHidden>
+      {pawTrail.map((paw, index) => (
+        <Ionicons
+          key={index}
+          name="paw"
+          color={theme.text}
+          size={paw.size}
+          style={[styles.pawTrailItem, paw, { transform: [{ rotate: paw.rotate }] }]}
+        />
+      ))}
+    </View>
+  );
+}
 
 function Action({ icon, label, onPress, compact = false }: { icon: keyof typeof Ionicons.glyphMap; label: string; onPress: () => void; compact?: boolean }) {
   return (
@@ -48,6 +82,12 @@ function Header({ title, onBack, right }: { title: string; onBack?: () => void; 
 function percent(value: number) { return `${Math.round(value * 100)}%`; }
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    PlayfairDisplay_400Regular,
+    PlayfairDisplay_500Medium,
+    PlayfairDisplay_600SemiBold,
+    PlayfairDisplay_700Bold,
+  });
   const [screen, setScreen] = useState<Screen>("home");
   const [imageUri, setImageUri] = useState<string>();
   const [prediction, setPrediction] = useState<Prediction>();
@@ -148,10 +188,13 @@ export default function App() {
 
   const top = prediction?.matches[0];
 
+  if (!fontsLoaded) return null;
+
   return (
-    <LinearGradient colors={["#2E1257", theme.bg, "#11131F"]} style={styles.fill}>
+    <SafeAreaProvider>
+    <LinearGradient colors={["#7B3FE4", "#6A2ED6"]} style={styles.fill}>
       <StatusBar style="light" />
-      <SafeAreaView style={styles.safe}>
+      <SafeAreaView style={styles.safe} edges={["top", "left", "right", "bottom"]}>
         {screen === "home" && (
           <ScrollView contentContainerStyle={styles.page}>
             <View style={styles.homeTop}>
@@ -159,8 +202,8 @@ export default function App() {
               <Pressable accessibilityLabel="Previous results" onPress={() => setScreen("history")} style={styles.iconButton}><Ionicons name="time-outline" size={23} color={theme.text} /></Pressable>
             </View>
             <View style={styles.hero}>
-              <Ionicons name="paw" size={72} color={theme.accent} />
-              <Text style={styles.badge}>120 BREEDS RECOGNISED</Text>
+              <Ionicons name="paw" size={74} color="rgba(201,182,247,.34)" />
+              <View style={styles.heroBadge}><Ionicons name="paw" size={15} color={theme.accent} /><Text style={styles.badge}>120 breeds recognised</Text></View>
             </View>
             <Text style={styles.title}>What breed is that dog?</Text>
             <Text style={styles.subtitle}>Take a photo or choose one from your library to discover the most likely breed.</Text>
@@ -168,29 +211,33 @@ export default function App() {
               <Action icon="camera-outline" label="Take a photo" onPress={() => choose("camera")} />
               <Action icon="images-outline" label="Choose from library" onPress={() => choose("library")} />
             </View>
-            <View style={styles.note}><Ionicons name="information-circle-outline" size={18} color={theme.accent} /><Text style={styles.noteText}>Results are visual estimates from a photo, not a genetic test.</Text></View>
+            <View style={styles.homeNote}><Ionicons name="information-circle-outline" size={17} color={theme.accent} /><Text style={styles.noteText}>Results are visual estimates from a photo, not a genetic test.</Text></View>
           </ScrollView>
         )}
 
         {screen === "preview" && imageUri && (
           <ScrollView contentContainerStyle={styles.page}>
-            <Header title="Your photo" onBack={() => setScreen("home")} />
+            <Header title="Your photo" onBack={() => setScreen("home")} right={<Pressable onPress={() => setScreen("home")} style={styles.textButton}><Text style={styles.textButtonLabel}>Cancel</Text></Pressable>} />
             <Image source={{ uri: imageUri }} style={styles.previewImage} />
-            <View style={styles.note}><Ionicons name="bulb-outline" size={18} color={theme.accent} /><Text style={styles.noteText}>For the best result, use a clear photo showing the dog’s face and body.</Text></View>
             <View style={styles.actionRow}>
               <Action compact icon="camera-reverse-outline" label="Retake" onPress={() => choose("camera")} />
               <Action compact icon="swap-horizontal-outline" label="Replace" onPress={() => choose("library")} />
             </View>
+            <View style={styles.note}><Ionicons name="bulb-outline" size={18} color={theme.accent} /><Text style={styles.noteText}>For the best result, use a clear photo showing the dog’s face and body.</Text></View>
             <Action icon="search-outline" label="Identify this dog" onPress={analyse} />
           </ScrollView>
         )}
 
         {screen === "analysing" && (
-          <View style={[styles.page, styles.center]}>
-            {imageUri && <Image source={{ uri: imageUri }} style={styles.analysisImage} />}
+          <View style={[styles.page, styles.analysisPage]}>
+            <View style={styles.analysisFrame}>
+              {imageUri && <Image source={{ uri: imageUri }} style={styles.analysisImage} />}
+              <View style={styles.scanLine} />
+              <View style={styles.scanBorder} />
+            </View>
             <ActivityIndicator size="large" color={theme.accent} />
-            <Text style={styles.title}>Sniffing out a match…</Text>
-            <Text style={styles.subtitle}>Comparing this photo with 120 dog breeds.</Text>
+            <View style={styles.analysisCopy}><Text style={[styles.title, styles.centerText]}>Sniffing out a match…</Text><Text style={[styles.subtitle, styles.centerText]}>Comparing this photo with 120 dog breeds.</Text></View>
+            <View style={styles.note}><Ionicons name="hourglass-outline" size={18} color={theme.accent} /><Text style={styles.noteText}>A slower connection can take a little longer. Keep this screen open while we compare the photo.</Text></View>
           </View>
         )}
 
@@ -200,12 +247,11 @@ export default function App() {
             <View style={styles.resultHero}>
               {imageUri && <Image source={{ uri: imageUri }} style={styles.resultImage} />}
               <View style={styles.resultCopy}>
-                <Text style={styles.badge}>{prediction.prediction_quality === "good" ? "LIKELY MATCH" : "LOW CONFIDENCE"}</Text>
-                <Text style={styles.resultBreed}>{top.breed}</Text>
-                <Text style={styles.confidence}>{percent(top.confidence)} confidence</Text>
+                <View style={styles.confidenceBadge}><Ionicons name={prediction.prediction_quality === "good" ? "checkmark-circle" : "help-circle"} size={15} color={theme.accent} /><Text style={styles.confidenceBadgeText}>{prediction.prediction_quality === "good" ? "High confidence" : "Low confidence"}</Text></View>
+                <Text style={styles.resultHeading}>{prediction.prediction_quality === "good" ? "We found a likely match!" : "Here are the closest matches"}</Text>
               </View>
             </View>
-            <View style={styles.meter}><View style={[styles.meterFill, { width: `${Math.round(top.confidence * 100)}%` }]} /></View>
+            <View style={styles.resultCard}><View style={styles.resultCardTop}><Text style={styles.resultBreed}>{top.breed}</Text><Text style={styles.resultPercent}>{percent(top.confidence)}</Text></View><View style={styles.meter}><View style={[styles.meterFill, { width: `${Math.round(top.confidence * 100)}%` }]} /></View><Text style={styles.confidence}>{percent(top.confidence)} confidence</Text></View>
             {prediction.prediction_quality === "uncertain" && <Text style={styles.subtitle}>This dog may be a mixed breed, or the photo may not show enough detail.</Text>}
             <Text style={styles.sectionTitle}>Other possible matches</Text>
             {prediction.matches.slice(1).map(match => (
@@ -255,35 +301,44 @@ export default function App() {
             <Pressable onPress={() => setScreen("home")}><Text style={styles.shareText}>Back to home</Text></Pressable>
           </View>
         )}
+        <PawTrail />
       </SafeAreaView>
     </LinearGradient>
+    </SafeAreaProvider>
   );
 }
 
 const styles = StyleSheet.create({
   fill: { flex: 1 }, safe: { flex: 1 }, grow: { flex: 1 },
-  page: { width: "100%", maxWidth: 560, alignSelf: "center", padding: 22, paddingBottom: 48, gap: 18 },
+  page: { width: "100%", maxWidth: 560, alignSelf: "center", paddingHorizontal: 22, paddingTop: 6, paddingBottom: 100, gap: 18 },
   center: { flex: 1, alignItems: "center", justifyContent: "center", textAlign: "center" },
   homeTop: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" },
-  brand: { flexDirection: "row", gap: 9, alignItems: "center" }, brandText: { color: theme.text, fontSize: 21, fontWeight: "700" },
+  brand: { flexDirection: "row", gap: 9, alignItems: "center" }, brandText: { color: theme.text, fontSize: 21, fontFamily: "PlayfairDisplay_700Bold" },
   header: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", minHeight: 48 },
-  headerTitle: { color: theme.text, fontSize: 17, fontWeight: "600" }, iconButton: { width: 44, height: 44, borderRadius: 22, borderWidth: 1, borderColor: theme.border, alignItems: "center", justifyContent: "center", backgroundColor: theme.surfaceSoft }, iconSpacer: { width: 44 },
-  hero: { minHeight: 230, borderRadius: 28, backgroundColor: "rgba(255,255,255,.08)", borderWidth: 1, borderColor: theme.border, alignItems: "center", justifyContent: "center", gap: 18 },
-  badge: { color: theme.accent, fontSize: 12, fontWeight: "800", letterSpacing: 1.2 },
-  title: { color: theme.text, fontSize: 34, lineHeight: 39, fontWeight: "700", letterSpacing: -0.8 },
-  subtitle: { color: theme.muted, fontSize: 16, lineHeight: 24 },
+  headerTitle: { color: theme.text, fontSize: 16, fontFamily: "PlayfairDisplay_500Medium" }, iconButton: { width: 44, height: 44, borderRadius: 22, borderWidth: 1, borderColor: "rgba(246,241,255,.32)", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(255,255,255,.1)" }, iconSpacer: { width: 44 },
+  hero: { height: 290, borderRadius: 26, backgroundColor: "rgba(46,18,87,.24)", borderWidth: 1, borderColor: theme.border, alignItems: "center", justifyContent: "center", overflow: "hidden" },
+  heroBadge: { position: "absolute", bottom: 16, flexDirection: "row", alignItems: "center", gap: 6, paddingVertical: 7, paddingHorizontal: 14, borderRadius: 99, backgroundColor: "rgba(30,16,48,.5)", borderWidth: 1, borderColor: "rgba(246,241,255,.24)" },
+  badge: { color: theme.text, fontSize: 13, fontFamily: "PlayfairDisplay_500Medium" },
+  title: { color: theme.text, fontSize: 32, lineHeight: 36, fontFamily: "PlayfairDisplay_600SemiBold", letterSpacing: -0.8 },
+  subtitle: { color: theme.muted, fontSize: 15, lineHeight: 23, fontFamily: "PlayfairDisplay_400Regular" },
   actionRow: { flexDirection: "row", gap: 12 },
-  action: { flex: 1, minHeight: 118, padding: 16, borderRadius: 22, borderWidth: 1.5, borderColor: "rgba(246,241,255,.5)", justifyContent: "space-between", backgroundColor: "rgba(255,255,255,.025)" },
-  actionCompact: { minHeight: 72 }, actionText: { color: theme.text, fontSize: 18, fontWeight: "700" }, actionTextCompact: { fontSize: 14 }, pressed: { opacity: 0.65 },
-  note: { flexDirection: "row", gap: 9, padding: 13, borderRadius: 14, backgroundColor: theme.surfaceSoft }, noteText: { color: theme.muted, fontSize: 13, lineHeight: 19 },
-  previewImage: { width: "100%", aspectRatio: 1, borderRadius: 26, backgroundColor: theme.surface }, analysisImage: { width: 180, height: 180, borderRadius: 28, marginBottom: 12 },
-  resultHero: { flexDirection: "row", gap: 16, alignItems: "center" }, resultImage: { width: 108, height: 108, borderRadius: 24 }, resultCopy: { flex: 1, gap: 7 },
-  resultBreed: { color: theme.text, fontSize: 28, lineHeight: 31, fontWeight: "700" }, confidence: { color: theme.muted, fontSize: 15 },
+  action: { flex: 1, minHeight: 118, padding: 16, borderRadius: 22, borderWidth: 1.5, borderColor: "rgba(246,241,255,.5)", justifyContent: "space-between", backgroundColor: "transparent" },
+  actionCompact: { minHeight: 72 }, actionText: { color: theme.text, fontSize: 17, fontFamily: "PlayfairDisplay_600SemiBold" }, actionTextCompact: { fontSize: 13 }, pressed: { opacity: 0.65 },
+  note: { flexDirection: "row", gap: 9, padding: 13, borderRadius: 16, backgroundColor: "rgba(30,16,48,.28)" }, homeNote: { flexDirection: "row", gap: 9, alignItems: "flex-start", paddingHorizontal: 4 }, noteText: { flex: 1, color: theme.muted, fontSize: 13, lineHeight: 19, fontFamily: "PlayfairDisplay_400Regular" },
+  textButton: { height: 44, minWidth: 44, alignItems: "flex-end", justifyContent: "center" }, textButtonLabel: { color: theme.muted, fontSize: 15, fontFamily: "PlayfairDisplay_500Medium" },
+  previewImage: { width: "100%", aspectRatio: 1, borderRadius: 26, backgroundColor: theme.surface },
+  analysisPage: { alignItems: "center", gap: 24 }, analysisFrame: { width: "100%", aspectRatio: 1, maxHeight: 352, borderRadius: 26, overflow: "hidden", borderWidth: 1, borderColor: theme.border }, analysisImage: { width: "100%", height: "100%" }, scanLine: { position: "absolute", left: 0, right: 0, top: "48%", height: 54, borderBottomWidth: 2, borderBottomColor: theme.accent, backgroundColor: "rgba(201,182,247,.14)" }, scanBorder: { position: "absolute", inset: 14, borderRadius: 18, borderWidth: 1.5, borderStyle: "dashed", borderColor: "rgba(246,241,255,.45)" }, analysisCopy: { alignItems: "center", gap: 7 }, centerText: { textAlign: "center" },
+  resultHero: { flexDirection: "row", gap: 14, alignItems: "center" }, resultImage: { width: 96, height: 96, borderRadius: 22 }, resultCopy: { flex: 1, gap: 7 },
+  confidenceBadge: { alignSelf: "flex-start", flexDirection: "row", alignItems: "center", gap: 6, paddingVertical: 5, paddingHorizontal: 11, borderRadius: 99, backgroundColor: "rgba(201,182,247,.22)" }, confidenceBadgeText: { color: "#E0D2FC", fontSize: 12, fontFamily: "PlayfairDisplay_600SemiBold" }, resultHeading: { color: theme.text, fontSize: 25, lineHeight: 29, fontFamily: "PlayfairDisplay_600SemiBold" },
+  resultCard: { padding: 18, gap: 14, borderRadius: 22, borderWidth: 1, borderColor: theme.border, backgroundColor: "rgba(255,255,255,.1)" }, resultCardTop: { flexDirection: "row", alignItems: "baseline", justifyContent: "space-between", gap: 12 }, resultPercent: { color: theme.accent, fontSize: 27, fontFamily: "PlayfairDisplay_700Bold" },
+  resultBreed: { color: theme.text, fontSize: 28, lineHeight: 31, fontFamily: "PlayfairDisplay_600SemiBold" }, confidence: { color: theme.muted, fontSize: 15, fontFamily: "PlayfairDisplay_400Regular" },
   meter: { height: 8, backgroundColor: theme.surface, borderRadius: 4, overflow: "hidden" }, meterFill: { height: 8, backgroundColor: theme.accent, borderRadius: 4 },
-  sectionTitle: { color: theme.text, fontSize: 20, fontWeight: "700", marginTop: 8 },
-  match: { flexDirection: "row", justifyContent: "space-between", padding: 16, borderRadius: 16, borderWidth: 1, borderColor: theme.border, backgroundColor: theme.surfaceSoft }, matchName: { color: theme.text, fontSize: 16, fontWeight: "600" }, matchScore: { color: theme.accent, fontSize: 16, fontWeight: "700" },
-  share: { flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 8, padding: 12 }, shareText: { color: theme.accent, fontSize: 15, fontWeight: "600" }, disclaimer: { color: theme.dim, fontSize: 12, lineHeight: 18, textAlign: "center" },
+  sectionTitle: { color: theme.text, fontSize: 20, fontFamily: "PlayfairDisplay_600SemiBold", marginTop: 8 },
+  match: { flexDirection: "row", justifyContent: "space-between", padding: 16, borderRadius: 16, borderWidth: 1, borderColor: theme.border, backgroundColor: theme.surfaceSoft }, matchName: { color: theme.text, fontSize: 16, fontFamily: "PlayfairDisplay_500Medium" }, matchScore: { color: theme.accent, fontSize: 16, fontFamily: "PlayfairDisplay_600SemiBold" },
+  share: { flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 8, padding: 12 }, shareText: { color: theme.accent, fontSize: 15, fontFamily: "PlayfairDisplay_600SemiBold" }, disclaimer: { color: theme.dim, fontSize: 12, lineHeight: 18, textAlign: "center", fontFamily: "PlayfairDisplay_400Regular" },
   profileIcon: { height: 180, borderRadius: 28, alignItems: "center", justifyContent: "center", backgroundColor: theme.surfaceSoft, borderWidth: 1, borderColor: theme.border },
-  factGrid: { flexDirection: "row", flexWrap: "wrap", gap: 10 }, fact: { width: "48%", minHeight: 90, padding: 14, borderRadius: 17, backgroundColor: theme.surfaceSoft, borderWidth: 1, borderColor: theme.border }, factLabel: { color: theme.accent, fontSize: 12, textTransform: "uppercase", letterSpacing: 0.6 }, factValue: { color: theme.text, fontSize: 15, marginTop: 10 },
+  factGrid: { flexDirection: "row", flexWrap: "wrap", gap: 10 }, fact: { width: "48%", minHeight: 90, padding: 14, borderRadius: 17, backgroundColor: theme.surfaceSoft, borderWidth: 1, borderColor: theme.border }, factLabel: { color: theme.accent, fontSize: 12, textTransform: "uppercase", letterSpacing: 0.6, fontFamily: "PlayfairDisplay_600SemiBold" }, factValue: { color: theme.text, fontSize: 15, marginTop: 10, fontFamily: "PlayfairDisplay_400Regular" },
   historyItem: { flexDirection: "row", alignItems: "center", gap: 13, padding: 11, borderRadius: 18, borderWidth: 1, borderColor: theme.border, backgroundColor: theme.surfaceSoft }, historyImage: { width: 62, height: 62, borderRadius: 14 },
+  pawTrail: { position: "absolute", left: 0, right: 0, bottom: 0, height: 72, overflow: "hidden" },
+  pawTrailItem: { position: "absolute" },
 });
