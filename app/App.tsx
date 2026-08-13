@@ -11,10 +11,12 @@ import * as ImagePicker from "expo-image-picker";
 import * as ImageManipulator from "expo-image-manipulator";
 import { LinearGradient } from "expo-linear-gradient";
 import { StatusBar } from "expo-status-bar";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ActivityIndicator,
   Alert,
+  Animated,
+  Easing,
   Image,
   Platform,
   Pressable,
@@ -32,10 +34,37 @@ import type { Prediction, SavedResult } from "./src/types";
 
 type Screen = "home" | "preview" | "analysing" | "results" | "profile" | "history" | "error";
 const HISTORY_KEY = "detectodog.history.v1";
-const MIN_ANALYSIS_MS = 1800;
+const MIN_ANALYSIS_MS = 1000;
 
 function wait(milliseconds: number) {
   return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
+
+function ScanLine() {
+  const progress = useRef(new Animated.Value(0)).current;
+  const [frameHeight, setFrameHeight] = useState(0);
+
+  useEffect(() => {
+    const animation = Animated.loop(
+      Animated.sequence([
+        Animated.timing(progress, { toValue: 1, duration: 750, easing: Easing.inOut(Easing.ease), useNativeDriver: true }),
+        Animated.timing(progress, { toValue: 0, duration: 750, easing: Easing.inOut(Easing.ease), useNativeDriver: true }),
+      ]),
+    );
+    animation.start();
+    return () => animation.stop();
+  }, [progress]);
+
+  return (
+    <View pointerEvents="none" style={StyleSheet.absoluteFill} onLayout={event => setFrameHeight(event.nativeEvent.layout.height)}>
+      <Animated.View
+        style={[
+          styles.scanLine,
+          { transform: [{ translateY: progress.interpolate({ inputRange: [0, 1], outputRange: [0, Math.max(0, frameHeight - 54)] }) }] },
+        ]}
+      />
+    </View>
+  );
 }
 
 const pawTrail = [
@@ -128,8 +157,8 @@ export default function App() {
       }
 
       const result = source === "camera"
-        ? await ImagePicker.launchCameraAsync({ mediaTypes: ["images"], quality: 0.65, allowsEditing: true, aspect: [1, 1] })
-        : await ImagePicker.launchImageLibraryAsync({ mediaTypes: ["images"], quality: 0.65, allowsEditing: true, aspect: [1, 1] });
+        ? await ImagePicker.launchCameraAsync({ mediaTypes: ["images"], quality: 0.65 })
+        : await ImagePicker.launchImageLibraryAsync({ mediaTypes: ["images"], quality: 0.65 });
 
       if (result.canceled) return;
       const selected = result.assets[0];
@@ -242,7 +271,7 @@ export default function App() {
           <View style={[styles.page, styles.analysisPage]}>
             <View style={styles.analysisFrame}>
               {imageUri && <Image source={{ uri: imageUri }} style={styles.analysisImage} />}
-              <View style={styles.scanLine} />
+              <ScanLine />
               <View style={styles.scanBorder} />
             </View>
             <ActivityIndicator size="large" color={theme.accent} />
@@ -339,11 +368,11 @@ const styles = StyleSheet.create({
   note: { flexDirection: "row", gap: 9, padding: 13, borderRadius: 16, backgroundColor: "rgba(30,16,48,.28)" }, homeNote: { flexDirection: "row", gap: 9, alignItems: "flex-start", paddingHorizontal: 4 }, noteText: { flex: 1, color: theme.muted, fontSize: 13, lineHeight: 19, fontFamily: "PlayfairDisplay_400Regular" },
   textButton: { height: 44, minWidth: 44, alignItems: "flex-end", justifyContent: "center" }, textButtonLabel: { color: theme.muted, fontSize: 15, fontFamily: "PlayfairDisplay_500Medium" },
   previewImage: { width: "100%", aspectRatio: 1, borderRadius: 26, backgroundColor: theme.surface },
-  analysisPage: { alignItems: "center", gap: 24 }, analysisFrame: { width: "100%", aspectRatio: 1, maxHeight: 352, borderRadius: 26, overflow: "hidden", borderWidth: 1, borderColor: theme.border }, analysisImage: { width: "100%", height: "100%" }, scanLine: { position: "absolute", left: 0, right: 0, top: "48%", height: 54, borderBottomWidth: 2, borderBottomColor: theme.accent, backgroundColor: "rgba(201,182,247,.14)" }, scanBorder: { position: "absolute", inset: 14, borderRadius: 18, borderWidth: 1.5, borderStyle: "dashed", borderColor: "rgba(246,241,255,.45)" }, analysisCopy: { alignItems: "center", gap: 7 }, centerText: { textAlign: "center" },
+  analysisPage: { alignItems: "center", gap: 24 }, analysisFrame: { width: "100%", aspectRatio: 1, maxHeight: 352, borderRadius: 26, overflow: "hidden", borderWidth: 1, borderColor: theme.border }, analysisImage: { width: "100%", height: "100%" }, scanLine: { position: "absolute", left: 0, right: 0, top: 0, height: 54, borderBottomWidth: 2, borderBottomColor: theme.accent, backgroundColor: "rgba(201,182,247,.14)" }, scanBorder: { position: "absolute", inset: 14, borderRadius: 18, borderWidth: 1.5, borderStyle: "dashed", borderColor: "rgba(246,241,255,.45)" }, analysisCopy: { alignItems: "center", gap: 7 }, centerText: { textAlign: "center" },
   resultHero: { flexDirection: "row", gap: 14, alignItems: "center" }, resultImage: { width: 96, height: 96, borderRadius: 22 }, resultCopy: { flex: 1, gap: 7 },
   confidenceBadge: { alignSelf: "flex-start", flexDirection: "row", alignItems: "center", gap: 6, paddingVertical: 5, paddingHorizontal: 11, borderRadius: 99, backgroundColor: "rgba(201,182,247,.22)" }, confidenceBadgeText: { color: "#E0D2FC", fontSize: 12, fontFamily: "PlayfairDisplay_600SemiBold" }, resultHeading: { color: theme.text, fontSize: 25, lineHeight: 29, fontFamily: "PlayfairDisplay_600SemiBold" },
-  resultCard: { padding: 18, gap: 14, borderRadius: 22, borderWidth: 1, borderColor: theme.border, backgroundColor: "rgba(255,255,255,.1)" }, resultCardTop: { flexDirection: "row", alignItems: "baseline", justifyContent: "space-between", gap: 12 }, resultPercent: { color: theme.accent, fontSize: 27, fontFamily: "PlayfairDisplay_700Bold" },
-  resultBreed: { color: theme.text, fontSize: 28, lineHeight: 31, fontFamily: "PlayfairDisplay_600SemiBold" }, confidence: { color: theme.muted, fontSize: 15, fontFamily: "PlayfairDisplay_400Regular" },
+  resultCard: { padding: 18, gap: 14, borderRadius: 22, borderWidth: 1, borderColor: theme.border, backgroundColor: "rgba(255,255,255,.1)" }, resultCardTop: { flexDirection: "row", alignItems: "flex-start", gap: 12 }, resultPercent: { flexShrink: 0, color: theme.accent, fontSize: 27, lineHeight: 31, fontFamily: "PlayfairDisplay_700Bold" },
+  resultBreed: { flex: 1, flexShrink: 1, color: theme.text, fontSize: 28, lineHeight: 31, fontFamily: "PlayfairDisplay_600SemiBold" }, confidence: { color: theme.muted, fontSize: 15, fontFamily: "PlayfairDisplay_400Regular" },
   meter: { height: 8, backgroundColor: theme.surface, borderRadius: 4, overflow: "hidden" }, meterFill: { height: 8, backgroundColor: theme.accent, borderRadius: 4 },
   sectionTitle: { color: theme.text, fontSize: 20, fontFamily: "PlayfairDisplay_600SemiBold", marginTop: 8 },
   match: { flexDirection: "row", justifyContent: "space-between", padding: 16, borderRadius: 16, borderWidth: 1, borderColor: theme.border, backgroundColor: theme.surfaceSoft }, matchName: { color: theme.text, fontSize: 16, fontFamily: "PlayfairDisplay_500Medium" }, matchScore: { color: theme.accent, fontSize: 16, fontFamily: "PlayfairDisplay_600SemiBold" },
