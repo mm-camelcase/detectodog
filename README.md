@@ -8,15 +8,32 @@ The Expo app runs on Android and the web. It can take a photo or use one from th
 
 The web app is an installable PWA. Android preview builds are produced as APK files through Expo EAS.
 
-## 🧠 Model and API
+## 🧠 Models and API
 
-The classifier is an EfficientNet-B0 model trained on the [Stanford Dogs data set](http://vision.stanford.edu/aditya86/ImageNetDogs/):
+DetectoDog uses two separate ONNX models:
+
+- `detectodog-1.0` recognises 120 dog breeds.
+- `dog-detector-1.0` decides whether the image is likely to contain a dog.
+
+```mermaid
+flowchart LR
+    A["Photo"] --> B["Breed model<br/>detectodog-1.0"]
+    B --> C["Dog detector<br/>dog-detector-1.0"]
+    C -->|"Dog"| D["Three breed matches"]
+    C -->|"Not a dog"| E["No dog found"]
+```
+
+The breed model is an EfficientNet-B0 model trained on the [Stanford Dogs data set](http://vision.stanford.edu/aditya86/ImageNetDogs/):
 
 - 20,580 images
 - 120 breeds
 - 84.36% best validation accuracy
 
-The notebook covers data preparation, augmentation, transfer learning, evaluation and model export. The production model runs as an 18 MB ONNX graph behind a small FastAPI service.
+The detector is a small classifier trained from the breed model's output. It prevents weak forced matches for images such as landscapes, vehicles and furniture. The original breed model remains unchanged.
+
+Both models are packaged in one API container and run inside the same Lambda request. There is one public API and no second service to operate.
+
+The notebooks and training scripts cover data preparation, augmentation, transfer learning, evaluation and ONNX export.
 
 Photos are processed in memory and are not stored by the API.
 
@@ -27,7 +44,7 @@ Photos are processed in memory and are not stored by the API.
 Terraform provisions one production environment in `eu-west-1`:
 
 - API Gateway and Lambda for inference
-- ECR for the API container
+- ECR for the API container and both ONNX models
 - S3 and CloudFront for the web app
 - CloudWatch logs and an AWS budget alert
 
@@ -68,4 +85,5 @@ npm run verify
 
 - Breed profiles are placeholders.
 - Results are visual estimates, not genetic tests.
-- The model only classifies the 120 breeds it was trained on.
+- Mixed breeds and breeds outside the trained 120 may return a low-confidence result.
+- Dog detection is a visual estimate and can still make mistakes.
