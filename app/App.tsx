@@ -32,6 +32,11 @@ import type { Prediction, SavedResult } from "./src/types";
 
 type Screen = "home" | "preview" | "analysing" | "results" | "profile" | "history" | "error";
 const HISTORY_KEY = "detectodog.history.v1";
+const MIN_ANALYSIS_MS = 1800;
+
+function wait(milliseconds: number) {
+  return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
 
 const pawTrail = [
   { left: "3%", bottom: 5, size: 24, opacity: 0.2, rotate: "-24deg" },
@@ -161,12 +166,15 @@ export default function App() {
 
   async function analyse() {
     if (!imageUri) return;
+    const startedAt = Date.now();
     setScreen("analysing");
     try {
       const result = await identifyDog(imageUri);
+      await wait(Math.max(0, MIN_ANALYSIS_MS - (Date.now() - startedAt)));
       setPrediction(result);
       setScreen("results");
     } catch (reason) {
+      await wait(Math.max(0, MIN_ANALYSIS_MS - (Date.now() - startedAt)));
       setError(reason instanceof Error ? reason.message : "Something went wrong.");
       setScreen("error");
     }
@@ -212,6 +220,7 @@ export default function App() {
               <Action icon="images-outline" label="Choose from library" onPress={() => choose("library")} />
             </View>
             <View style={styles.homeNote}><Ionicons name="information-circle-outline" size={17} color={theme.accent} /><Text style={styles.noteText}>Results are visual estimates from a photo, not a genetic test.</Text></View>
+            <PawTrail />
           </ScrollView>
         )}
 
@@ -225,6 +234,7 @@ export default function App() {
             </View>
             <View style={styles.note}><Ionicons name="bulb-outline" size={18} color={theme.accent} /><Text style={styles.noteText}>For the best result, use a clear photo showing the dog’s face and body.</Text></View>
             <Action icon="search-outline" label="Identify this dog" onPress={analyse} />
+            <PawTrail />
           </ScrollView>
         )}
 
@@ -263,6 +273,7 @@ export default function App() {
             </View>
             <Pressable onPress={() => Share.share({ message: `DetectoDog thinks this is a ${top.breed} (${percent(top.confidence)} confidence).` })} style={styles.share}><Ionicons name="share-social-outline" size={19} color={theme.accent} /><Text style={styles.shareText}>Share this result</Text></Pressable>
             <Text style={styles.disclaimer}>{prediction.disclaimer}</Text>
+            <PawTrail />
           </ScrollView>
         )}
 
@@ -276,6 +287,7 @@ export default function App() {
               {["Origin", "Typical size", "Lifespan", "Energy", "Grooming", "Trainability"].map(label => <View key={label} style={styles.fact}><Text style={styles.factLabel}>{label}</Text><Text style={styles.factValue}>Coming soon</Text></View>)}
             </View>
             <Action icon="camera-outline" label="Identify another dog" onPress={() => setScreen("home")} />
+            <PawTrail />
           </ScrollView>
         )}
 
@@ -289,6 +301,7 @@ export default function App() {
                 <Ionicons name="chevron-forward" size={20} color={theme.muted} />
               </Pressable>
             ))}
+            <PawTrail />
           </ScrollView>
         )}
 
@@ -301,7 +314,6 @@ export default function App() {
             <Pressable onPress={() => setScreen("home")}><Text style={styles.shareText}>Back to home</Text></Pressable>
           </View>
         )}
-        <PawTrail />
       </SafeAreaView>
     </LinearGradient>
     </SafeAreaProvider>
@@ -339,6 +351,6 @@ const styles = StyleSheet.create({
   profileIcon: { height: 180, borderRadius: 28, alignItems: "center", justifyContent: "center", backgroundColor: theme.surfaceSoft, borderWidth: 1, borderColor: theme.border },
   factGrid: { flexDirection: "row", flexWrap: "wrap", gap: 10 }, fact: { width: "48%", minHeight: 90, padding: 14, borderRadius: 17, backgroundColor: theme.surfaceSoft, borderWidth: 1, borderColor: theme.border }, factLabel: { color: theme.accent, fontSize: 12, textTransform: "uppercase", letterSpacing: 0.6, fontFamily: "PlayfairDisplay_600SemiBold" }, factValue: { color: theme.text, fontSize: 15, marginTop: 10, fontFamily: "PlayfairDisplay_400Regular" },
   historyItem: { flexDirection: "row", alignItems: "center", gap: 13, padding: 11, borderRadius: 18, borderWidth: 1, borderColor: theme.border, backgroundColor: theme.surfaceSoft }, historyImage: { width: 62, height: 62, borderRadius: 14 },
-  pawTrail: { position: "absolute", left: 0, right: 0, bottom: 0, height: 72, overflow: "hidden" },
+  pawTrail: { position: "relative", width: "100%", height: 72, marginTop: 8, overflow: "hidden" },
   pawTrailItem: { position: "absolute" },
 });
