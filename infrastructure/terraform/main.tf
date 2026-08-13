@@ -61,6 +61,7 @@ resource "aws_lambda_function" "api" {
   environment {
     variables = {
       MODEL_VERSION        = "detectodog-1.0"
+      API_MODEL_VERSION    = "detectodog-2.0"
       MAX_IMAGE_BYTES      = "2097152"
       ALLOWED_ORIGINS      = "*"
       ORT_INTRA_OP_THREADS = "2"

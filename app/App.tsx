@@ -32,7 +32,7 @@ import { identifyDog } from "./src/api";
 import { theme } from "./src/theme";
 import type { Prediction, SavedResult } from "./src/types";
 
-type Screen = "home" | "preview" | "analysing" | "results" | "profile" | "history" | "error";
+type Screen = "home" | "preview" | "analysing" | "results" | "profile" | "history" | "notDog" | "error";
 const HISTORY_KEY = "detectodog.history.v1";
 const MIN_ANALYSIS_MS = 1000;
 
@@ -201,7 +201,7 @@ export default function App() {
       const result = await identifyDog(imageUri);
       await wait(Math.max(0, MIN_ANALYSIS_MS - (Date.now() - startedAt)));
       setPrediction(result);
-      setScreen("results");
+      setScreen(result.prediction_quality === "not_dog" ? "notDog" : "results");
     } catch (reason) {
       await wait(Math.max(0, MIN_ANALYSIS_MS - (Date.now() - startedAt)));
       setError(reason instanceof Error ? reason.message : "Something went wrong.");
@@ -306,6 +306,20 @@ export default function App() {
           </ScrollView>
         )}
 
+        {screen === "notDog" && (
+          <View style={[styles.page, styles.center]}>
+            <View style={styles.noDogIcon}><Ionicons name="search-outline" size={48} color={theme.text} /></View>
+            <View style={styles.analysisCopy}>
+              <Text style={[styles.title, styles.centerText]}>All 120 breeds said no</Text>
+              <Text style={[styles.subtitle, styles.centerText]}>We couldn’t identify a dog in this photo. Try a clearer photo with one dog visible and good lighting.</Text>
+            </View>
+            <View style={[styles.actionRow, styles.fullWidth]}>
+              <Action icon="camera-outline" label="Retake photo" onPress={() => choose("camera")} />
+              <Action icon="images-outline" label="Choose another photo" onPress={() => choose("library")} />
+            </View>
+          </View>
+        )}
+
         {screen === "profile" && top && (
           <ScrollView contentContainerStyle={styles.page}>
             <Header title="Breed profile" onBack={() => setScreen("results")} />
@@ -378,6 +392,7 @@ const styles = StyleSheet.create({
   match: { flexDirection: "row", justifyContent: "space-between", padding: 16, borderRadius: 16, borderWidth: 1, borderColor: theme.border, backgroundColor: theme.surfaceSoft }, matchName: { color: theme.text, fontSize: 16, fontFamily: "PlayfairDisplay_500Medium" }, matchScore: { color: theme.accent, fontSize: 16, fontFamily: "PlayfairDisplay_600SemiBold" },
   share: { flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 8, padding: 12 }, shareText: { color: theme.accent, fontSize: 15, fontFamily: "PlayfairDisplay_600SemiBold" }, disclaimer: { color: theme.dim, fontSize: 12, lineHeight: 18, textAlign: "center", fontFamily: "PlayfairDisplay_400Regular" },
   profileIcon: { height: 180, borderRadius: 28, alignItems: "center", justifyContent: "center", backgroundColor: theme.surfaceSoft, borderWidth: 1, borderColor: theme.border },
+  noDogIcon: { width: 96, height: 96, borderRadius: 48, alignItems: "center", justifyContent: "center", backgroundColor: "rgba(255,255,255,.12)", borderWidth: 1, borderColor: theme.border }, fullWidth: { width: "100%" },
   factGrid: { flexDirection: "row", flexWrap: "wrap", gap: 10 }, fact: { width: "48%", minHeight: 90, padding: 14, borderRadius: 17, backgroundColor: theme.surfaceSoft, borderWidth: 1, borderColor: theme.border }, factLabel: { color: theme.accent, fontSize: 12, textTransform: "uppercase", letterSpacing: 0.6, fontFamily: "PlayfairDisplay_600SemiBold" }, factValue: { color: theme.text, fontSize: 15, marginTop: 10, fontFamily: "PlayfairDisplay_400Regular" },
   historyItem: { flexDirection: "row", alignItems: "center", gap: 13, padding: 11, borderRadius: 18, borderWidth: 1, borderColor: theme.border, backgroundColor: theme.surfaceSoft }, historyImage: { width: 62, height: 62, borderRadius: 14 },
   pawTrail: { position: "relative", width: "100%", height: 72, marginTop: 8, overflow: "hidden" },

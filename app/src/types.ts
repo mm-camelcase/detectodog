@@ -6,7 +6,10 @@ export type Match = {
 
 export type Prediction = {
   model_version: string;
-  prediction_quality: "good" | "uncertain";
+  breed_model_version?: string;
+  detector_model_version?: string;
+  dog_probability?: number;
+  prediction_quality: "good" | "uncertain" | "not_dog";
   matches: Match[];
   disclaimer: string;
 };

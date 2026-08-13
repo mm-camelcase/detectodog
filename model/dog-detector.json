@@ -1,0 +1,13 @@
+{
+  "model_version": "dog-detector-1.0",
+  "input": "breed_logits",
+  "threshold": 0.28438991638789557,
+  "breed_model_version": "detectodog-1.0",
+  "training_manifest_sha256": "a5fbaaa3623be0a4e863a822aa355ff429584f5a2c5e866ba1162128be3c3476",
+  "validation_roc_auc": 0.9846001415428167,
+  "samples": {
+    "train": 2245,
+    "validation": 546,
+    "test": 708
+  }
+}

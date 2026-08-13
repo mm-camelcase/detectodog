@@ -19,11 +19,11 @@ Test with:
 curl -F image=@dog.jpg http://127.0.0.1:8000/v1/predict
 ```
 
-Uploads are limited to 2 MB, decoded in memory, and not persisted. The model is a closed-set classifier: uncertainty is inferred from its confidence, but it cannot reliably prove that an image contains a dog.
+Uploads are limited to 2 MB, decoded in memory, and not persisted. Version 2 adds a separately trained dog/not-dog gate over the breed model logits. The original breed model remains unchanged.
 
 ## Re-export the serving model
 
-The original PyTorch checkpoint remains under `experiments/models/`. Export is a build-time operation; PyTorch is not installed in the production image.
+The original PyTorch checkpoint remains outside the production image. Export and detector training are build-time operations; PyTorch is not installed in the production image.
 
 ```bash
 pip install -r api/requirements-export.txt
