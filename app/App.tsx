@@ -25,15 +25,18 @@ import {
   Share,
   StyleSheet,
   Text,
+  TextInput,
   View,
 } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
 import { getBreedInfo, identifyDog } from "./src/api";
+import { SUPPORTED_BREEDS } from "./src/breeds";
+import type { SupportedBreed } from "./src/breeds";
 import { theme } from "./src/theme";
 import type { BreedInfo, Prediction, SavedResult } from "./src/types";
 
-type Screen = "home" | "preview" | "analysing" | "results" | "profile" | "history" | "notDog" | "error";
+type Screen = "home" | "breeds" | "preview" | "analysing" | "results" | "profile" | "history" | "notDog" | "error";
 const HISTORY_KEY = "detectodog.history.v1";
 const MIN_ANALYSIS_MS = 1000;
 
@@ -132,6 +135,9 @@ export default function App() {
   const [breedInfo, setBreedInfo] = useState<BreedInfo>();
   const [breedInfoLoading, setBreedInfoLoading] = useState(false);
   const [breedInfoError, setBreedInfoError] = useState("");
+  const [breedSearch, setBreedSearch] = useState("");
+  const [profileBreed, setProfileBreed] = useState<SupportedBreed>();
+  const [profileReturn, setProfileReturn] = useState<"breeds" | "results">("results");
 
   useEffect(() => {
     AsyncStorage.getItem(HISTORY_KEY).then(value => value && setHistory(JSON.parse(value))).catch(() => undefined);
@@ -227,14 +233,15 @@ export default function App() {
     setScreen("results");
   }
 
-  async function openBreedProfile() {
-    if (!top) return;
+  async function openBreedProfile(breed: SupportedBreed, returnTo: "breeds" | "results") {
+    setProfileBreed(breed);
+    setProfileReturn(returnTo);
     setScreen("profile");
     setBreedInfo(undefined);
     setBreedInfoError("");
     setBreedInfoLoading(true);
     try {
-      setBreedInfo(await getBreedInfo(top.breed_id));
+      setBreedInfo(await getBreedInfo(breed.id));
     } catch (reason) {
       setBreedInfoError(reason instanceof Error ? reason.message : "Breed details are not available right now.");
     } finally {
@@ -243,6 +250,10 @@ export default function App() {
   }
 
   const top = prediction?.matches[0];
+  const normalisedSearch = breedSearch.trim().toLocaleLowerCase();
+  const visibleBreeds = normalisedSearch
+    ? SUPPORTED_BREEDS.filter(breed => breed.name.toLocaleLowerCase().includes(normalisedSearch))
+    : SUPPORTED_BREEDS;
 
   if (!fontsLoaded) return null;
 
@@ -255,7 +266,10 @@ export default function App() {
           <ScrollView contentContainerStyle={styles.page}>
             <View style={styles.homeTop}>
               <View style={styles.brand}><Ionicons name="paw" size={24} color={theme.accent} /><Text style={styles.brandText}>DetectoDog</Text></View>
-              <Pressable accessibilityLabel="Previous results" onPress={() => setScreen("history")} style={styles.iconButton}><Ionicons name="time-outline" size={23} color={theme.text} /></Pressable>
+              <View style={styles.homeActions}>
+                <Pressable accessibilityLabel="Browse breeds" onPress={() => setScreen("breeds")} style={styles.iconButton}><Ionicons name="search-outline" size={23} color={theme.text} /></Pressable>
+                <Pressable accessibilityLabel="Previous results" onPress={() => setScreen("history")} style={styles.iconButton}><Ionicons name="time-outline" size={23} color={theme.text} /></Pressable>
+              </View>
             </View>
             <View style={styles.hero}>
               <Ionicons name="paw" size={74} color="rgba(201,182,247,.34)" />
@@ -268,6 +282,37 @@ export default function App() {
               <Action icon="images-outline" label="Choose from library" onPress={() => choose("library")} />
             </View>
             <View style={styles.homeNote}><Ionicons name="information-circle-outline" size={17} color={theme.accent} /><Text style={styles.noteText}>Results are visual estimates from a photo, not a genetic test.</Text></View>
+            <PawTrail />
+          </ScrollView>
+        )}
+
+        {screen === "breeds" && (
+          <ScrollView contentContainerStyle={styles.page} keyboardShouldPersistTaps="handled">
+            <Header title="Browse breeds" onBack={() => setScreen("home")} />
+            <View style={styles.searchBox}>
+              <Ionicons name="search-outline" size={21} color={theme.accent} />
+              <TextInput
+                accessibilityLabel="Search supported dog breeds"
+                autoCapitalize="words"
+                autoCorrect={false}
+                clearButtonMode="while-editing"
+                onChangeText={setBreedSearch}
+                placeholder="Search 120 breeds"
+                placeholderTextColor={theme.dim}
+                returnKeyType="search"
+                style={styles.searchInput}
+                value={breedSearch}
+              />
+              {breedSearch.length > 0 && Platform.OS !== "ios" && <Pressable accessibilityLabel="Clear search" onPress={() => setBreedSearch("")}><Ionicons name="close-circle" size={20} color={theme.muted} /></Pressable>}
+            </View>
+            <Text style={styles.searchCount}>{visibleBreeds.length} {visibleBreeds.length === 1 ? "breed" : "breeds"}</Text>
+            {visibleBreeds.length > 0 ? visibleBreeds.map(breed => (
+              <Pressable key={breed.id} onPress={() => openBreedProfile(breed, "breeds")} style={({ pressed }) => [styles.breedRow, pressed && styles.pressed]}>
+                <View style={styles.breedRowIcon}><Ionicons name="paw" size={17} color={theme.accent} /></View>
+                <Text style={styles.breedRowName}>{breed.name}</Text>
+                <Ionicons name="chevron-forward" size={19} color={theme.muted} />
+              </Pressable>
+            )) : <View style={styles.emptySearch}><Ionicons name="search-outline" size={44} color={theme.accent} /><Text style={styles.sectionTitle}>No supported breed found</Text><Text style={[styles.subtitle, styles.centerText]}>Try a shorter or different breed name.</Text></View>}
             <PawTrail />
           </ScrollView>
         )}
@@ -316,7 +361,7 @@ export default function App() {
               <View key={match.breed_id} style={styles.match}><Text style={styles.matchName}>{match.breed}</Text><Text style={styles.matchScore}>{percent(match.confidence)}</Text></View>
             ))}
             <View style={styles.actionRow}>
-              <Action icon="paw-outline" label="Explore this breed" onPress={openBreedProfile} />
+              <Action icon="paw-outline" label="Explore this breed" onPress={() => openBreedProfile({ id: top.breed_id, name: top.breed }, "results")} />
               <Action icon="camera-reverse-outline" label="Try another photo" onPress={() => setScreen("home")} />
             </View>
             <Pressable onPress={() => Share.share({ message: `DetectoDog thinks this is a ${top.breed} (${percent(top.confidence)} confidence).` })} style={styles.share}><Ionicons name="share-social-outline" size={19} color={theme.accent} /><Text style={styles.shareText}>Share this result</Text></Pressable>
@@ -339,11 +384,11 @@ export default function App() {
           </View>
         )}
 
-        {screen === "profile" && top && (
+        {screen === "profile" && profileBreed && (
           <ScrollView contentContainerStyle={styles.page}>
-            <Header title="Breed profile" onBack={() => setScreen("results")} />
+            <Header title="Breed profile" onBack={() => setScreen(profileReturn)} />
             <View style={styles.profileIcon}>{breedInfo?.image_url ? <Image source={{ uri: breedInfo.image_url }} style={styles.profileImage} /> : <Ionicons name="paw" size={54} color={theme.accent} />}</View>
-            <Text style={styles.title}>{top.breed}</Text>
+            <Text style={styles.title}>{profileBreed.name}</Text>
             {breedInfoLoading && <ActivityIndicator size="large" color={theme.accent} />}
             {breedInfoError ? <Text style={styles.subtitle}>{breedInfoError}</Text> : breedInfo && <>
               <Text style={styles.subtitle}>{breedInfo.description}</Text>
@@ -403,6 +448,7 @@ const styles = StyleSheet.create({
   page: { width: "100%", maxWidth: 560, alignSelf: "center", paddingHorizontal: 22, paddingTop: 6, paddingBottom: 100, gap: 18 },
   center: { flex: 1, alignItems: "center", justifyContent: "center", textAlign: "center" },
   homeTop: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" },
+  homeActions: { flexDirection: "row", alignItems: "center", gap: 9 },
   brand: { flexDirection: "row", gap: 9, alignItems: "center" }, brandText: { color: theme.text, fontSize: 21, fontFamily: "PlayfairDisplay_700Bold" },
   header: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", minHeight: 48 },
   headerTitle: { color: theme.text, fontSize: 16, fontFamily: "PlayfairDisplay_500Medium" }, iconButton: { width: 44, height: 44, borderRadius: 22, borderWidth: 1, borderColor: "rgba(246,241,255,.32)", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(255,255,255,.1)" }, iconSpacer: { width: 44 },
@@ -430,6 +476,13 @@ const styles = StyleSheet.create({
   noDogIcon: { width: 96, height: 96, borderRadius: 48, alignItems: "center", justifyContent: "center", backgroundColor: "rgba(255,255,255,.12)", borderWidth: 1, borderColor: theme.border }, fullWidth: { width: "100%" },
   factGrid: { flexDirection: "row", flexWrap: "wrap", gap: 10 }, fact: { width: "48%", minHeight: 90, padding: 14, borderRadius: 17, backgroundColor: theme.surfaceSoft, borderWidth: 1, borderColor: theme.border }, factLabel: { color: theme.accent, fontSize: 12, textTransform: "uppercase", letterSpacing: 0.6, fontFamily: "PlayfairDisplay_600SemiBold" }, factValue: { color: theme.text, fontSize: 15, marginTop: 10, fontFamily: "PlayfairDisplay_400Regular" },
   historyItem: { flexDirection: "row", alignItems: "center", gap: 13, padding: 11, borderRadius: 18, borderWidth: 1, borderColor: theme.border, backgroundColor: theme.surfaceSoft }, historyImage: { width: 62, height: 62, borderRadius: 14 },
+  searchBox: { minHeight: 54, flexDirection: "row", alignItems: "center", gap: 10, paddingHorizontal: 16, borderRadius: 18, borderWidth: 1.5, borderColor: "rgba(246,241,255,.5)", backgroundColor: "rgba(30,16,48,.22)" },
+  searchInput: { flex: 1, paddingVertical: 13, color: theme.text, fontSize: 16, fontFamily: "PlayfairDisplay_400Regular" },
+  searchCount: { color: theme.accent, fontSize: 12, textTransform: "uppercase", letterSpacing: 0.8, fontFamily: "PlayfairDisplay_600SemiBold" },
+  breedRow: { minHeight: 62, flexDirection: "row", alignItems: "center", gap: 12, paddingHorizontal: 14, paddingVertical: 10, borderRadius: 17, borderWidth: 1, borderColor: theme.border, backgroundColor: theme.surfaceSoft },
+  breedRowIcon: { width: 34, height: 34, borderRadius: 17, alignItems: "center", justifyContent: "center", backgroundColor: "rgba(201,182,247,.13)" },
+  breedRowName: { flex: 1, color: theme.text, fontSize: 16, fontFamily: "PlayfairDisplay_500Medium" },
+  emptySearch: { alignItems: "center", paddingVertical: 54, gap: 10 },
   pawTrail: { position: "relative", width: "100%", height: 72, marginTop: 8, overflow: "hidden" },
   pawTrailItem: { position: "absolute" },
 });
