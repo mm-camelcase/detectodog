@@ -2,7 +2,7 @@
   "expo": {
     "name": "DetectoDog",
     "slug": "detectodog",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "scheme": "detectodog",
     "icon": "./assets/icon.png",
     "orientation": "portrait",
@@ -17,7 +17,7 @@
     },
     "android": {
       "package": "ie.detectodog.app",
-      "versionCode": 8,
+      "versionCode": 9,
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#2E1257"

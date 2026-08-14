@@ -106,6 +106,12 @@ resource "aws_apigatewayv2_route" "predict" {
   target    = "integrations/${aws_apigatewayv2_integration.lambda.id}"
 }
 
+resource "aws_apigatewayv2_route" "breed_profile" {
+  api_id    = aws_apigatewayv2_api.api.id
+  route_key = "GET /v1/breeds/{breed_id}"
+  target    = "integrations/${aws_apigatewayv2_integration.lambda.id}"
+}
+
 resource "aws_cloudwatch_log_group" "api_gateway" {
   name              = "/aws/apigateway/detectodog-api"
   retention_in_days = 7

@@ -55,3 +55,15 @@ def test_returns_breed_for_detected_dog(monkeypatch) -> None:
     assert response.status_code == 200
     assert response.json()["prediction_quality"] == "good"
     assert response.json()["matches"][0]["breed"] == "Labrador Retriever"
+
+
+def test_returns_breed_profile(monkeypatch) -> None:
+    monkeypatch.setattr("app.main.get_breed_info", lambda breed_id: {"name": "Labrador Retriever", "provider": "Stratonauts Dog API"} if breed_id == "labrador-retriever" else None)
+    response = client.get("/v1/breeds/labrador-retriever")
+    assert response.status_code == 200
+    assert response.json()["provider"] == "Stratonauts Dog API"
+
+
+def test_rejects_unknown_breed_profile() -> None:
+    response = client.get("/v1/breeds/not-a-real-breed")
+    assert response.status_code == 404

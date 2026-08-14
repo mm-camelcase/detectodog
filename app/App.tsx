@@ -18,6 +18,7 @@ import {
   Animated,
   Easing,
   Image,
+  Linking,
   Platform,
   Pressable,
   ScrollView,
@@ -28,9 +29,9 @@ import {
 } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
-import { identifyDog } from "./src/api";
+import { getBreedInfo, identifyDog } from "./src/api";
 import { theme } from "./src/theme";
-import type { Prediction, SavedResult } from "./src/types";
+import type { BreedInfo, Prediction, SavedResult } from "./src/types";
 
 type Screen = "home" | "preview" | "analysing" | "results" | "profile" | "history" | "notDog" | "error";
 const HISTORY_KEY = "detectodog.history.v1";
@@ -128,6 +129,9 @@ export default function App() {
   const [history, setHistory] = useState<SavedResult[]>([]);
   const [error, setError] = useState("");
   const [selecting, setSelecting] = useState(false);
+  const [breedInfo, setBreedInfo] = useState<BreedInfo>();
+  const [breedInfoLoading, setBreedInfoLoading] = useState(false);
+  const [breedInfoError, setBreedInfoError] = useState("");
 
   useEffect(() => {
     AsyncStorage.getItem(HISTORY_KEY).then(value => value && setHistory(JSON.parse(value))).catch(() => undefined);
@@ -223,6 +227,21 @@ export default function App() {
     setScreen("results");
   }
 
+  async function openBreedProfile() {
+    if (!top) return;
+    setScreen("profile");
+    setBreedInfo(undefined);
+    setBreedInfoError("");
+    setBreedInfoLoading(true);
+    try {
+      setBreedInfo(await getBreedInfo(top.breed_id));
+    } catch (reason) {
+      setBreedInfoError(reason instanceof Error ? reason.message : "Breed details are not available right now.");
+    } finally {
+      setBreedInfoLoading(false);
+    }
+  }
+
   const top = prediction?.matches[0];
 
   if (!fontsLoaded) return null;
@@ -297,7 +316,7 @@ export default function App() {
               <View key={match.breed_id} style={styles.match}><Text style={styles.matchName}>{match.breed}</Text><Text style={styles.matchScore}>{percent(match.confidence)}</Text></View>
             ))}
             <View style={styles.actionRow}>
-              <Action icon="paw-outline" label="Explore this breed" onPress={() => setScreen("profile")} />
+              <Action icon="paw-outline" label="Explore this breed" onPress={openBreedProfile} />
               <Action icon="camera-reverse-outline" label="Try another photo" onPress={() => setScreen("home")} />
             </View>
             <Pressable onPress={() => Share.share({ message: `DetectoDog thinks this is a ${top.breed} (${percent(top.confidence)} confidence).` })} style={styles.share}><Ionicons name="share-social-outline" size={19} color={theme.accent} /><Text style={styles.shareText}>Share this result</Text></Pressable>
@@ -323,12 +342,24 @@ export default function App() {
         {screen === "profile" && top && (
           <ScrollView contentContainerStyle={styles.page}>
             <Header title="Breed profile" onBack={() => setScreen("results")} />
-            <View style={styles.profileIcon}><Ionicons name="paw" size={54} color={theme.accent} /></View>
+            <View style={styles.profileIcon}>{breedInfo?.image_url ? <Image source={{ uri: breedInfo.image_url }} style={styles.profileImage} /> : <Ionicons name="paw" size={54} color={theme.accent} />}</View>
             <Text style={styles.title}>{top.breed}</Text>
-            <Text style={styles.subtitle}>Breed details are being prepared for the portfolio data set. Individual health, temperament and care needs always vary.</Text>
-            <View style={styles.factGrid}>
-              {["Origin", "Typical size", "Lifespan", "Energy", "Grooming", "Trainability"].map(label => <View key={label} style={styles.fact}><Text style={styles.factLabel}>{label}</Text><Text style={styles.factValue}>Coming soon</Text></View>)}
-            </View>
+            {breedInfoLoading && <ActivityIndicator size="large" color={theme.accent} />}
+            {breedInfoError ? <Text style={styles.subtitle}>{breedInfoError}</Text> : breedInfo && <>
+              <Text style={styles.subtitle}>{breedInfo.description}</Text>
+              <View style={styles.factGrid}>
+                {[
+                  ["Origin", [breedInfo.origin.region, breedInfo.origin.country].filter(Boolean).join(", ") || "Not listed"],
+                  ["Typical size", `${breedInfo.weight_kg.min ?? "?"}–${breedInfo.weight_kg.max ?? "?"} kg · ${breedInfo.height_cm.min ?? "?"}–${breedInfo.height_cm.max ?? "?"} cm`],
+                  ["Lifespan", `${breedInfo.life_years.min ?? "?"}–${breedInfo.life_years.max ?? "?"} years`],
+                  ["Energy", breedInfo.traits.energy ? `${breedInfo.traits.energy}/5` : "Not listed"],
+                  ["Grooming", breedInfo.traits.grooming ? `${breedInfo.traits.grooming}/5` : "Not listed"],
+                  ["Trainability", breedInfo.traits.trainability ? `${breedInfo.traits.trainability}/5` : "Not listed"],
+                ].map(([label, value]) => <View key={label} style={styles.fact}><Text style={styles.factLabel}>{label}</Text><Text style={styles.factValue}>{value}</Text></View>)}
+              </View>
+              {breedInfo.traits.temperament.length > 0 && <View style={styles.note}><Ionicons name="heart-outline" size={18} color={theme.accent} /><Text style={styles.noteText}>{breedInfo.traits.temperament.join(" · ")}</Text></View>}
+              <Pressable onPress={() => Linking.openURL(breedInfo.provider_url)}><Text style={[styles.disclaimer, styles.providerLink]}>Powered by {breedInfo.provider}</Text></Pressable>
+            </>}
             <Action icon="camera-outline" label="Identify another dog" onPress={() => setScreen("home")} />
             <PawTrail />
           </ScrollView>
@@ -391,7 +422,7 @@ const styles = StyleSheet.create({
   sectionTitle: { color: theme.text, fontSize: 20, fontFamily: "PlayfairDisplay_600SemiBold", marginTop: 8 },
   match: { flexDirection: "row", justifyContent: "space-between", padding: 16, borderRadius: 16, borderWidth: 1, borderColor: theme.border, backgroundColor: theme.surfaceSoft }, matchName: { color: theme.text, fontSize: 16, fontFamily: "PlayfairDisplay_500Medium" }, matchScore: { color: theme.accent, fontSize: 16, fontFamily: "PlayfairDisplay_600SemiBold" },
   share: { flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 8, padding: 12 }, shareText: { color: theme.accent, fontSize: 15, fontFamily: "PlayfairDisplay_600SemiBold" }, disclaimer: { color: theme.dim, fontSize: 12, lineHeight: 18, textAlign: "center", fontFamily: "PlayfairDisplay_400Regular" },
-  profileIcon: { height: 180, borderRadius: 28, alignItems: "center", justifyContent: "center", backgroundColor: theme.surfaceSoft, borderWidth: 1, borderColor: theme.border },
+  profileIcon: { height: 240, borderRadius: 28, alignItems: "center", justifyContent: "center", overflow: "hidden", backgroundColor: theme.surfaceSoft, borderWidth: 1, borderColor: theme.border }, profileImage: { width: "100%", height: "100%", resizeMode: "cover" }, providerLink: { color: theme.accent, textDecorationLine: "underline" },
   noDogIcon: { width: 96, height: 96, borderRadius: 48, alignItems: "center", justifyContent: "center", backgroundColor: "rgba(255,255,255,.12)", borderWidth: 1, borderColor: theme.border }, fullWidth: { width: "100%" },
   factGrid: { flexDirection: "row", flexWrap: "wrap", gap: 10 }, fact: { width: "48%", minHeight: 90, padding: 14, borderRadius: 17, backgroundColor: theme.surfaceSoft, borderWidth: 1, borderColor: theme.border }, factLabel: { color: theme.accent, fontSize: 12, textTransform: "uppercase", letterSpacing: 0.6, fontFamily: "PlayfairDisplay_600SemiBold" }, factValue: { color: theme.text, fontSize: 15, marginTop: 10, fontFamily: "PlayfairDisplay_400Regular" },
   historyItem: { flexDirection: "row", alignItems: "center", gap: 13, padding: 11, borderRadius: 18, borderWidth: 1, borderColor: theme.border, backgroundColor: theme.surfaceSoft }, historyImage: { width: 62, height: 62, borderRadius: 14 },

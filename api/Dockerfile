@@ -10,6 +10,7 @@ ENV MODEL_PATH=${LAMBDA_TASK_ROOT}/model/detectodog.onnx \
     LABELS_PATH=${LAMBDA_TASK_ROOT}/model/breeds.json \
     DETECTOR_PATH=${LAMBDA_TASK_ROOT}/model/dog-detector.onnx \
     DETECTOR_CONFIG_PATH=${LAMBDA_TASK_ROOT}/model/dog-detector.json \
+    BREED_INFO_PATH=${LAMBDA_TASK_ROOT}/model/breed-info.json \
     MODEL_VERSION=detectodog-1.0 \
     API_MODEL_VERSION=detectodog-2.0
 

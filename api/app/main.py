@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from mangum import Mangum
 from PIL import Image, UnidentifiedImageError
 
+from .breed_info import get_breed_info
 from .model import load_detector_config, load_labels, predict_with_dog_gate
 
 
@@ -16,7 +17,7 @@ MODEL_VERSION = os.getenv("MODEL_VERSION", "detectodog-1.0")
 API_MODEL_VERSION = os.getenv("API_MODEL_VERSION", "detectodog-2.0")
 ALLOWED_TYPES = {"image/jpeg", "image/png", "image/webp"}
 
-app = FastAPI(title="DetectoDog API", version="2.0.0", docs_url=None, redoc_url=None)
+app = FastAPI(title="DetectoDog API", version="2.1.0", docs_url=None, redoc_url=None)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[origin for origin in os.getenv("ALLOWED_ORIGINS", "*").split(",")],
@@ -59,6 +60,17 @@ async def classify(image: UploadFile = File(...)) -> dict[str, object]:
         "matches": matches,
         "disclaimer": "Visual estimate only; this is not a genetic test.",
     }
+
+
+@app.get("/v1/breeds/{breed_id}")
+def breed_profile(breed_id: str) -> dict[str, object]:
+    known_ids = {str(label["id"]) for label in load_labels()}
+    if breed_id not in known_ids:
+        raise HTTPException(status_code=404, detail="Breed not found.")
+    profile = get_breed_info(breed_id)
+    if not profile:
+        raise HTTPException(status_code=404, detail="Breed details are not available yet.")
+    return profile
 
 
 handler = Mangum(app, lifespan="off")

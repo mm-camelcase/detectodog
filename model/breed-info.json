@@ -1,0 +1,6520 @@
+{
+  "chihuahua": {
+    "dog_api_id": "092dae18-86f4-4b41-a3f8-f57fab2f6f2c",
+    "name": "Chihuahua",
+    "description": "The Chihuahua is a small, energetic breed that is known for its intelligence, loyalty, and big personality. This breed is native to Mexico, where it was originally kept as a companion and lapdog.",
+    "life_years": {
+      "min": 14,
+      "max": 16
+    },
+    "weight_kg": {
+      "min": 1,
+      "max": 3
+    },
+    "height_cm": {
+      "min": 15,
+      "max": 23
+    },
+    "origin": {
+      "country": "Mexico",
+      "region": "State of Chihuahua"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": []
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 2,
+      "trainability": 3,
+      "exercise_minutes": 30,
+      "temperament": [
+        "graceful",
+        "alert",
+        "swift-moving",
+        "saucy",
+        "terrier-like",
+        "devoted"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/iu6uxabgzvp9vxb483ltv01lciod",
+    "image_attribution": {
+      "author": "Caterinarufo",
+      "license": "Public domain",
+      "license_url": null,
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Standard_razza_chihuahua.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "japanese-spaniel": {
+    "dog_api_id": "9a128e96-c007-443b-a352-781de84660c4",
+    "name": "Japanese Chin",
+    "description": "The Japanese Chin is a small, elegant dog breed with a distinctive, wedge-shaped head and a long, silky coat that can be black, white, or red in color. They are known for their friendly, playful nature and their agility, and were originally bred as companions for the aristocracy in Japan.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 2,
+      "max": 4
+    },
+    "height_cm": {
+      "min": 20,
+      "max": 28
+    },
+    "origin": {
+      "country": "Japan",
+      "region": "East Asia (ancestors from China/Korea)"
+    },
+    "coat": {
+      "type": "long",
+      "length": "long",
+      "colors": [
+        "black and white",
+        "red and white",
+        "black and tan and white"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 2,
+      "grooming": 4,
+      "trainability": 3,
+      "exercise_minutes": 30,
+      "temperament": [
+        "affectionate",
+        "sensitive",
+        "alert",
+        "playful",
+        "aristocratic",
+        "quiet"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/otj9mks68xplmkqev7p7balo817t",
+    "image_attribution": {
+      "author": "Va12le21",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:ItalianChin.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "maltese-dog": {
+    "dog_api_id": "521d8c02-32b9-4b50-8f0d-f791b4bfe697",
+    "name": "Maltese",
+    "description": "The Maltese is a small, elegant breed with a long, silky coat. They have a round head with a short muzzle and large, black eyes with a gentle expression. The Maltese is an affectionate, happy breed that loves to be around its family and is known for its gentle and playful nature.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 2,
+      "max": 3
+    },
+    "height_cm": {
+      "min": 18,
+      "max": 25
+    },
+    "origin": {
+      "country": "Italy",
+      "region": "Central Mediterranean"
+    },
+    "coat": {
+      "type": "long",
+      "length": "long",
+      "colors": [
+        "white",
+        "ivory (permitted but not preferred)"
+      ]
+    },
+    "hypoallergenic": true,
+    "traits": {
+      "energy": 3,
+      "grooming": 5,
+      "trainability": 4,
+      "exercise_minutes": 30,
+      "temperament": [
+        "affectionate",
+        "lively",
+        "gentle",
+        "playful",
+        "intelligent",
+        "fearless"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/3xsqc0figf7b5tlnzjoi583d5hat",
+    "image_attribution": {
+      "author": "SheltieBoy",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1AKC_Maltese_Dog_Show_2011.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "pekinese": {
+    "dog_api_id": "dd9017cb-368d-4013-8e9c-01ec3f305365",
+    "name": "Pekingese",
+    "description": "The Pekingese is a small breed of dog that originated in China. It is a compact and lively breed, with a long, silky coat. Its head is large and round, with small, erect ears. Its legs are short and strong, and its tail is usually docked. The Pekingese is an intelligent and loyal breed, and it makes an excellent family pet. It is an active breed, and it needs regular exercise and mental stimulation. It is loyal and affectionate, and it enjoys being around its family.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 3,
+      "max": 6
+    },
+    "height_cm": {
+      "min": 15,
+      "max": 23
+    },
+    "origin": {
+      "country": "China",
+      "region": "Beijing (Peking)"
+    },
+    "coat": {
+      "type": "long",
+      "length": "long",
+      "colors": [
+        "red",
+        "fawn",
+        "black",
+        "black and tan",
+        "sable",
+        "cream",
+        "white",
+        "gray",
+        "biscuit",
+        "particolor"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 2,
+      "grooming": 5,
+      "trainability": 2,
+      "exercise_minutes": 30,
+      "temperament": [
+        "dignified",
+        "independent",
+        "affectionate",
+        "confident",
+        "stubborn",
+        "loyal"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/m7ch4fufkulc1roqtei2mr1akl11",
+    "image_attribution": {
+      "author": null,
+      "license": "Public domain",
+      "license_url": null,
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cotton_the_Pekingese.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "shih-tzu": {
+    "dog_api_id": "e4aa816d-fb22-4841-80c4-b9967c310447",
+    "name": "Shih Tzu",
+    "description": "The Shih Tzu is a small and playful breed of dog that was originally bred in China as a companion dog. They are intelligent, affectionate, and loyal, and make excellent family pets.",
+    "life_years": {
+      "min": 14,
+      "max": 16
+    },
+    "weight_kg": {
+      "min": 4,
+      "max": 7
+    },
+    "height_cm": {
+      "min": 20,
+      "max": 28
+    },
+    "origin": {
+      "country": "China",
+      "region": null
+    },
+    "coat": {
+      "type": "long",
+      "length": "long",
+      "colors": [
+        "all colors and combinations permitted",
+        "gold",
+        "white",
+        "black",
+        "liver",
+        "brindle"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 2,
+      "grooming": 5,
+      "trainability": 3,
+      "exercise_minutes": 30,
+      "temperament": [
+        "Affectionate",
+        "Playful",
+        "Outgoing",
+        "Alert",
+        "Trusting"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/215yky4zc12cshuq90iv4g5jdxtc",
+    "image_attribution": {
+      "author": "Wawri (Tomasz Wawak)",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Shih-tzu-Fibi.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "blenheim-spaniel": {
+    "dog_api_id": "9ca8f849-4979-4634-80bc-949692635577",
+    "name": "Cavalier King Charles Spaniel",
+    "description": "The Cavalier King Charles Spaniel is a small breed that originated in the United Kingdom. They have a long, silky coat, and come in a variety of colors. They are a gentle and loving breed, and make good family companions. They are an active breed, and need plenty of exercise and stimulation. They are also very loyal and devoted to their owners.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 5,
+      "max": 8
+    },
+    "height_cm": {
+      "min": 30,
+      "max": 33
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "England"
+    },
+    "coat": {
+      "type": "medium",
+      "length": "medium",
+      "colors": [
+        "Blenheim",
+        "Tricolor",
+        "Black and Tan",
+        "Ruby"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 4,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "affectionate",
+        "gentle",
+        "graceful",
+        "fearless",
+        "sporting",
+        "playful"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/hmt4mzvx63z8d3qfris6fhiwifcf",
+    "image_attribution": {
+      "author": "Greg Hume",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:BlenheimTn.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "papillon": {
+    "dog_api_id": "88591552-b3bd-45fd-931c-5c8b88aad4f2",
+    "name": "Papillon",
+    "description": "The Papillon is a small toy breed that originated in France. It is an active and intelligent breed that is friendly and outgoing. The Papillon stands between 8-11 inches at the shoulder and has a long, silky coat that can come in various colors and patterns.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 3,
+      "max": 5
+    },
+    "height_cm": {
+      "min": 20,
+      "max": 28
+    },
+    "origin": {
+      "country": "France",
+      "region": "France/Belgium"
+    },
+    "coat": {
+      "type": "long",
+      "length": "long",
+      "colors": [
+        "white and black",
+        "white and red",
+        "white and sable",
+        "white, black and tan",
+        "white and lemon"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 3,
+      "trainability": 5,
+      "exercise_minutes": 30,
+      "temperament": [
+        "happy",
+        "alert",
+        "friendly",
+        "intelligent",
+        "lively",
+        "not shy or aggressive"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/uta9dyzfgif0736nylxmb4znkbh4",
+    "image_attribution": {
+      "author": "Gvdmoort",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Outdoor_Continental_Toy_Spaniel_Papillon.jpeg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "toy-terrier": {
+    "dog_api_id": "c9b33324-0581-42a7-b2c1-5da3bba5f350",
+    "name": "Toy Fox Terrier",
+    "description": "The Toy Fox Terrier is a small and energetic breed of dog that was originally bred in the United States for hunting small game. They are intelligent, playful, and affectionate, and make excellent companion dogs.",
+    "life_years": {
+      "min": 13,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 2,
+      "max": 3
+    },
+    "height_cm": {
+      "min": 22,
+      "max": 29
+    },
+    "origin": {
+      "country": "United States",
+      "region": null
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "white and tan",
+        "white, black and tan (tricolor)",
+        "white and black",
+        "white, chocolate and tan"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 1,
+      "trainability": 4,
+      "exercise_minutes": 40,
+      "temperament": [
+        "alert",
+        "intelligent",
+        "spirited",
+        "loyal",
+        "playful",
+        "self-possessed"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/fohicsu4ywducnb22nvv7xwm1id7",
+    "image_attribution": {
+      "author": "Terry Best",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Toy_Fox_Terrier_2.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "rhodesian-ridgeback": {
+    "dog_api_id": "09d3fe1d-03d7-46d8-ad86-d66288563673",
+    "name": "Rhodesian Ridgeback",
+    "description": "The Rhodesian Ridgeback is a large and athletic breed of dog that was originally bred in Zimbabwe for hunting large game. They are intelligent, independent, and loyal, and make excellent companion dogs.",
+    "life_years": {
+      "min": 10,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 30,
+      "max": 39
+    },
+    "height_cm": {
+      "min": 61,
+      "max": 69
+    },
+    "origin": {
+      "country": "Zimbabwe",
+      "region": "Southern Africa"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "light wheaten",
+        "wheaten",
+        "red wheaten"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 1,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "dignified",
+        "intelligent",
+        "reserved with strangers",
+        "loyal",
+        "athletic",
+        "independent"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/0i3a9t31xul9il4129ohnyz7lanb",
+    "image_attribution": {
+      "author": "Vulkano12",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Akani_Kopf.jpeg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "afghan-hound": {
+    "dog_api_id": "dd9362cc-52e0-462d-b856-fccdcf24b140",
+    "name": "Afghan Hound",
+    "description": "The Afghan Hound is a large and elegant breed of dog that was originally bred in Afghanistan for hunting small game. They are intelligent, independent, and athletic, and make excellent companion dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 20,
+      "max": 27
+    },
+    "height_cm": {
+      "min": 61,
+      "max": 71
+    },
+    "origin": {
+      "country": "Afghanistan",
+      "region": null
+    },
+    "coat": {
+      "type": "long",
+      "length": "long",
+      "colors": [
+        "fawn",
+        "gold",
+        "cream",
+        "red",
+        "black",
+        "brindle",
+        "blue",
+        "gray",
+        "white",
+        "tricolour"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 5,
+      "trainability": 2,
+      "exercise_minutes": 45,
+      "temperament": [
+        "dignified",
+        "aloof",
+        "independent",
+        "aristocratic",
+        "gentle",
+        "clownish"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/f0t6j6yhrj9asbbi6c1mddv6klqm",
+    "image_attribution": {
+      "author": "SheltieBoy",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:AKC_Helena_Fall_Dog_Show_2011.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "basset": {
+    "dog_api_id": "3e4912ab-bf3c-40cd-8eb9-be1e5999179b",
+    "name": "Basset Hound",
+    "description": "The Basset Hound is a small and playful breed of dog that was originally bred in France for hunting small game. They are intelligent, affectionate, and loyal, and make excellent companion dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 20,
+      "max": 29
+    },
+    "height_cm": {
+      "min": 28,
+      "max": 38
+    },
+    "origin": {
+      "country": "France",
+      "region": "Normandy/Artois"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "black, white and tan (tricolor)",
+        "tan/lemon and white (bicolor)",
+        "any recognized hound color"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 2,
+      "grooming": 2,
+      "trainability": 2,
+      "exercise_minutes": 40,
+      "temperament": [
+        "charming",
+        "patient",
+        "low-key",
+        "stubborn",
+        "affectionate",
+        "devoted"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/ggr57vtp4a8zwb1dy3ahrzqa5o5i",
+    "image_attribution": {
+      "author": "Alexbassethound",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Basset-hound-dog-posing-for-a-close-up-photo.webp"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "beagle": {
+    "dog_api_id": "d8621d92-6558-451c-8631-a32e767026a0",
+    "name": "Beagle",
+    "description": "The Beagle is a small to medium-sized dog breed that was originally bred for hunting. They are known for their cheerful dispositions and keen sense of smell.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 9,
+      "max": 14
+    },
+    "height_cm": {
+      "min": 33,
+      "max": 38
+    },
+    "origin": {
+      "country": "England",
+      "region": "United Kingdom"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "Tricolor",
+        "Red and White",
+        "Lemon and White",
+        "Black and Tan",
+        "Chocolate Tri",
+        "White and Tan"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 1,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "Curious",
+        "Merry",
+        "Friendly",
+        "Determined",
+        "Excitable",
+        "Gentle"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/9obkbwwrspyaz8qcpji5ygo4359k",
+    "image_attribution": {
+      "author": "Claude Valroff, Original uploader was Julien Valroff at fr.wikipedia",
+      "license": "CC BY-SA 2.0 fr",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Beagle_Upsy.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "bloodhound": {
+    "dog_api_id": "d7ddec39-1ca5-4e56-b42f-e24f54884ae8",
+    "name": "Bloodhound",
+    "description": "The Bloodhound is a large scent hound, bred for tracking and hunting humans or animals by their scent.",
+    "life_years": {
+      "min": 10,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 36,
+      "max": 50
+    },
+    "height_cm": {
+      "min": 58,
+      "max": 69
+    },
+    "origin": {
+      "country": "Belgium",
+      "region": null
+    },
+    "coat": {
+      "type": "short",
+      "length": "short",
+      "colors": [
+        "black and tan",
+        "liver and tan",
+        "red"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 2,
+      "trainability": 2,
+      "exercise_minutes": 60,
+      "temperament": [
+        "gentle",
+        "independent",
+        "stubborn",
+        "affectionate",
+        "determined",
+        "tireless"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/v4vszsax84syi0aor5uomsr5nljk",
+    "image_attribution": {
+      "author": "Pypaertv, modyfikacja Pleple2000",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bloodhound_423.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "bluetick": {
+    "dog_api_id": "4823c4e3-d4bf-4cd3-ac6c-88fb2d8a4cdd",
+    "name": "Bluetick Coonhound",
+    "description": "The Bluetick Coonhound is a large and athletic breed of dog that was originally bred in the United States for hunting raccoons. They are intelligent, energetic, and determined, and make excellent hunting dogs.",
+    "life_years": {
+      "min": 11,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 20,
+      "max": 36
+    },
+    "height_cm": {
+      "min": 53,
+      "max": 69
+    },
+    "origin": {
+      "country": "United States",
+      "region": "Louisiana / Southern United States"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "blue mottled",
+        "black",
+        "tan",
+        "white"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 2,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "intelligent",
+        "determined",
+        "affectionate",
+        "vocal",
+        "cold-nosed tracker",
+        "goofy"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/9khei31juh51kra3asl53b9t8upj",
+    "image_attribution": {
+      "author": null,
+      "license": "Public domain",
+      "license_url": null,
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:BluetickCoonhound.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "black-and-tan-coonhound": {
+    "dog_api_id": "488fd6fe-b444-4cd9-868b-7e68b17f6f0a",
+    "name": "Black and Tan Coonhound",
+    "description": "The Black and Tan Coonhound is a large and muscular breed of dog that was originally bred for hunting raccoons. They are intelligent, energetic, and determined, and make excellent hunting dogs.",
+    "life_years": {
+      "min": 10,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 18,
+      "max": 34
+    },
+    "height_cm": {
+      "min": 58,
+      "max": 69
+    },
+    "origin": {
+      "country": "United States",
+      "region": "Southern United States"
+    },
+    "coat": {
+      "type": "short",
+      "length": "short",
+      "colors": [
+        "black",
+        "tan"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 1,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "outgoing",
+        "friendly",
+        "determined",
+        "independent",
+        "affectionate",
+        "vocal"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/z6hruyz2hu86i6sbz70ziwzlweob",
+    "image_attribution": {
+      "author": "Krysta",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Black_And_Tan_Coonhound.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "walker-hound": {
+    "dog_api_id": "330b5cec-9fcf-46bd-8770-fada2fbacc77",
+    "name": "Treeing Walker Coonhound",
+    "description": "The Treeing Walker Coonhound is a medium-sized hound breed that was developed by crossing the English and American Foxhounds. It is an active and energetic breed that is friendly, loyal, and intelligent. The Treeing Walker Coonhound stands between 22-27 inches at the shoulder and has a short to medium-length coat that comes in various colors and patterns.",
+    "life_years": {
+      "min": 10,
+      "max": 13
+    },
+    "weight_kg": {
+      "min": 20,
+      "max": 30
+    },
+    "height_cm": {
+      "min": 51,
+      "max": 69
+    },
+    "origin": {
+      "country": "United States",
+      "region": "Southern United States"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "tricolor (white, black and tan)",
+        "white and black",
+        "white and tan"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 2,
+      "trainability": 3,
+      "exercise_minutes": 90,
+      "temperament": [
+        "alert",
+        "intelligent",
+        "active",
+        "courteous",
+        "courageous",
+        "friendly"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/e8wpt337shm01z86r52qf9xlcs6z",
+    "image_attribution": {
+      "author": "Kingkong954",
+      "license": "Public domain",
+      "license_url": null,
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Treeing-walker-coonhound-standing.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "english-foxhound": {
+    "dog_api_id": "7460a973-58c6-4ac6-8cc9-00ae12f6b8fd",
+    "name": "English Foxhound",
+    "description": "The English Foxhound is a medium-sized hound breed that was historically used for hunting foxes. It is an active and energetic breed that is friendly and even-tempered, and is considered to be a very intelligent and obedient breed. The English Foxhound stands between 21-25 inches at the shoulder and has a short to medium-length coat that can come in a variety of colors.",
+    "life_years": {
+      "min": 10,
+      "max": 13
+    },
+    "weight_kg": {
+      "min": 25,
+      "max": 34
+    },
+    "height_cm": {
+      "min": 53,
+      "max": 64
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "England"
+    },
+    "coat": {
+      "type": "short",
+      "length": "short",
+      "colors": [
+        "black, tan and white (any combination)",
+        "hound pies (white with color patches)",
+        "tan",
+        "red"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 2,
+      "trainability": 3,
+      "exercise_minutes": 90,
+      "temperament": [
+        "Active",
+        "Friendly",
+        "Independent",
+        "Sociable",
+        "Stubborn",
+        "Loud"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/a29r1z3yn1b9t6ovi2tz8ara5e9f",
+    "image_attribution": {
+      "author": "Flickr user Thowra_uk",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:English_Foxhound_portrait.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "redbone": {
+    "dog_api_id": "0af27828-f1f6-41d4-8580-48025d5e182c",
+    "name": "Redbone Coonhound",
+    "description": "The Redbone Coonhound is a large and athletic breed of dog that was originally bred in the United States for hunting raccoons. They are intelligent, energetic, and determined, and make excellent hunting dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 20,
+      "max": 32
+    },
+    "height_cm": {
+      "min": 53,
+      "max": 69
+    },
+    "origin": {
+      "country": "United States",
+      "region": "Georgia and the American South"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "solid red",
+        "chestnut"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 1,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "even-tempered",
+        "affectionate",
+        "determined",
+        "intelligent",
+        "sociable",
+        "aggressive hunter"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/w2t2iqikb89tsrfvntisd71qxdc0",
+    "image_attribution": {
+      "author": "127177p",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_female_redbone-coonhound-1.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "borzoi": {
+    "dog_api_id": "0d84dcb0-2eb9-41fe-882a-29e140dd0822",
+    "name": "Borzoi",
+    "description": "The Borzoi is a large and athletic breed of dog that was originally bred in Russia for hunting wolves and other large game. They are intelligent, independent, and graceful, and make excellent companion dogs.",
+    "life_years": {
+      "min": 9,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 27,
+      "max": 48
+    },
+    "height_cm": {
+      "min": 66,
+      "max": 81
+    },
+    "origin": {
+      "country": "Russia",
+      "region": null
+    },
+    "coat": {
+      "type": "long",
+      "length": "long",
+      "colors": [
+        "White",
+        "Black",
+        "Cream",
+        "Gold",
+        "Red",
+        "Tan",
+        "Brindle",
+        "Sable"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 3,
+      "trainability": 2,
+      "exercise_minutes": 40,
+      "temperament": [
+        "Independent",
+        "Dignified",
+        "Gentle",
+        "Aloof with strangers",
+        "Intelligent",
+        "Quiet"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/7u3k781nj2tcy1l7tj5wb1axd0am",
+    "image_attribution": {
+      "author": "Sergey Khantsis",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Brindle_Borzoi.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "irish-wolfhound": {
+    "dog_api_id": "0cef8682-d0c9-48f0-890b-f567eb2e7c2d",
+    "name": "Irish Wolfhound",
+    "description": "The Irish Wolfhound is a large and muscular breed of dog that was originally bred for hunting wolves. They are gentle, intelligent, and loyal, and make excellent family pets.",
+    "life_years": {
+      "min": 6,
+      "max": 8
+    },
+    "weight_kg": {
+      "min": 40,
+      "max": 82
+    },
+    "height_cm": {
+      "min": 71,
+      "max": 86
+    },
+    "origin": {
+      "country": "Ireland",
+      "region": "Ireland"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "medium",
+      "colors": [
+        "grey",
+        "brindle",
+        "red",
+        "black",
+        "pure white",
+        "fawn"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 3,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "gentle",
+        "calm",
+        "loyal",
+        "dignified",
+        "patient",
+        "sweet-tempered"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/naglqjytm34sbycaum8a8vvod5gp",
+    "image_attribution": {
+      "author": "Dux",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:(2)_Irish_Wolfhound_4.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "italian-greyhound": {
+    "dog_api_id": "6eab391a-9497-4283-b994-81a17b5810b1",
+    "name": "Italian Greyhound",
+    "description": "The Italian Greyhound is a small and slender breed of dog that was originally bred for hunting small game. They are gentle, intelligent, and affectionate, and make excellent companion dogs.",
+    "life_years": {
+      "min": 14,
+      "max": 16
+    },
+    "weight_kg": {
+      "min": 3,
+      "max": 5
+    },
+    "height_cm": {
+      "min": 33,
+      "max": 38
+    },
+    "origin": {
+      "country": "Italy",
+      "region": "Mediterranean Basin"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "black",
+        "blue",
+        "grey (blue)",
+        "isabella (fawn)",
+        "red",
+        "cream",
+        "white markings",
+        "parti-color"
+      ]
+    },
+    "hypoallergenic": true,
+    "traits": {
+      "energy": 3,
+      "grooming": 1,
+      "trainability": 3,
+      "exercise_minutes": 45,
+      "temperament": [
+        "affectionate",
+        "playful",
+        "alert",
+        "intelligent",
+        "sensitive",
+        "reserved with strangers"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/2tjhrhxddj7irj7mosry5oy88bnd",
+    "image_attribution": {
+      "author": "christina",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Italian_Greyhound_standing_gray.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "whippet": {
+    "dog_api_id": "32534831-9241-4be3-a594-70c45e1a9bbe",
+    "name": "Whippet",
+    "description": "The Whippet is a medium-sized dog breed with a slender, athletic build and a short, smooth coat that is typically blue, red, or fawn in color. They are known for their speed, grace, and agility, and were originally bred to hunt small game, such as rabbits, by sight.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 11,
+      "max": 18
+    },
+    "height_cm": {
+      "min": 46,
+      "max": 56
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "England"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "any color or markings"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 1,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "amiable",
+        "friendly",
+        "gentle",
+        "affectionate",
+        "intense in sport"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/1huccrkz26s3yhwdl2euk7u1p2a2",
+    "image_attribution": {
+      "author": "Canarian",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Whippet_2018_6.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "ibizan-hound": {
+    "dog_api_id": "4cebf59e-ddb1-40ab-8a48-ceacb2a54270",
+    "name": "Ibizan Hound",
+    "description": "The Ibizan Hound is a medium-sized hunting dog from the Balearic Islands of Spain. They are active, friendly, and intelligent, and make great family pets. Ibizan Hounds have a short, glossy coat that is usually white with red or chestnut markings. They are active and require plenty of exercise and mental stimulation to stay healthy and happy.",
+    "life_years": {
+      "min": 11,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 20,
+      "max": 25
+    },
+    "height_cm": {
+      "min": 57,
+      "max": 70
+    },
+    "origin": {
+      "country": "Spain",
+      "region": "Balearic Islands (Ibiza)"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "white",
+        "red",
+        "white and red combinations"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 2,
+      "trainability": 3,
+      "exercise_minutes": 45,
+      "temperament": [
+        "even-tempered",
+        "affectionate",
+        "loyal",
+        "intelligent",
+        "independent",
+        "alert"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/019p06kafpmtbzeddgpttzgucvoz",
+    "image_attribution": {
+      "author": "Jan Eduard, corrected by Pleple2000",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Podenco_z_ibizy_645.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "norwegian-elkhound": {
+    "dog_api_id": "5b89a1a3-549f-4166-b6c7-188926b89caa",
+    "name": "Norwegian Elkhound",
+    "description": "The Norwegian Elkhound is an ancient breed of Spitz-type hunting and guard dog from Norway. They are strong and powerful, yet friendly and loyal. Norwegian Elkhounds have a thick, double coat with a long, profuse undercoat and a short, thick outer coat. They come in various colors, including black and grey. They are independent and intelligent, and make great family pets.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 18,
+      "max": 25
+    },
+    "height_cm": {
+      "min": 46,
+      "max": 53
+    },
+    "origin": {
+      "country": "Norway",
+      "region": "Scandinavia"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "gray"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 3,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "Bold",
+        "Alert",
+        "Loyal",
+        "Independent",
+        "Energetic",
+        "Friendly"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/nqkk3mvp0iae3vkm0hfz4b90d6w7",
+    "image_attribution": {
+      "author": "Dmitry Guskov",
+      "license": "Public domain",
+      "license_url": null,
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Norwegian_Elkhound_1.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "otterhound": {
+    "dog_api_id": "8acfbb7f-f4b8-4e56-b64a-283a007a77eb",
+    "name": "Otterhound",
+    "description": "The Otterhound is a large and athletic breed of dog that was originally bred in England for hunting otters. They are intelligent, playful, and affectionate, and make excellent companion dogs.",
+    "life_years": {
+      "min": 10,
+      "max": 13
+    },
+    "weight_kg": {
+      "min": 29,
+      "max": 52
+    },
+    "height_cm": {
+      "min": 58,
+      "max": 69
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "England"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "grizzle",
+        "sandy",
+        "red",
+        "wheaten",
+        "blue",
+        "white",
+        "liver",
+        "black and tan",
+        "blue and tan",
+        "black and cream",
+        "tan and liver",
+        "tan and white"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 4,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "amiable",
+        "boisterous",
+        "even-tempered",
+        "affectionate",
+        "inquisitive",
+        "persevering"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/9v5m5td5mn2sgq7gs80bvmnkg9qz",
+    "image_attribution": {
+      "author": "Dale D. McDonald",
+      "license": "Public domain",
+      "license_url": null,
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Blackforrestotterhound.JPG"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "saluki": {
+    "dog_api_id": "58f9eb88-7288-42a5-b34a-5b5192eaac17",
+    "name": "Saluki",
+    "description": "The Saluki is a graceful and elegant breed, originating in the Middle East. They are a sight hound, and have a long, sleek coat in a variety of colors. They are highly intelligent, and have an independent nature. They are a fast breed, and have a long stride, and can be used for racing and coursing. They are loyal and devoted to their family, and make good companions.",
+    "life_years": {
+      "min": 10,
+      "max": 17
+    },
+    "weight_kg": {
+      "min": 20,
+      "max": 30
+    },
+    "height_cm": {
+      "min": 58,
+      "max": 71
+    },
+    "origin": {
+      "country": "Middle East",
+      "region": "Fertile Crescent"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "white",
+        "cream",
+        "fawn",
+        "golden",
+        "red",
+        "grizzle and tan",
+        "tricolor (white, black and tan)",
+        "black and tan"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 2,
+      "trainability": 2,
+      "exercise_minutes": 60,
+      "temperament": [
+        "dignified",
+        "gentle",
+        "independent",
+        "reserved with strangers",
+        "intelligent",
+        "aloof"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/6c8p67c7ob2n52sb3p1mdkxl9tpk",
+    "image_attribution": {
+      "author": "SALUKIWORLD",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cream_saluki_on_grass.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "scottish-deerhound": {
+    "dog_api_id": "861977df-b35a-49c4-b155-e9d29bbd2f0d",
+    "name": "Scottish Deerhound",
+    "description": "The Scottish Deerhound is a large breed of sighthound that originated in Scotland. It is a powerful and athletic breed, with a long, wiry coat. Its head is large and round, with small, erect ears. Its legs are strong and muscular, and its tail is usually docked. The Scottish Deerhound is an intelligent and loyal breed, and it makes an excellent family pet. It is an active breed, and it needs plenty of exercise and mental stimulation. It is loyal and affectionate, and it enjoys spending time with its family.",
+    "life_years": {
+      "min": 8,
+      "max": 11
+    },
+    "weight_kg": {
+      "min": 34,
+      "max": 50
+    },
+    "height_cm": {
+      "min": 71,
+      "max": 81
+    },
+    "origin": {
+      "country": "Scotland",
+      "region": "Scottish Highlands"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "medium",
+      "colors": [
+        "dark blue-gray",
+        "gray",
+        "brindle",
+        "yellow",
+        "sandy red",
+        "red fawn with black points"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 3,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "gentle",
+        "dignified",
+        "loyal",
+        "docile",
+        "friendly",
+        "courageous"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/dwhgnil6i2wx1nix2tx8tmpces5x",
+    "image_attribution": {
+      "author": "Sisteskrik",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Karrie.JPG"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "weimaraner": {
+    "dog_api_id": "851399dd-ebd6-49d6-b4c1-ec26ee583799",
+    "name": "Weimaraner",
+    "description": "The Weimaraner is a large, powerful breed with a short, thick coat. They have a long, elegant head with a deep muzzle and a strong jaw. Weimaraners are an intelligent, active breed with a friendly, loyal nature and are often used in agility, obedience, and hunting events.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 25,
+      "max": 40
+    },
+    "height_cm": {
+      "min": 58,
+      "max": 69
+    },
+    "origin": {
+      "country": "Germany",
+      "region": "Weimar, Thuringia"
+    },
+    "coat": {
+      "type": "short",
+      "length": "short",
+      "colors": [
+        "mouse-gray",
+        "silver-gray",
+        "blue-gray"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 2,
+      "trainability": 4,
+      "exercise_minutes": 90,
+      "temperament": [
+        "friendly",
+        "fearless",
+        "alert",
+        "obedient",
+        "assertive",
+        "willful"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/8l7plxv31yzlq2127dgzfpizcdyy",
+    "image_attribution": {
+      "author": "Gabriella Burioso",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Weimaraner_2009.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "staffordshire-bullterrier": {
+    "dog_api_id": "791fa86c-ff6c-49d9-92ee-b33c755ca50e",
+    "name": "Staffordshire Bull Terrier",
+    "description": "The Staffordshire Bull Terrier is a small and powerful breed of dog that was originally bred in England for bull baiting. They are intelligent, loyal, and protective, and make excellent companion dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 11,
+      "max": 17
+    },
+    "height_cm": {
+      "min": 36,
+      "max": 41
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "Staffordshire and the Black Country"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "red",
+        "fawn",
+        "white",
+        "black",
+        "blue",
+        "any of these with white",
+        "brindle",
+        "brindle with white"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 1,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "courageous",
+        "intelligent",
+        "tenacious",
+        "affectionate",
+        "bold",
+        "trustworthy"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/ste9cl3ilxlymlq56ec056db3poi",
+    "image_attribution": {
+      "author": "Serial Number 54129",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Brindle_%26_white_Staffordshire_Bull_Terrier_(AKA_Essie).jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "american-staffordshire-terrier": {
+    "dog_api_id": "30a056b8-2bbe-4aa9-b874-c511eb2ca775",
+    "name": "American Staffordshire Terrier",
+    "description": "The American Staffordshire Terrier is a medium-sized breed of dog that was originally bred for dog fighting. They are intelligent, loyal, and protective, and make excellent family pets.",
+    "life_years": {
+      "min": 12,
+      "max": 16
+    },
+    "weight_kg": {
+      "min": 18,
+      "max": 40
+    },
+    "height_cm": {
+      "min": 43,
+      "max": 48
+    },
+    "origin": {
+      "country": "United States",
+      "region": null
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "black",
+        "blue",
+        "brindle",
+        "fawn",
+        "red",
+        "white",
+        "solid",
+        "parti",
+        "patched"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 2,
+      "trainability": 4,
+      "exercise_minutes": 40,
+      "temperament": [
+        "Confident",
+        "Good-natured",
+        "Courageous",
+        "Smart",
+        "Loyal",
+        "Outgoing"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/u04bytdlouwrs68ypx8y3o1l90pt",
+    "image_attribution": {
+      "author": "State Farm",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:01_American_Staffordshire_terrier.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "bedlington-terrier": {
+    "dog_api_id": "b4233dc2-c233-4122-9f67-4c895a3717d5",
+    "name": "Bedlington Terrier",
+    "description": "The Bedlington Terrier is a small and athletic breed of dog that was originally bred in England for hunting small game. They are intelligent, playful, and affectionate, and make excellent companion dogs.",
+    "life_years": {
+      "min": 11,
+      "max": 16
+    },
+    "weight_kg": {
+      "min": 7,
+      "max": 9
+    },
+    "height_cm": {
+      "min": 38,
+      "max": 45
+    },
+    "origin": {
+      "country": "England",
+      "region": "Bedlington, Northumberland"
+    },
+    "coat": {
+      "type": "curly",
+      "length": "medium",
+      "colors": [
+        "Blue",
+        "Liver",
+        "Sandy",
+        "Blue and tan",
+        "Liver and tan",
+        "Sandy and tan"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 4,
+      "trainability": 4,
+      "exercise_minutes": 45,
+      "temperament": [
+        "Spirited",
+        "Intelligent",
+        "Mild-mannered",
+        "Loyal",
+        "Courageous"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/p7hp05bpt2u7pqe596262ssmkope",
+    "image_attribution": {
+      "author": "Jonathan Palombo",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%22Elvis%22_the_dog_(6990154625).jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "border-terrier": {
+    "dog_api_id": "5396c717-b1a6-4295-a3a7-04bb5cad66fd",
+    "name": "Border Terrier",
+    "description": "The Border Terrier is a small and energetic breed of dog that was originally bred in England for hunting small game. They are intelligent, playful, and affectionate, and make excellent companion dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 5,
+      "max": 7
+    },
+    "height_cm": {
+      "min": 28,
+      "max": 40
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "Anglo-Scottish border, Cheviot Hills"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "short",
+      "colors": [
+        "red",
+        "grizzle and tan",
+        "blue and tan",
+        "wheaten"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 2,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "intelligent",
+        "good-natured",
+        "affectionate",
+        "alert",
+        "eager to please",
+        "independent"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/rq446791hsndmhe49byjq2tkrlb8",
+    "image_attribution": {
+      "author": "Charles J Sharp",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Border-terrier-bitch.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "kerry-blue-terrier": {
+    "dog_api_id": "11d190ba-4f98-4671-8952-518e7fbcbd7b",
+    "name": "Kerry Blue Terrier",
+    "description": "The Kerry Blue Terrier is a medium-sized terrier breed that was developed in Ireland. It is an active and intelligent breed that is loyal and devoted to its family. The Kerry Blue Terrier stands between 17-19 inches at the shoulder and has a long, wavy coat that can come in various colors.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 13,
+      "max": 18
+    },
+    "height_cm": {
+      "min": 44,
+      "max": 50
+    },
+    "origin": {
+      "country": "Ireland",
+      "region": "County Kerry"
+    },
+    "coat": {
+      "type": "curly",
+      "length": "medium",
+      "colors": []
+    },
+    "hypoallergenic": true,
+    "traits": {
+      "energy": 4,
+      "grooming": 5,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "Alert",
+        "Intelligent",
+        "Spirited",
+        "Independent",
+        "Loyal",
+        "Assertive"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/x6c4vnn959h9xlfokgeyi3y3ak1f",
+    "image_attribution": {
+      "author": "KerryBlueTerrierAlofok_(1).jpg: Alofok derivative work: Parzi (talk)",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:KerryBlueTerrierAlofok_(1)-2011-27-05.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "irish-terrier": {
+    "dog_api_id": "84b24bac-9b97-4bb0-a585-e8bb18de1a58",
+    "name": "Irish Terrier",
+    "description": "The Irish Terrier is a medium-sized, energetic breed that is known for its intelligence, courage, and loyalty. This breed is native to Ireland, where it was originally used to hunt small game and vermin.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 11,
+      "max": 12
+    },
+    "height_cm": {
+      "min": 44,
+      "max": 46
+    },
+    "origin": {
+      "country": "Ireland",
+      "region": null
+    },
+    "coat": {
+      "type": "wire",
+      "length": "short",
+      "colors": [
+        "bright red",
+        "golden red",
+        "red wheaten",
+        "wheaten"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 3,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "bold",
+        "loyal",
+        "alert",
+        "affectionate",
+        "spirited",
+        "fearless"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/9esz0ffr6ktggyhhh6jmocq91m5r",
+    "image_attribution": {
+      "author": "Andrew Clark",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:IrishTerrierSydenhamHillWoods.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "norfolk-terrier": {
+    "dog_api_id": "5a9bd4e9-6346-4c40-ac39-f42b12da555b",
+    "name": "Norfolk Terrier",
+    "description": "The Norfolk Terrier is a small and energetic breed of dog that was originally bred in England for hunting small game. They are intelligent, playful, and affectionate, and make excellent companion dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 5,
+      "max": 6
+    },
+    "height_cm": {
+      "min": 23,
+      "max": 25
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "East Anglia, England"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "short",
+      "colors": [
+        "red",
+        "wheaten",
+        "black and tan",
+        "grizzle"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 3,
+      "trainability": 3,
+      "exercise_minutes": 45,
+      "temperament": [
+        "fearless",
+        "alert",
+        "affectionate",
+        "active",
+        "gregarious",
+        "hardy"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/84pn1qcsys7iias54hep9q3jyblp",
+    "image_attribution": {
+      "author": "Nutak",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Beccles.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "norwich-terrier": {
+    "dog_api_id": "1042a426-55b1-4129-8331-1c54b4f5c506",
+    "name": "Norwich Terrier",
+    "description": "The Norwich Terrier is a small breed of dog that originated in England. It is a compact and lively breed, with a short, wiry coat. Its head is large and round, with small, erect ears. Its legs are short and strong, and its tail is usually docked. The Norwich Terrier is an intelligent and friendly breed, and it makes a great family pet. It is an active breed, and it needs regular exercise and mental stimulation. It is loyal and affectionate, and it enjoys being around its family.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 5,
+      "max": 6
+    },
+    "height_cm": {
+      "min": 24,
+      "max": 26
+    },
+    "origin": {
+      "country": "England",
+      "region": "East Anglia (Norfolk/Norwich)"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "short",
+      "colors": [
+        "red",
+        "wheaten",
+        "black and tan",
+        "grizzle"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 3,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "fearless",
+        "affectionate",
+        "alert",
+        "loyal",
+        "spirited",
+        "eager to please"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/jr4ec1zn4l26nh11dy3a8u7bdnyx",
+    "image_attribution": {
+      "author": "Gamma Corvi",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:NorwichTerrier_Elvis.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "yorkshire-terrier": {
+    "dog_api_id": "ce40589c-295a-4259-9e83-711854db8129",
+    "name": "Yorkshire Terrier",
+    "description": "The Yorkshire Terrier is a small, intelligent dog breed with a long, silky coat that is typically blue and tan in color. They are known for their feisty, independent nature and their affectionate personalities, and were originally bred to hunt rats and other vermin in the textile mills of Yorkshire, England.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 2,
+      "max": 3
+    },
+    "height_cm": {
+      "min": 18,
+      "max": 23
+    },
+    "origin": {
+      "country": "England",
+      "region": "Yorkshire"
+    },
+    "coat": {
+      "type": "long",
+      "length": "long",
+      "colors": [
+        "blue and tan",
+        "black and tan (puppy coat)"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 5,
+      "trainability": 3,
+      "exercise_minutes": 30,
+      "temperament": [
+        "Affectionate",
+        "Sprightly",
+        "Tomboyish",
+        "Confident",
+        "Independent",
+        "Feisty"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/r11geo5h4cgi1prex92p2lr5mqij",
+    "image_attribution": {
+      "author": "Portraitlady4306",
+      "license": "Public domain",
+      "license_url": null,
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Little_tootie.JPG"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "wire-haired-fox-terrier": {
+    "dog_api_id": "5b631664-c346-4e2c-89c5-ee0b82cafa6f",
+    "name": "Wire Fox Terrier",
+    "description": "The Wire Fox Terrier is a small and energetic breed of dog that was originally bred in England for hunting small game. They are intelligent, playful, and affectionate, and make excellent companion dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 7,
+      "max": 9
+    },
+    "height_cm": {
+      "min": 35,
+      "max": 39
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "England"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "medium",
+      "colors": [
+        "white",
+        "white & tan",
+        "white, black & tan"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 4,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "alert",
+        "bold",
+        "energetic",
+        "intelligent",
+        "independent",
+        "playful"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/ofmhwywy2hgoa88z30hqm3og3ug7",
+    "image_attribution": {
+      "author": "Duspivova",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wera.JPG"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "lakeland-terrier": {
+    "dog_api_id": "21ee6f2c-4250-45f5-badd-51ed6c6c450b",
+    "name": "Lakeland Terrier",
+    "description": "The Lakeland Terrier is a small, agile terrier breed with a wiry, weather-resistant coat and a distinctive plumed tail.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 7,
+      "max": 9
+    },
+    "height_cm": {
+      "min": 33,
+      "max": 38
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "Lake District, England"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "short",
+      "colors": [
+        "black",
+        "blue",
+        "liver",
+        "red",
+        "wheaten",
+        "grizzle",
+        "black and tan",
+        "blue and tan",
+        "grizzle and tan",
+        "red grizzle"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 4,
+      "trainability": 3,
+      "exercise_minutes": 45,
+      "temperament": [
+        "alert",
+        "lively",
+        "cheerful",
+        "confident",
+        "friendly",
+        "bold"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/5un3iukildpfypxuhm1d4pa1ukvz",
+    "image_attribution": {
+      "author": "David Owsiany",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Boutchie_apres_championnat_004.JPG"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "sealyham-terrier": {
+    "dog_api_id": "f6eeac88-d62d-4ae7-9357-d3ca9bbc916a",
+    "name": "Sealyham Terrier",
+    "description": "The Sealyham Terrier is a small and energetic breed of dog that was originally bred in Wales for hunting small game. They are intelligent, playful, and affectionate, and make excellent companion dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 7,
+      "max": 11
+    },
+    "height_cm": {
+      "min": 25,
+      "max": 31
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "Pembrokeshire, Wales"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "medium",
+      "colors": [
+        "white",
+        "white with lemon markings",
+        "white with tan markings",
+        "white with badger markings",
+        "white with blue markings"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 4,
+      "trainability": 3,
+      "exercise_minutes": 45,
+      "temperament": [
+        "alert",
+        "confident",
+        "friendly",
+        "fearless",
+        "independent",
+        "affectionate"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/7zccjgigk58bu7059rweae3ser3l",
+    "image_attribution": {
+      "author": "Ettore Balocchi",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dog-002_(15689565729).jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "airedale": {
+    "dog_api_id": "1460844f-841c-4de8-b788-271aa4d63224",
+    "name": "Airedale Terrier",
+    "description": "The Airedale Terrier is a large and powerful breed of dog that was originally bred in England for hunting small game. They are intelligent, energetic, and determined, and make excellent hunting dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 18,
+      "max": 23
+    },
+    "height_cm": {
+      "min": 56,
+      "max": 61
+    },
+    "origin": {
+      "country": "England",
+      "region": "Aire Valley, Yorkshire"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "medium",
+      "colors": [
+        "black and tan",
+        "dark grizzle and tan"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 4,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "intelligent",
+        "courageous",
+        "confident",
+        "friendly",
+        "alert",
+        "independent"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/25qnum9zvfekevhxiewtqih91mxd",
+    "image_attribution": {
+      "author": "Zuni1520",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Airedale-terrier-charles14m.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "cairn": {
+    "dog_api_id": "32e67add-67a8-481b-8179-1bd5ec79e8bb",
+    "name": "Cairn Terrier",
+    "description": "The Cairn Terrier is a small and energetic breed of dog that was originally bred in Scotland for hunting small game. They are intelligent, playful, and affectionate, and make excellent companion dogs.",
+    "life_years": {
+      "min": 14,
+      "max": 16
+    },
+    "weight_kg": {
+      "min": 6,
+      "max": 7
+    },
+    "height_cm": {
+      "min": 24,
+      "max": 25
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "Scottish Highlands, Scotland"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "cream",
+        "wheaten",
+        "red",
+        "gray",
+        "silver",
+        "brindle",
+        "black brindle"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 3,
+      "trainability": 3,
+      "exercise_minutes": 45,
+      "temperament": [
+        "alert",
+        "bold",
+        "independent",
+        "curious",
+        "spirited",
+        "intelligent"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/m0x9wn0ta66paqff4z76fensrzww",
+    "image_attribution": {
+      "author": "Bitjungle",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cairn_Terrier_-_001.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "australian-terrier": {
+    "dog_api_id": "4b3278eb-612a-4e87-b2ab-73174d039514",
+    "name": "Australian Terrier",
+    "description": "The Australian Terrier is a small breed of terrier that originated in Australia. It is a compact and lively breed, with a short, wiry coat. Its head is large and round, with small, erect ears. Its legs are short and strong, and its tail is usually docked. The Australian Terrier is an intelligent and loyal breed, and it makes an excellent family pet. It is an active breed, and it needs regular exercise and mental stimulation. It is loyal and affectionate, and it enjoys spending time with its family.",
+    "life_years": {
+      "min": 11,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 6,
+      "max": 7
+    },
+    "height_cm": {
+      "min": 25,
+      "max": 28
+    },
+    "origin": {
+      "country": "Australia",
+      "region": "Tasmania"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "medium",
+      "colors": [
+        "Blue and Tan",
+        "Solid Sandy",
+        "Solid Red"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 3,
+      "trainability": 3,
+      "exercise_minutes": 45,
+      "temperament": [
+        "Alert",
+        "Spirited",
+        "Courageous",
+        "Friendly",
+        "Confident",
+        "Independent"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/v0mbxzfilhhr4g9p3mjgq2fa1liy",
+    "image_attribution": {
+      "author": "island silks",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:02_Australian_Silky_Terrier,_Zack,_spring_2012.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "dandie-dinmont": {
+    "dog_api_id": "84f73717-1814-42c6-90e6-33a047635dd7",
+    "name": "Dandie Dinmont Terrier",
+    "description": "The Dandie Dinmont Terrier is a small and playful breed of dog that was originally bred in Scotland for hunting small game. They are intelligent, independent, and affectionate, and make excellent companion dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 8,
+      "max": 11
+    },
+    "height_cm": {
+      "min": 20,
+      "max": 28
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "Scottish-English border (Borders region)"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "short",
+      "colors": [
+        "pepper",
+        "mustard"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 3,
+      "trainability": 3,
+      "exercise_minutes": 30,
+      "temperament": [
+        "independent",
+        "affectionate",
+        "playful",
+        "alert",
+        "devoted",
+        "stubborn"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/obx8ivrutq8tah5vetpd1wa6b5xb",
+    "image_attribution": {
+      "author": "Bonfirebuddy at Dutch Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bonfire_Buddy.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "boston-bull": {
+    "dog_api_id": "239b9cb3-02bc-47e0-a970-7400a838d352",
+    "name": "Boston Terrier",
+    "description": "The Boston Terrier is a small, intelligent dog breed that originated in the United States. They are known for their friendly dispositions and distinctive black and white coats.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 5,
+      "max": 11
+    },
+    "height_cm": {
+      "min": 23,
+      "max": 38
+    },
+    "origin": {
+      "country": "United States",
+      "region": "Boston, Massachusetts"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "brindle with white markings",
+        "seal with white markings",
+        "black with white markings"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 1,
+      "trainability": 4,
+      "exercise_minutes": 45,
+      "temperament": [
+        "lively",
+        "highly intelligent",
+        "friendly",
+        "affectionate",
+        "comical",
+        "alert"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/yx6sjflfa3qobazbl6uy77mnzqb8",
+    "image_attribution": {
+      "author": "Svenska Mässan from Sweden",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:BOSTON_TERRIER,_Ving%C3%A5rdens_Essi_von_Richards_(23995273800).2.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "miniature-schnauzer": {
+    "dog_api_id": "e9579b15-81f7-40ea-98e7-21af2631dceb",
+    "name": "Miniature Schnauzer",
+    "description": "The Miniature Schnauzer is a small breed that originated in Germany in the late 19th century. They have a double coat of wiry fur, and come in a variety of colors. They are an intelligent and active breed, and make good family companions. They are alert, and make good watchdogs, and are loyal and devoted to their owners.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 5,
+      "max": 9
+    },
+    "height_cm": {
+      "min": 30,
+      "max": 36
+    },
+    "origin": {
+      "country": "Germany",
+      "region": null
+    },
+    "coat": {
+      "type": "wire",
+      "length": "short",
+      "colors": [
+        "salt and pepper",
+        "black and silver",
+        "solid black"
+      ]
+    },
+    "hypoallergenic": true,
+    "traits": {
+      "energy": 3,
+      "grooming": 4,
+      "trainability": 4,
+      "exercise_minutes": 45,
+      "temperament": [
+        "alert",
+        "spirited",
+        "friendly",
+        "intelligent",
+        "obedient",
+        "feisty"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/5fmbcton84ma87ubollguil38vp2",
+    "image_attribution": {
+      "author": "Matthallett",
+      "license": "Public domain",
+      "license_url": null,
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:20080420_LunaHallett_(cropped).jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "giant-schnauzer": {
+    "dog_api_id": "4033b262-984d-458a-9a0d-aa8e9cdda8e4",
+    "name": "Giant Schnauzer",
+    "description": "The Giant Schnauzer is a large breed of working dog that originated in Germany. It is a powerful and athletic breed, with a thick, wiry coat. Its head is large and round, with small, erect ears. Its legs are strong and muscular, and its tail is usually docked. The Giant Schnauzer is an intelligent and loyal breed, and it makes an excellent family pet. It is an active breed, and it needs plenty of exercise and mental stimulation. It is loyal and affectionate, and it enjoys spending time with its family.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 25,
+      "max": 39
+    },
+    "height_cm": {
+      "min": 60,
+      "max": 70
+    },
+    "origin": {
+      "country": "Germany",
+      "region": "Bavaria/Württemberg"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "medium",
+      "colors": [
+        "black",
+        "salt and pepper"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 4,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "loyal",
+        "intelligent",
+        "protective",
+        "spirited",
+        "courageous",
+        "reliable"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/6kihvbcmhm0klqzib5irjj9wmou4",
+    "image_attribution": {
+      "author": "Paul Kounine (mischivo)",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:GiantSchnauzer_Grass.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "standard-schnauzer": {
+    "dog_api_id": "5e415b34-d15f-46da-ab83-25ec1e48bced",
+    "name": "Standard Schnauzer",
+    "description": "The Standard Schnauzer is a medium-sized German working dog. They are intelligent, active, and loyal, and make great family pets. Standard Schnauzers have a distinctive wiry coat that can be black, salt-and-pepper, or black-and-silver in color. They are easy to train and require plenty of exercise and mental stimulation to stay healthy and happy.",
+    "life_years": {
+      "min": 13,
+      "max": 16
+    },
+    "weight_kg": {
+      "min": 14,
+      "max": 23
+    },
+    "height_cm": {
+      "min": 44,
+      "max": 50
+    },
+    "origin": {
+      "country": "Germany",
+      "region": null
+    },
+    "coat": {
+      "type": "wire",
+      "length": "medium",
+      "colors": [
+        "pepper and salt",
+        "black"
+      ]
+    },
+    "hypoallergenic": true,
+    "traits": {
+      "energy": 4,
+      "grooming": 4,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "alert",
+        "intelligent",
+        "loyal",
+        "spirited",
+        "reliable",
+        "obedient"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/wxa1fzdwrmqunxguy73u5iwzqpbx",
+    "image_attribution": {
+      "author": "PaulasBunt",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Paula_vom_Siebenm%C3%BChlental.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "scotch-terrier": {
+    "dog_api_id": "09be818d-ef06-4f25-a616-9ab5d7456c9c",
+    "name": "Scottish Terrier",
+    "description": "The Scottish Terrier is a small, sturdy breed with a wiry coat and a distinctive beard. It is known for its independent and intelligent nature.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 8,
+      "max": 10
+    },
+    "height_cm": {
+      "min": 25,
+      "max": 25
+    },
+    "origin": {
+      "country": "Scotland",
+      "region": "Scottish Highlands"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "short",
+      "colors": [
+        "black",
+        "wheaten",
+        "brindle"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 4,
+      "trainability": 3,
+      "exercise_minutes": 40,
+      "temperament": [
+        "confident",
+        "independent",
+        "feisty",
+        "loyal",
+        "alert",
+        "dignified"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/3x8ra9woqxgwzl8k85vlq9yrv5uf",
+    "image_attribution": {
+      "author": "narujen",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:0Scottish_Terrier.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "tibetan-terrier": {
+    "dog_api_id": "84cb99f1-4735-4dc9-a3b3-25a5f0fb0eb5",
+    "name": "Tibetan Terrier",
+    "description": "The Tibetan Terrier is a small and playful breed of dog that was originally bred in Tibet as a companion dog. They are intelligent, affectionate, and loyal, and make excellent family pets.",
+    "life_years": {
+      "min": 14,
+      "max": 16
+    },
+    "weight_kg": {
+      "min": 8,
+      "max": 14
+    },
+    "height_cm": {
+      "min": 33,
+      "max": 41
+    },
+    "origin": {
+      "country": "Tibet",
+      "region": "Tibetan Plateau / Buddhist monasteries"
+    },
+    "coat": {
+      "type": "double",
+      "length": "long",
+      "colors": [
+        "white",
+        "gold",
+        "cream",
+        "black",
+        "tricolor",
+        "brindle",
+        "silver",
+        "particolor"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 5,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "intelligent",
+        "affectionate",
+        "playful",
+        "loyal",
+        "reserved with strangers",
+        "alert"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/x7o4orttshdcq2cpd4vdd67k10ou",
+    "image_attribution": {
+      "author": "PateraIncus",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tibetan_terrier.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "silky-terrier": {
+    "dog_api_id": "96342549-046f-4f69-9870-8cd95f138b94",
+    "name": "Silky Terrier",
+    "description": "The Silky Terrier is a small, sturdy terrier breed known for its soft, silky coat. They have a lively and alert personality, and are very loyal and affectionate towards their family. Silky Terriers are active and require regular exercise and mental stimulation to remain healthy and happy. They are intelligent and eager to please, and make great family pets.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 4,
+      "max": 5
+    },
+    "height_cm": {
+      "min": 23,
+      "max": 26
+    },
+    "origin": {
+      "country": "Australia",
+      "region": "Sydney, New South Wales"
+    },
+    "coat": {
+      "type": "long",
+      "length": "long",
+      "colors": [
+        "blue and tan",
+        "grey-blue and tan"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 4,
+      "trainability": 4,
+      "exercise_minutes": 30,
+      "temperament": [
+        "alert",
+        "friendly",
+        "inquisitive",
+        "lively",
+        "keen",
+        "affectionate"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/9q5t3ncuy8r5y4arwggu365sgt5q",
+    "image_attribution": {
+      "author": "Dagur Brynjólfsson",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:01_Australian_Silky_Terrier.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "soft-coated-wheaten-terrier": {
+    "dog_api_id": "faa43ad0-3e19-4506-9a31-0bd1d821f5aa",
+    "name": "Soft Coated Wheaten Terrier",
+    "description": "The Soft Coated Wheaten Terrier is a medium-sized breed of dog that was originally bred in Ireland for herding and guarding livestock. They are intelligent, playful, and energetic, and make excellent companion dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 14,
+      "max": 18
+    },
+    "height_cm": {
+      "min": 43,
+      "max": 48
+    },
+    "origin": {
+      "country": "Ireland",
+      "region": "Ireland"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "medium",
+      "colors": [
+        "wheaten"
+      ]
+    },
+    "hypoallergenic": true,
+    "traits": {
+      "energy": 4,
+      "grooming": 5,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "happy",
+        "steady",
+        "self-confident",
+        "alert",
+        "playful",
+        "affectionate"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/ntvzd24pv8cltbot47lmxq0sxobi",
+    "image_attribution": {
+      "author": "123bob1234 at English Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dog2wheaten.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "west-highland-white-terrier": {
+    "dog_api_id": "5e4d2176-648d-4333-b263-cef04563dee4",
+    "name": "West Highland White Terrier",
+    "description": "The West Highland White Terrier is a small, energetic breed that is known for its intelligence, independence, and tenacity. This breed is native to the Scottish Highlands, where it was originally used to hunt small game and rodents.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 6,
+      "max": 10
+    },
+    "height_cm": {
+      "min": 23,
+      "max": 30
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "Scotland (Scottish Highlands)"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "White"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 4,
+      "trainability": 3,
+      "exercise_minutes": 45,
+      "temperament": [
+        "Alert",
+        "Gay",
+        "Courageous",
+        "Self-reliant",
+        "Friendly",
+        "Independent"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/hiidshgvw91p79zssxiix9rp4d21",
+    "image_attribution": {
+      "author": "Jjc249",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Westie_Chloe.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "lhasa": {
+    "dog_api_id": "bf1a3791-0df3-4338-9b99-53ac4641bdda",
+    "name": "Lhasa Apso",
+    "description": "The Lhasa Apso is a small and playful breed of dog that was originally bred in Tibet as a companion dog. They are intelligent, independent, and affectionate, and make excellent family pets.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 5,
+      "max": 8
+    },
+    "height_cm": {
+      "min": 23,
+      "max": 28
+    },
+    "origin": {
+      "country": "Tibet",
+      "region": "Lhasa/Himalayas"
+    },
+    "coat": {
+      "type": "long",
+      "length": "long",
+      "colors": [
+        "black",
+        "red",
+        "dark grizzle",
+        "golden",
+        "honey",
+        "parti-color",
+        "sandy",
+        "slate",
+        "smoke",
+        "white"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 2,
+      "grooming": 5,
+      "trainability": 3,
+      "exercise_minutes": 20,
+      "temperament": [
+        "confident",
+        "assertive",
+        "aloof with strangers",
+        "alert",
+        "independent",
+        "intelligent"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/pmlbx6o40abx45mkpvoug4kwcl8y",
+    "image_attribution": {
+      "author": "Lhasaapso",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lhasaapso.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "flat-coated-retriever": {
+    "dog_api_id": "188075d0-5a8a-4829-8c3e-128d75b691ca",
+    "name": "Flat-Coated Retriever",
+    "description": "The Flat-Coated Retriever is a large breed of retrieving dog from England. These dogs are large in size, with a flat and glossy coat of fur. They have a lively and affectionate demeanor, making them excellent companion and working dogs. They are highly trainable and intelligent, with an instinct to retrieve game. They are loyal and devoted to their family, with an independent nature that makes them well suited for retrieving and guard work.",
+    "life_years": {
+      "min": 8,
+      "max": 10
+    },
+    "weight_kg": {
+      "min": 25,
+      "max": 36
+    },
+    "height_cm": {
+      "min": 56,
+      "max": 62
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "England"
+    },
+    "coat": {
+      "type": "medium",
+      "length": "medium",
+      "colors": [
+        "black",
+        "liver"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 3,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "cheerful",
+        "friendly",
+        "intelligent",
+        "exuberant",
+        "playful",
+        "affectionate"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/6w8bikgdeq0f7o9swka49sqjecqr",
+    "image_attribution": {
+      "author": "Fabien Foixet",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chien_volant_badminton.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "curly-coated-retriever": {
+    "dog_api_id": "6dee41b1-0805-4f4e-a079-c8b1cdfa1768",
+    "name": "Curly-Coated Retriever",
+    "description": "The Curly-Coated Retriever is a large breed of retrieving dog from England. These dogs are large in size, with a curly coat of fur. They have a dignified and energetic demeanor, making them excellent working dogs. They are highly intelligent and trainable, with an instinct to retrieve game. They are loyal and devoted to their family, with an independent nature that makes them well suited for retrieving and guard work.",
+    "life_years": {
+      "min": 10,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 25,
+      "max": 41
+    },
+    "height_cm": {
+      "min": 58,
+      "max": 69
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "England"
+    },
+    "coat": {
+      "type": "curly",
+      "length": "short",
+      "colors": [
+        "black",
+        "liver"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 2,
+      "trainability": 4,
+      "exercise_minutes": 90,
+      "temperament": [
+        "intelligent",
+        "independent",
+        "aloof with strangers",
+        "confident",
+        "loyal",
+        "energetic"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/tlmnlh5ikb43u9jrq6ht3a0di6sz",
+    "image_attribution": {
+      "author": "Mattias Agar",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Curley_coated_retriever5.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "golden-retriever": {
+    "dog_api_id": "fee91641-2a2e-4c4f-b557-cff67c5803bc",
+    "name": "Golden Retriever",
+    "description": "The Golden Retriever is a large and muscular breed of dog that was originally bred in Scotland for retrieving game. They are intelligent, friendly, and eager to please, and make excellent family pets.",
+    "life_years": {
+      "min": 10,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 25,
+      "max": 34
+    },
+    "height_cm": {
+      "min": 55,
+      "max": 61
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "Scotland"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "Light Golden",
+        "Golden",
+        "Dark Golden"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 3,
+      "trainability": 5,
+      "exercise_minutes": 60,
+      "temperament": [
+        "Friendly",
+        "Reliable",
+        "Trustworthy",
+        "Intelligent",
+        "Eager to please",
+        "Confident"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/u8zy6eypfireozf10sjeny09fgk1",
+    "image_attribution": {
+      "author": "Dukedestiny01.jpg: \"Janneke Vreugdenhil\" derivative work: Anka Friedrich ([[User talk:Ankaaswe Trix Friedrich|talk]])",
+      "license": "Public domain",
+      "license_url": null,
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Dukedestiny01_drvd.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "labrador-retriever": {
+    "dog_api_id": "9d7c4db8-b9cf-4ed3-af8e-86fc56fbf251",
+    "name": "Labrador Retriever",
+    "description": "The Labrador Retriever is a large and muscular breed of dog that was originally bred in Canada for retrieving game. They are intelligent, friendly, and eager to please, and make excellent family pets.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 25,
+      "max": 36
+    },
+    "height_cm": {
+      "min": 55,
+      "max": 62
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": null
+    },
+    "coat": {
+      "type": "double",
+      "length": "short",
+      "colors": [
+        "black",
+        "yellow",
+        "chocolate"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 2,
+      "trainability": 5,
+      "exercise_minutes": 60,
+      "temperament": [
+        "friendly",
+        "outgoing",
+        "active",
+        "intelligent",
+        "gentle",
+        "eager to please"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/csh51c1wkqdjizsty62twsc1rzsi",
+    "image_attribution": {
+      "author": "IDS.photos from Tiverton, UK",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Labrador_on_Quantock_(2175262184).jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "chesapeake-bay-retriever": {
+    "dog_api_id": "4fec6538-41d2-449c-9ba1-663a4144e2df",
+    "name": "Chesapeake Bay Retriever",
+    "description": "The Chesapeake Bay Retriever is a large and muscular breed of dog that was originally bred in the United States for retrieving waterfowl. They are intelligent, friendly, and eager to please, and make excellent hunting dogs.",
+    "life_years": {
+      "min": 10,
+      "max": 13
+    },
+    "weight_kg": {
+      "min": 25,
+      "max": 36
+    },
+    "height_cm": {
+      "min": 53,
+      "max": 66
+    },
+    "origin": {
+      "country": "United States",
+      "region": "Chesapeake Bay, Maryland"
+    },
+    "coat": {
+      "type": "double",
+      "length": "short",
+      "colors": [
+        "brown",
+        "sedge",
+        "deadgrass",
+        "dark brown",
+        "light brown",
+        "tan"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 2,
+      "trainability": 4,
+      "exercise_minutes": 90,
+      "temperament": [
+        "intelligent",
+        "affectionate",
+        "courageous",
+        "upbeat",
+        "tireless",
+        "protective"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/n18zf0sit8prhgcp8v2zf4eh5khp",
+    "image_attribution": {
+      "author": "Original uploader was Keith Rousseau at en.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chesapeake_Bay_Retriever1.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "german-short-haired-pointer": {
+    "dog_api_id": "43578b4e-bca9-41b4-b493-cd9eb07d28dd",
+    "name": "German Shorthaired Pointer",
+    "description": "The German Shorthaired Pointer is a medium to large-sized dog breed that was originally bred for hunting. They are known for their intelligence and energetic personalities.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 20,
+      "max": 32
+    },
+    "height_cm": {
+      "min": 53,
+      "max": 64
+    },
+    "origin": {
+      "country": "Germany",
+      "region": null
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "liver",
+        "liver and white",
+        "liver roan",
+        "black",
+        "black and white",
+        "black roan"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 2,
+      "trainability": 4,
+      "exercise_minutes": 90,
+      "temperament": [
+        "intelligent",
+        "energetic",
+        "friendly",
+        "eager to please",
+        "affectionate",
+        "bold"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/6r7dfle4f1f09kismi3qu3f36zl0",
+    "image_attribution": {
+      "author": null,
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Etzel_vom_Th%C3%BCringer_Zipfel.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "vizsla": {
+    "dog_api_id": "2d7be3ac-c72b-4d2f-af62-93a1f1d944f9",
+    "name": "Vizsla",
+    "description": "The Vizsla is a medium-sized breed of dog that was originally bred in Hungary for hunting small game. They are intelligent, energetic, and determined, and make excellent hunting dogs.",
+    "life_years": {
+      "min": 10,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 20,
+      "max": 27
+    },
+    "height_cm": {
+      "min": 53,
+      "max": 61
+    },
+    "origin": {
+      "country": "Hungary",
+      "region": "Carpathian Basin"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "golden rust",
+        "rust",
+        "dark golden rust"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 1,
+      "trainability": 4,
+      "exercise_minutes": 90,
+      "temperament": [
+        "lively",
+        "gentle-mannered",
+        "affectionate",
+        "sensitive",
+        "energetic",
+        "intelligent"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/8hb3ug8qhtycswummzhpamccil1q",
+    "image_attribution": {
+      "author": "Noveczki Katalin",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dr%C3%B3tosvizsla_vadat_%C3%A1ll.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "english-setter": {
+    "dog_api_id": "699a4ee6-564c-43e2-8932-5159657a29a8",
+    "name": "English Setter",
+    "description": "The English Setter is a large, gentle breed of gundog with a distinctive silky, wavy coat and a calm, intelligent disposition.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 20,
+      "max": 36
+    },
+    "height_cm": {
+      "min": 58,
+      "max": 69
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "England"
+    },
+    "coat": {
+      "type": "long",
+      "length": "medium",
+      "colors": [
+        "white with orange flecks (Belton)",
+        "white with liver flecks (Belton)",
+        "white with black flecks (Belton)",
+        "white with lemon flecks (Belton)",
+        "tricolor (black, white and tan)",
+        "solid white"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 4,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "gentle",
+        "affectionate",
+        "intelligent",
+        "alert",
+        "sweet-tempered",
+        "biddable"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/b3xbngaq8rynzxgyn94p2wqv657x",
+    "image_attribution": {
+      "author": null,
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Engelse_setter.JPG"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "irish-setter": {
+    "dog_api_id": "89e06189-4e3c-43a3-9494-16073e888fc0",
+    "name": "Irish Setter",
+    "description": "The Irish Setter is a medium-sized breed of dog that was originally bred for hunting. They are friendly, energetic, and intelligent, and make excellent companion dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 25,
+      "max": 34
+    },
+    "height_cm": {
+      "min": 61,
+      "max": 71
+    },
+    "origin": {
+      "country": "Ireland",
+      "region": "Ireland"
+    },
+    "coat": {
+      "type": "long",
+      "length": "medium",
+      "colors": [
+        "mahogany",
+        "rich chestnut red"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 4,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "rollicking",
+        "outgoing",
+        "affectionate",
+        "high-spirited",
+        "swift-moving",
+        "trainable"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/sdxl5dw4phi26s39ttdo5p2v9rqq",
+    "image_attribution": {
+      "author": "Luis Miguel Bugallo Sánchez (Lmbuga Commons)(Lmbuga Galipedia) Publicada por/Publish by: Luis Miguel Bugallo Sánchez",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Can_Setter_dog_GFDL.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "gordon-setter": {
+    "dog_api_id": "1d355e56-02d2-494d-93b5-516ffc189d20",
+    "name": "Gordon Setter",
+    "description": "The Gordon Setter is a large and athletic breed of dog that was originally bred for hunting. They are intelligent, energetic, and eager to please, and make excellent companion dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 20,
+      "max": 36
+    },
+    "height_cm": {
+      "min": 58,
+      "max": 69
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "Scotland"
+    },
+    "coat": {
+      "type": "medium",
+      "length": "medium",
+      "colors": [
+        "Black and tan"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 3,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "Intelligent",
+        "Noble",
+        "Loyal",
+        "Alert",
+        "Confident",
+        "Strong-minded"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/h49r2uxm5yuaomzn21nxttjpw79s",
+    "image_attribution": {
+      "author": "Markgrogers",
+      "license": "Public domain",
+      "license_url": null,
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nike_the_Gordon_Setter_(18_June_2005).jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "brittany-spaniel": {
+    "dog_api_id": "da847994-042e-4213-9e5d-c529b22e37b5",
+    "name": "Brittany",
+    "description": "The Brittany is a medium-sized breed with a short, dense coat and a muscular, athletic build. It is known for its high energy level and its ability to excel in a variety of activities, including hunting, agility, and obedience.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 14,
+      "max": 18
+    },
+    "height_cm": {
+      "min": 44,
+      "max": 52
+    },
+    "origin": {
+      "country": "France",
+      "region": "Brittany"
+    },
+    "coat": {
+      "type": "medium",
+      "length": "medium",
+      "colors": [
+        "Orange and white",
+        "Liver and white",
+        "Tri-colored (liver, white and orange)"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 3,
+      "trainability": 5,
+      "exercise_minutes": 60,
+      "temperament": [
+        "Energetic",
+        "Eager to please",
+        "Alert",
+        "Intelligent",
+        "Happy",
+        "Bold"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/aubmt3vey72o2kdro964li1uw176",
+    "image_attribution": {
+      "author": "Pharaoh Hound",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:American_Brittany_standing.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "clumber": {
+    "dog_api_id": "3c7ca8f4-175f-4d55-bedb-5c53907340f9",
+    "name": "Clumber Spaniel",
+    "description": "The Clumber Spaniel is a large, affectionate and gentle gun dog. It is an ancient breed, first developed in the English county of Clumber in the 1700s. Clumbers are known for their thick white coat, which is usually double-coated, and is relatively low-maintenance. They make excellent family pets, but they also excel in the field as hunting dogs. Clumbers can be very sensitive and they do not respond well to harsh treatment. They are loyal and devoted to their family and are usually good with children.",
+    "life_years": {
+      "min": 10,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 25,
+      "max": 39
+    },
+    "height_cm": {
+      "min": 43,
+      "max": 51
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "England (Clumber Park, Nottinghamshire)"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "white with lemon markings",
+        "white with orange markings"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 3,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "dignified",
+        "affectionate",
+        "loyal",
+        "gentle",
+        "mellow",
+        "sweet-tempered"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/ngto3hy8xyq88dyhm1qcfhbau8mm",
+    "image_attribution": {
+      "author": "Lara",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Clumber_Spaniel_on_Grass.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "english-springer": {
+    "dog_api_id": "3b7aa8d3-4e4c-424b-bf4d-11453c26bb00",
+    "name": "English Springer Spaniel",
+    "description": "The English Springer Spaniel is a medium-sized breed of dog that was originally bred in England for flushing and retrieving game. They are intelligent, energetic, and eager to please, and make excellent hunting dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 16,
+      "max": 25
+    },
+    "height_cm": {
+      "min": 46,
+      "max": 53
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "England"
+    },
+    "coat": {
+      "type": "medium",
+      "length": "medium",
+      "colors": [
+        "black and white",
+        "liver and white",
+        "blue roan",
+        "liver roan",
+        "tricolor (black, white and tan)",
+        "tricolor (liver, white and tan)"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 3,
+      "trainability": 5,
+      "exercise_minutes": 60,
+      "temperament": [
+        "friendly",
+        "biddable",
+        "merry",
+        "energetic",
+        "eager to please",
+        "affectionate"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/ob4yu77ozrzacwz9oejsijz5tzu8",
+    "image_attribution": {
+      "author": "Karen Arnold",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dog-out-walking.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "welsh-springer-spaniel": {
+    "dog_api_id": "90dac44c-f0d9-43bb-9560-cd47010a72ec",
+    "name": "Welsh Springer Spaniel",
+    "description": "The Welsh Springer Spaniel is a medium-sized breed of dog that originated in Wales. They have a short, dense coat, and come in a variety of colors. They are an active breed, and need plenty of exercise and mental stimulation. They are loyal and devoted to their owners, and make good family companions.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 16,
+      "max": 25
+    },
+    "height_cm": {
+      "min": 43,
+      "max": 48
+    },
+    "origin": {
+      "country": "Wales",
+      "region": "Wales"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "rich red and white"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 2,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "affectionate",
+        "loyal",
+        "playful",
+        "energetic",
+        "gentle",
+        "reserved with strangers"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/ggzemr7fp0q79nu8bf936t06isu0",
+    "image_attribution": {
+      "author": "Udo Tjalsma",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Welsh_Springer_Spaniel_1.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "cocker-spaniel": {
+    "dog_api_id": "4dba996c-1b89-4fd5-92c1-3df35c05ecac",
+    "name": "Cocker Spaniel",
+    "description": "The Cocker Spaniel is a medium-sized breed of dog that was originally bred in England for flushing and retrieving game. They are intelligent, friendly, and eager to please, and make excellent hunting dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 9,
+      "max": 15
+    },
+    "height_cm": {
+      "min": 34,
+      "max": 39
+    },
+    "origin": {
+      "country": "United States",
+      "region": "New England"
+    },
+    "coat": {
+      "type": "medium",
+      "length": "medium",
+      "colors": [
+        "black",
+        "black and tan"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 5,
+      "trainability": 3,
+      "exercise_minutes": 45,
+      "temperament": [
+        "merry",
+        "gentle",
+        "affectionate",
+        "eager to please",
+        "trusting",
+        "sensitive"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/p59hchif4pwd7pjvzj0pku0uz7w6",
+    "image_attribution": {
+      "author": "Gergely Vass",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:EnglishCockerSpaniel_simon.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "sussex-spaniel": {
+    "dog_api_id": "3d6b889f-9c5e-4b31-bb46-60280beeb663",
+    "name": "Sussex Spaniel",
+    "description": "The Sussex Spaniel is a medium-sized breed of spaniel from the Sussex region of England. These dogs are medium in size, with a long and wavy coat of fur. They have a gentle and affectionate demeanor, making them excellent companion dogs. They are highly trainable and intelligent, with an instinct to retrieve game. They are loyal and devoted to their family, with an independent nature that makes them well suited for retrieving and guard work.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 16,
+      "max": 20
+    },
+    "height_cm": {
+      "min": 33,
+      "max": 38
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "Sussex, England"
+    },
+    "coat": {
+      "type": "medium",
+      "length": "medium",
+      "colors": [
+        "golden liver"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 2,
+      "grooming": 3,
+      "trainability": 3,
+      "exercise_minutes": 45,
+      "temperament": [
+        "calm",
+        "affectionate",
+        "loyal",
+        "somber",
+        "tractable",
+        "vocal"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/20nkmcsrujlheky1fnzu9x3poin6",
+    "image_attribution": {
+      "author": "Pleple2000",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Field_spaniel_581.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "irish-water-spaniel": {
+    "dog_api_id": "f2e17571-e03c-42fe-bf13-ba20b9f96e93",
+    "name": "Irish Water Spaniel",
+    "description": "The Irish Water Spaniel is a large breed of retrieving dog from Ireland. These dogs are large in size, with a long and wavy coat of fur. They have a lively and energetic demeanor, making them excellent working dogs. They are highly trainable and intelligent, with an instinct to retrieve game. They are loyal and devoted to their family, with an independent nature that makes them well suited for retrieving and guard work.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 20,
+      "max": 32
+    },
+    "height_cm": {
+      "min": 53,
+      "max": 61
+    },
+    "origin": {
+      "country": "Ireland",
+      "region": "South of Ireland (Shannon area)"
+    },
+    "coat": {
+      "type": "curly",
+      "length": "medium",
+      "colors": [
+        "liver (purplish hue)"
+      ]
+    },
+    "hypoallergenic": true,
+    "traits": {
+      "energy": 4,
+      "grooming": 5,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "intelligent",
+        "clownish",
+        "independent",
+        "alert",
+        "brave",
+        "instinctive retriever"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/67yqrameksezuxxqce8tgd30weta",
+    "image_attribution": {
+      "author": "Roete002",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ierse_Water_Spaniel.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "kuvasz": {
+    "dog_api_id": "9cb2e6d5-bacb-4b14-a534-7b1b243045b0",
+    "name": "Kuvasz",
+    "description": "The Kuvasz is a large, muscular breed that was originally bred to protect livestock. It is intelligent and loyal, but can be reserved with strangers.",
+    "life_years": {
+      "min": 10,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 32,
+      "max": 52
+    },
+    "height_cm": {
+      "min": 66,
+      "max": 76
+    },
+    "origin": {
+      "country": "Hungary",
+      "region": "Great Hungarian Plain / Carpathian Basin"
+    },
+    "coat": {
+      "type": "double",
+      "length": "long",
+      "colors": [
+        "white",
+        "ivory"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 3,
+      "trainability": 2,
+      "exercise_minutes": 60,
+      "temperament": [
+        "intelligent",
+        "courageous",
+        "determined",
+        "curious",
+        "protective",
+        "independent"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/h4z8p21h2dsz7mecaeoxx4myg3tm",
+    "image_attribution": {
+      "author": "Erdelyi kopo",
+      "license": "Public domain",
+      "license_url": null,
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kuvasz_named_Kan.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "schipperke": {
+    "dog_api_id": "88025f0c-987f-42e9-98e0-ccb8b53516e9",
+    "name": "Schipperke",
+    "description": "The Schipperke is a small breed of dog from Belgium. These dogs are small in size, with a thick double coat of fur. They have a lively and energetic demeanor, with an instinct for hunting and tracking. They are highly intelligent and trainable, but require firm and consistent training to be obedient. They are loyal and devoted to their family, but can be stubborn and independent at times.",
+    "life_years": {
+      "min": 12,
+      "max": 16
+    },
+    "weight_kg": {
+      "min": 5,
+      "max": 7
+    },
+    "height_cm": {
+      "min": 25,
+      "max": 33
+    },
+    "origin": {
+      "country": "Belgium",
+      "region": "Flanders"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "black",
+        "cream/blonde"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 2,
+      "trainability": 3,
+      "exercise_minutes": 45,
+      "temperament": [
+        "alert",
+        "curious",
+        "mischievous",
+        "independent",
+        "watchful",
+        "loyal"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/xxxsh3725oy3gq0b8o7orj1nu3jh",
+    "image_attribution": {
+      "author": "No machine-readable author provided. 鏑木對馬守 assumed (based on copyright claims).",
+      "license": "Public domain",
+      "license_url": null,
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Schipperke0001.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "groenendael": {
+    "dog_api_id": "7ee19070-1a62-40e4-95d8-3b33ef87c9ef",
+    "name": "Belgian Sheepdog",
+    "description": "The Belgian Sheepdog is a large and intelligent breed of dog that was originally bred in Belgium for herding and guarding livestock. They are loyal, protective, and hardworking, and make excellent working dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 18,
+      "max": 34
+    },
+    "height_cm": {
+      "min": 56,
+      "max": 66
+    },
+    "origin": {
+      "country": "Belgium",
+      "region": "Groenendael"
+    },
+    "coat": {
+      "type": "long",
+      "length": "long",
+      "colors": [
+        "black"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 3,
+      "trainability": 5,
+      "exercise_minutes": 60,
+      "temperament": [
+        "intelligent",
+        "alert",
+        "protective",
+        "devoted",
+        "watchful",
+        "affectionate"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/bcz3sds3hen3qz50x2f9wm5rb2u5",
+    "image_attribution": {
+      "author": "D. Williams",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Belgian_Malinois_01.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "malinois": {
+    "dog_api_id": "ece72a1b-d6e1-4e2c-b3b3-04f9b534336d",
+    "name": "Belgian Malinois",
+    "description": "The Belgian Malinois is a medium-sized herding breed that originated in Belgium. It is an active and intelligent breed that is loyal and devoted to its family. The Belgian Malinois stands between 22-26 inches at the shoulder and has a short, dense coat that can come in various colors and patterns.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 18,
+      "max": 36
+    },
+    "height_cm": {
+      "min": 56,
+      "max": 66
+    },
+    "origin": {
+      "country": "Belgium",
+      "region": "Malines (Mechelen)"
+    },
+    "coat": {
+      "type": "short",
+      "length": "short",
+      "colors": [
+        "fawn",
+        "mahogany",
+        "black mask",
+        "black-tipped hairs"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 2,
+      "trainability": 5,
+      "exercise_minutes": 90,
+      "temperament": [
+        "intelligent",
+        "alert",
+        "protective",
+        "hardworking",
+        "confident",
+        "loyal"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/4wkbutxzoay3w90roxvn47g6y7mt",
+    "image_attribution": {
+      "author": "Flickr user intrepidmalinois \"MALINUTS\"",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Belgian_Malinois_male_Flickr.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "briard": {
+    "dog_api_id": "3bf9ff15-c5ac-41d4-8266-2e0fe48329d3",
+    "name": "Briard",
+    "description": "The Briard is a large, muscular breed with a long, shaggy coat that is typically black, tawny, or gray. It is known for its loyalty and protective instincts.",
+    "life_years": {
+      "min": 10,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 25,
+      "max": 40
+    },
+    "height_cm": {
+      "min": 56,
+      "max": 69
+    },
+    "origin": {
+      "country": "France",
+      "region": "Brie, Île-de-France"
+    },
+    "coat": {
+      "type": "long",
+      "length": "long",
+      "colors": [
+        "black",
+        "gray",
+        "tawny"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 5,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "Intelligent",
+        "Loyal",
+        "Protective",
+        "Fearless",
+        "Faithful",
+        "Alert"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/1lcrhghqlz3kr84httg6bzxe2y8q",
+    "image_attribution": {
+      "author": "Birgit Balzer, Deutschland (uploaded by Caronna 17:00, 10 Feb 2005 (UTC))",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Briard_fauve.JPG"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "kelpie": {
+    "dog_api_id": "2adf5a19-028d-4993-8044-4571008b6d49",
+    "name": "Australian Kelpie",
+    "description": "The Australian Kelpie is a lively and intelligent herding dog from Australia. They are active, friendly, and loyal, and make great family pets. Australian Kelpies have a thick, double coat that can be any color. They are easy to train and require plenty of exercise and mental stimulation to stay healthy and happy.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 11,
+      "max": 20
+    },
+    "height_cm": {
+      "min": 43,
+      "max": 51
+    },
+    "origin": {
+      "country": "Australia",
+      "region": "New South Wales"
+    },
+    "coat": {
+      "type": "double",
+      "length": "short",
+      "colors": [
+        "black",
+        "black and tan",
+        "red",
+        "red and tan",
+        "fawn",
+        "chocolate",
+        "smoke blue"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 2,
+      "trainability": 5,
+      "exercise_minutes": 90,
+      "temperament": [
+        "alert",
+        "eager",
+        "highly intelligent",
+        "tractable",
+        "loyal",
+        "tireless"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/jwbplcp6t6f94uwrp2t39pmeyapc",
+    "image_attribution": {
+      "author": "davepaku",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Australian_Kelpie_portrait.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "komondor": {
+    "dog_api_id": "63ada456-e0c7-4b52-9759-25efec4dc540",
+    "name": "Komondor",
+    "description": "The Komondor is a large, imposing breed that is known for its distinctive white, corded coat and its independent, protective nature. This breed is native to Hungary, where it was originally used to guard flocks of sheep and cattle.",
+    "life_years": {
+      "min": 10,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 36,
+      "max": 61
+    },
+    "height_cm": {
+      "min": 60,
+      "max": 80
+    },
+    "origin": {
+      "country": "Hungary",
+      "region": "Great Hungarian Plain"
+    },
+    "coat": {
+      "type": "corded",
+      "length": "long",
+      "colors": [
+        "white"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 5,
+      "trainability": 2,
+      "exercise_minutes": 60,
+      "temperament": [
+        "courageous",
+        "loyal",
+        "protective",
+        "independent",
+        "reserved with strangers",
+        "devoted"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/a5svm26qfuwwrs7d359o3sg59gmf",
+    "image_attribution": {
+      "author": "Nikki68 at Russian Wikipedia",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Komondor_delvin.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "old-english-sheepdog": {
+    "dog_api_id": "169f3d91-4430-452e-8dac-8399286444d8",
+    "name": "Old English Sheepdog",
+    "description": "The Old English Sheepdog is a large breed of herding dog from England. These dogs are large in size, with a thick double coat of fur to protect them from the cold. They have a gentle and affectionate demeanor, making them excellent companion and working dogs. They are highly trainable and intelligent, with an instinct to herd and protect their family and property. They are loyal and devoted to their family, with an independent nature that makes them well suited for herding and guard work.",
+    "life_years": {
+      "min": 10,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 27,
+      "max": 41
+    },
+    "height_cm": {
+      "min": 53,
+      "max": 61
+    },
+    "origin": {
+      "country": "England",
+      "region": null
+    },
+    "coat": {
+      "type": "double",
+      "length": "long",
+      "colors": [
+        "grey",
+        "grizzle",
+        "black",
+        "blue",
+        "blue merle",
+        "white markings"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 5,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "Affectionate",
+        "Intelligent",
+        "Gentle",
+        "Adaptable",
+        "Watchful",
+        "Sociable"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/7r6ygrmkhd0bvpfc1l5k7zuvlgf0",
+    "image_attribution": {
+      "author": "Mona (uploaded by Caronna 08:14, 15 Apr 2005 (UTC))",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bobtail.JPG"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "shetland-sheepdog": {
+    "dog_api_id": "9fbbf2a2-02b2-4e66-982b-5784648a18e5",
+    "name": "Shetland Sheepdog",
+    "description": "The Shetland Sheepdog is a small, agile breed with a long, thick coat. They have a long head and a medium-sized muzzle, with bright, alert eyes and a lively expression. Shetland Sheepdogs are known for their intelligence, eagerness to please, and devoted loyalty to their owners. They make excellent family pets and are also used in agility, obedience, and herding events.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 7,
+      "max": 11
+    },
+    "height_cm": {
+      "min": 33,
+      "max": 41
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "Shetland Islands, Scotland"
+    },
+    "coat": {
+      "type": "double",
+      "length": "long",
+      "colors": [
+        "black",
+        "blue merle",
+        "sable",
+        "white markings",
+        "tan markings"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 4,
+      "trainability": 5,
+      "exercise_minutes": 60,
+      "temperament": [
+        "intelligent",
+        "affectionate",
+        "loyal",
+        "alert",
+        "willing worker",
+        "reserved with strangers"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/y34qvfy72er981jvba64ernhbgjb",
+    "image_attribution": {
+      "author": "Alicepearsons",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sheltie_Isle_of_Mull.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "collie": {
+    "dog_api_id": "6b57d7c1-553d-4f46-b33b-c9c5a3a67c96",
+    "name": "Collie",
+    "description": "The Collie is a medium-sized herding breed that originated in Scotland. It is an active and intelligent breed that is loyal and devoted to its family. The Collie stands between 22-26 inches at the shoulder and has a long, dense coat that can come in various colors and patterns.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 23,
+      "max": 34
+    },
+    "height_cm": {
+      "min": 56,
+      "max": 66
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "Scotland"
+    },
+    "coat": {
+      "type": "double",
+      "length": "long",
+      "colors": [
+        "sable and white",
+        "tricolor",
+        "blue merle",
+        "white"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 4,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "devoted",
+        "graceful",
+        "proud",
+        "gentle",
+        "intelligent",
+        "sensitive"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/cfdryw34cr7aknlo988o5il2h7wl",
+    "image_attribution": {
+      "author": "7575u",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Border_Collie_with_Heterochromia_2.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "border-collie": {
+    "dog_api_id": "20b1d8be-ae44-4a70-8526-0612904bc9b2",
+    "name": "Border Collie",
+    "description": "The Border Collie is a medium-sized breed of herding dog from the borders of England and Scotland. These dogs are medium in size, with a thick double coat of fur to protect them from the cold. They have an energetic and intelligent demeanor, with an instinct for herding and working. They are highly trainable and obedient, but require firm and consistent training to be obedient. They are loyal and devoted to their family, with an independent nature that makes them well suited for herding and guard work.",
+    "life_years": {
+      "min": 12,
+      "max": 16
+    },
+    "weight_kg": {
+      "min": 12,
+      "max": 25
+    },
+    "height_cm": {
+      "min": 46,
+      "max": 56
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "Anglo-Scottish border (England/Scotland)"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "black and white",
+        "black tricolor (black, tan, white)",
+        "blue merle",
+        "red merle",
+        "red and white",
+        "sable",
+        "solid black"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 3,
+      "trainability": 5,
+      "exercise_minutes": 90,
+      "temperament": [
+        "intelligent",
+        "energetic",
+        "alert",
+        "responsive",
+        "athletic",
+        "loyal"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/1xr0081stkb8xrwctnaw1c0vsj6l",
+    "image_attribution": {
+      "author": "IketaniDaisei",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:20160428_dog_border_collie_panting.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "bouvier-des-flandres": {
+    "dog_api_id": "4ddbe251-72af-495e-8e9d-869217e1d92a",
+    "name": "Bouvier des Flandres",
+    "description": "The Bouvier des Flandres is a large and powerful breed of dog from the Flanders region of Belgium. These dogs are very large in size, with a thick double coat of wire-haired fur. They have a dignified but energetic demeanor, making them excellent working dogs. They are highly intelligent and trainable, with an instinct to protect their family and property. They are brave and loyal, with an independent nature that makes them well suited for herding and guard work.",
+    "life_years": {
+      "min": 10,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 27,
+      "max": 40
+    },
+    "height_cm": {
+      "min": 59,
+      "max": 68
+    },
+    "origin": {
+      "country": "Belgium",
+      "region": "Flanders"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "medium",
+      "colors": [
+        "fawn",
+        "black",
+        "salt and pepper",
+        "gray",
+        "brindle"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 5,
+      "trainability": 5,
+      "exercise_minutes": 60,
+      "temperament": [
+        "calm",
+        "steady",
+        "resolute",
+        "fearless",
+        "loyal",
+        "protective"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/0ehqe3w9cphgmgquyr0zuco4cmq9",
+    "image_attribution": {
+      "author": "Andreagenial",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Boyero-de-las-ardenas7.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "rottweiler": {
+    "dog_api_id": "11f90c78-8f4c-43f7-bc47-fab733a33c6b",
+    "name": "Rottweiler",
+    "description": "The Rottweiler is a large and powerful breed of dog that was originally bred in Germany for herding and guarding livestock. They are intelligent, loyal, and protective, and make excellent working dogs.",
+    "life_years": {
+      "min": 8,
+      "max": 10
+    },
+    "weight_kg": {
+      "min": 36,
+      "max": 60
+    },
+    "height_cm": {
+      "min": 56,
+      "max": 69
+    },
+    "origin": {
+      "country": "Germany",
+      "region": "Rottweil, Baden-Württemberg"
+    },
+    "coat": {
+      "type": "double",
+      "length": "short",
+      "colors": [
+        "black with rust/mahogany markings"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 2,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "confident",
+        "courageous",
+        "self-assured",
+        "aloof with strangers",
+        "devoted",
+        "calm"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/xjnfs50pu3a77tdyfhwnymqavgmg",
+    "image_attribution": {
+      "author": "Phil Sangwell from United Kingdom",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%22Prince%22_(7369763074).jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "german-shepherd": {
+    "dog_api_id": "74a2d74a-48a3-4281-a473-abfcd59a0d60",
+    "name": "German Shepherd Dog",
+    "description": "The German Shepherd Dog is a large breed that originated in Germany in the late 19th century. They are a working breed, and can be used for a variety of tasks, from herding and guarding to search and rescue. They have a thick double coat, in a variety of colors, and are highly intelligent and loyal. They are an active breed, and need plenty of exercise and mental stimulation.",
+    "life_years": {
+      "min": 7,
+      "max": 10
+    },
+    "weight_kg": {
+      "min": 22,
+      "max": 40
+    },
+    "height_cm": {
+      "min": 55,
+      "max": 65
+    },
+    "origin": {
+      "country": "Germany",
+      "region": "Swabia/Thuringia"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "Black with tan/red/brown markings",
+        "Black and tan",
+        "Black and red",
+        "Sable",
+        "Black",
+        "Grey/black and grey"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 3,
+      "trainability": 5,
+      "exercise_minutes": 90,
+      "temperament": [
+        "Confident",
+        "Courageous",
+        "Intelligent",
+        "Loyal",
+        "Watchful",
+        "Versatile"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/jet1wa2qkvw1yy12c2z8xut6g8hh",
+    "image_attribution": {
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:20110425_German_Shepherd_Dog_8505.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "doberman": {
+    "dog_api_id": "29fac412-58f8-44c4-8a47-77527e55123b",
+    "name": "Doberman Pinscher",
+    "description": "The Doberman Pinscher is a large and powerful breed of dog that was originally bred in Germany for guarding and protecting property. They are intelligent, loyal, and protective, and make excellent guard dogs.",
+    "life_years": {
+      "min": 10,
+      "max": 13
+    },
+    "weight_kg": {
+      "min": 25,
+      "max": 45
+    },
+    "height_cm": {
+      "min": 61,
+      "max": 71
+    },
+    "origin": {
+      "country": "Germany",
+      "region": "Thuringia"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "black and rust",
+        "red and rust",
+        "blue and rust",
+        "fawn (Isabella) and rust"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 1,
+      "trainability": 5,
+      "exercise_minutes": 60,
+      "temperament": [
+        "Intelligent",
+        "Loyal",
+        "Alert",
+        "Fearless",
+        "Energetic",
+        "Obedient"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/f97g2xcqe67q861ayu6itpqtxofy",
+    "image_attribution": {
+      "author": "David Iannotti",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dobermann_Black_and_Tan_%22Vito%22.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "miniature-pinscher": {
+    "dog_api_id": "ec7eae56-137b-4f7e-86e9-1e008c2e3294",
+    "name": "Miniature Pinscher",
+    "description": "The Miniature Pinscher is a small breed of dog that originated in Germany. It is a compact and lively breed, with a short, smooth coat. Its head is large and round, with small, erect ears. Its legs are short and strong, and its tail is usually docked. The Miniature Pinscher is an intelligent and loyal breed, and it makes an excellent family pet. It is an active breed, and it needs regular exercise and mental stimulation. It is loyal and affectionate, and it enjoys being around its family.",
+    "life_years": {
+      "min": 12,
+      "max": 16
+    },
+    "weight_kg": {
+      "min": 4,
+      "max": 6
+    },
+    "height_cm": {
+      "min": 25,
+      "max": 32
+    },
+    "origin": {
+      "country": "Germany",
+      "region": null
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "red",
+        "stag red",
+        "black with rust markings",
+        "chocolate with rust markings"
+      ]
+    },
+    "hypoallergenic": true,
+    "traits": {
+      "energy": 4,
+      "grooming": 1,
+      "trainability": 3,
+      "exercise_minutes": 40,
+      "temperament": [
+        "fearless",
+        "energetic",
+        "alert",
+        "confident",
+        "spirited",
+        "extroverted"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/mzm1p3s6itw61bo6shv0wxftpzf9",
+    "image_attribution": {
+      "author": "Canarian",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Miniature_Schnauzer_salt_%26_pepper_(cropped).jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "greater-swiss-mountain-dog": {
+    "dog_api_id": "ca34c3f8-40dc-4dec-aadf-2633016c7cc0",
+    "name": "Greater Swiss Mountain Dog",
+    "description": "The Greater Swiss Mountain Dog is a large and powerful breed of dog that was originally bred in Switzerland for herding and guarding livestock. They are intelligent, loyal, and hardworking, and make excellent working dogs.",
+    "life_years": {
+      "min": 8,
+      "max": 11
+    },
+    "weight_kg": {
+      "min": 36,
+      "max": 64
+    },
+    "height_cm": {
+      "min": 60,
+      "max": 72
+    },
+    "origin": {
+      "country": "Switzerland",
+      "region": "Swiss Alps"
+    },
+    "coat": {
+      "type": "double",
+      "length": "short",
+      "colors": [
+        "black, rust, and white tricolor"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 2,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "bold",
+        "faithful",
+        "willing worker",
+        "alert",
+        "affectionate",
+        "self-assured"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/7d1dc54jd5ct3zzvrmncf9pa1f2w",
+    "image_attribution": {
+      "author": "No machine-readable author provided. Pleple2000 assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Du%C5%BCy_szwajcarski_pies_pasterski_72.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "bernese-mountain-dog": {
+    "dog_api_id": "e16a9f90-786f-40f5-9149-97e2a9a4ed8b",
+    "name": "Bernese Mountain Dog",
+    "description": "The Bernese Mountain Dog is a large, sturdy dog breed with a thick, silky coat, often black, white, and rust in color. Originally bred to herd cattle and pull carts in the Swiss mountains, they are known for their intelligence, strength, and agility.",
+    "life_years": {
+      "min": 7,
+      "max": 10
+    },
+    "weight_kg": {
+      "min": 32,
+      "max": 52
+    },
+    "height_cm": {
+      "min": 58,
+      "max": 70
+    },
+    "origin": {
+      "country": "Switzerland",
+      "region": "Canton of Bern, Swiss Alps"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "black",
+        "rust",
+        "white"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 4,
+      "trainability": 4,
+      "exercise_minutes": 45,
+      "temperament": [
+        "gentle",
+        "self-confident",
+        "alert",
+        "good-natured",
+        "loyal",
+        "calm"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/87fjqkg973appe1g53zt48ms93z4",
+    "image_attribution": {
+      "author": "Psinkeric",
+      "license": "Public domain",
+      "license_url": null,
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sezare_the_dog_(cropped).jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "appenzeller": {
+    "dog_api_id": "b56e4273-9ec0-4274-831d-b238225f8fb6",
+    "name": "Appenzeller Sennenhund",
+    "description": "The Appenzeller Sennenhund is a large breed of mountain dog that originated in Switzerland. It is a powerful and athletic breed, with a thick, double coat. Its head is large and round, with small, erect ears. Its legs are strong and muscular, and its tail is usually docked. The Appenzeller Sennenhund is an intelligent and loyal breed, and it makes an excellent family pet. It is an active breed, and it needs plenty of exercise and mental stimulation. It is loyal and affectionate, and it enjoys spending time with its family.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 22,
+      "max": 32
+    },
+    "height_cm": {
+      "min": 50,
+      "max": 56
+    },
+    "origin": {
+      "country": "Switzerland",
+      "region": "Appenzell"
+    },
+    "coat": {
+      "type": "double",
+      "length": "short",
+      "colors": [
+        "black tricolor",
+        "Havana brown tricolor"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 5,
+      "grooming": 2,
+      "trainability": 4,
+      "exercise_minutes": 90,
+      "temperament": [
+        "lively",
+        "watchful",
+        "self-assured",
+        "loyal",
+        "reserved with strangers",
+        "high-spirited"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/5n4f1zruz2lau76z8ecv830g2peq",
+    "image_attribution": {
+      "author": "SportKBK",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Abora_z_Velk%C3%A9ho_%C3%9Ajezda1.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "entlebucher": {
+    "dog_api_id": "27ab345b-4e04-483f-bfdb-2a0031174a79",
+    "name": "Entlebucher Mountain Dog",
+    "description": "The Entlebucher Mountain Dog is a medium-sized dog breed that originated in Switzerland. They are known for their intelligence and loyalty.",
+    "life_years": {
+      "min": 11,
+      "max": 13
+    },
+    "weight_kg": {
+      "min": 18,
+      "max": 29
+    },
+    "height_cm": {
+      "min": 42,
+      "max": 52
+    },
+    "origin": {
+      "country": "Switzerland",
+      "region": "Entlebuch valley, Canton of Lucerne"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": []
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 2,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "Intelligent",
+        "Energetic",
+        "Alert",
+        "Loyal",
+        "Independent",
+        "Protective"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/wjd96q6i1zaf9wsnwczdh6qpoujw",
+    "image_attribution": {
+      "author": "Freifrau von Federvieh",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Caruso_vom_Coesfelder_Huegli_2017.jpeg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "boxer": {
+    "dog_api_id": "08c9fafe-fc77-4da8-9824-05f64910a8e1",
+    "name": "Boxer",
+    "description": "The Boxer is a large and muscular breed of dog that was originally bred in Germany for guarding and protecting property. They are intelligent, loyal, and protective, and make excellent guard dogs.",
+    "life_years": {
+      "min": 10,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 20,
+      "max": 32
+    },
+    "height_cm": {
+      "min": 55,
+      "max": 64
+    },
+    "origin": {
+      "country": "Germany",
+      "region": null
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "fawn",
+        "brindle",
+        "white markings"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 1,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "playful",
+        "loyal",
+        "protective",
+        "energetic",
+        "intelligent",
+        "fearless"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/hyevehiben4o5mkyyv464lhhx9g1",
+    "image_attribution": {
+      "author": "Mood210",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Male_fawn_Boxer_undocked.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "bull-mastiff": {
+    "dog_api_id": "a5c3be17-6557-4438-9801-badee2d63419",
+    "name": "Bullmastiff",
+    "description": "The Bullmastiff is a large and powerful breed of dog that was originally bred in England for guarding and protecting property. They are intelligent, loyal, and protective, and make excellent guard dogs.",
+    "life_years": {
+      "min": 8,
+      "max": 10
+    },
+    "weight_kg": {
+      "min": 45,
+      "max": 59
+    },
+    "height_cm": {
+      "min": 61,
+      "max": 69
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "England"
+    },
+    "coat": {
+      "type": "short",
+      "length": "short",
+      "colors": [
+        "fawn",
+        "red",
+        "brindle"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 2,
+      "grooming": 2,
+      "trainability": 3,
+      "exercise_minutes": 45,
+      "temperament": [
+        "alert",
+        "fearless",
+        "docile",
+        "loyal",
+        "protective",
+        "affectionate"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/1x8zrfi3rztj34gcv8dp2ycwcncy",
+    "image_attribution": {
+      "author": "BootsSiR",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Brindle_bullmastiff_female.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "tibetan-mastiff": {
+    "dog_api_id": "1ce29779-f1c3-47f4-894c-c45173f35336",
+    "name": "Tibetan Mastiff",
+    "description": "The Tibetan Mastiff is a powerful, muscular breed that is known for its courage, independence, and fierce loyalty. This breed is native to the Tibetan Plateau, where it was originally used to guard monasteries and protect flocks of sheep.",
+    "life_years": {
+      "min": 10,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 32,
+      "max": 68
+    },
+    "height_cm": {
+      "min": 61,
+      "max": 74
+    },
+    "origin": {
+      "country": "China (Tibet)",
+      "region": "Tibetan Plateau/Himalayas"
+    },
+    "coat": {
+      "type": "double",
+      "length": "long",
+      "colors": [
+        "black",
+        "black and tan",
+        "brown",
+        "blue/grey",
+        "blue/grey and tan",
+        "gold",
+        "red gold"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 3,
+      "trainability": 2,
+      "exercise_minutes": 40,
+      "temperament": [
+        "aloof",
+        "independent",
+        "protective",
+        "intelligent",
+        "strong-willed",
+        "watchful"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/gz3sw656od46f1wrghfypa644wm9",
+    "image_attribution": {
+      "author": "Bikaash",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bhote_Kukur.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "french-bulldog": {
+    "dog_api_id": "1fa29da4-8cc9-4f82-9c4d-cd93ee6dd6be",
+    "name": "French Bulldog",
+    "description": "The French Bulldog is a small and playful breed of dog that was originally bred in France as a companion dog. They are intelligent, affectionate, and loyal, and make excellent family pets.",
+    "life_years": {
+      "min": 10,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 8,
+      "max": 14
+    },
+    "height_cm": {
+      "min": 24,
+      "max": 35
+    },
+    "origin": {
+      "country": "France",
+      "region": "Paris"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "brindle",
+        "fawn",
+        "white",
+        "cream",
+        "pied",
+        "brindle and white"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 2,
+      "grooming": 2,
+      "trainability": 3,
+      "exercise_minutes": 30,
+      "temperament": [
+        "Playful",
+        "Alert",
+        "Adaptable",
+        "Affectionate",
+        "Easygoing"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/v15xaasfny0pfasdg4laq4kzvol7",
+    "image_attribution": {
+      "author": "Chraibi7886678",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:900-French-Bulldog-l.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "great-dane": {
+    "dog_api_id": "eb5988dd-6ffe-453f-9ded-206c9a9026ed",
+    "name": "Great Dane",
+    "description": "The Great Dane is a large and powerful breed of dog that was originally bred in Germany for hunting large game. They are intelligent, loyal, and gentle, and make excellent companion dogs.",
+    "life_years": {
+      "min": 8,
+      "max": 10
+    },
+    "weight_kg": {
+      "min": 50,
+      "max": 79
+    },
+    "height_cm": {
+      "min": 71,
+      "max": 86
+    },
+    "origin": {
+      "country": "Germany",
+      "region": null
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "Fawn",
+        "Brindle",
+        "Blue",
+        "Black",
+        "Harlequin",
+        "Mantle",
+        "Merle"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 1,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "Gentle",
+        "Friendly",
+        "Patient",
+        "Confident",
+        "Dependable",
+        "Spirited"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/4zpfvt35uhy92omtc9ri0s11ahxi",
+    "image_attribution": {
+      "author": "Melissa",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Great_Dane_black_laying.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "saint-bernard": {
+    "dog_api_id": "e0c3dc07-73d6-4209-ae0b-8ddd99817287",
+    "name": "Saint Bernard",
+    "description": "The Saint Bernard is a large, powerful dog breed with a thick, long coat that is typically red and white or brown and white in color. They are known for their strength, stamina, and gentleness, and were originally bred to help monks at the Great St. Bernard Hospice in the Swiss Alps.",
+    "life_years": {
+      "min": 8,
+      "max": 10
+    },
+    "weight_kg": {
+      "min": 54,
+      "max": 82
+    },
+    "height_cm": {
+      "min": 66,
+      "max": 76
+    },
+    "origin": {
+      "country": "Switzerland",
+      "region": "Great St. Bernard Pass, Swiss Alps"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "red and white",
+        "brown and white",
+        "brindle and white",
+        "mahogany and white",
+        "orange and white"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 2,
+      "grooming": 3,
+      "trainability": 3,
+      "exercise_minutes": 30,
+      "temperament": [
+        "gentle",
+        "calm",
+        "friendly",
+        "watchful",
+        "patient",
+        "affectionate"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/8ue95eu5n90v12sem9i6mxxv3qt3",
+    "image_attribution": {
+      "author": "Blanky",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hummel_Vedor_vd_Robandahoeve.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "eskimo-dog": {
+    "dog_api_id": "e1c0664d-aa61-4c85-970d-6c86ba197bee",
+    "name": "American Eskimo Dog",
+    "description": "The American Eskimo Dog is a small to medium-sized breed with a thick, fluffy coat that comes in white, cream, or biscuit colors. It is known for its intelligence and its ability to learn a wide variety of tricks.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 9,
+      "max": 20
+    },
+    "height_cm": {
+      "min": 36,
+      "max": 48
+    },
+    "origin": {
+      "country": "United States",
+      "region": null
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "white",
+        "white with biscuit cream"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 4,
+      "trainability": 5,
+      "exercise_minutes": 60,
+      "temperament": [
+        "intelligent",
+        "alert",
+        "friendly but conservative",
+        "protective watchdog",
+        "eager to please"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/fmbrmv8fugryonkkz3q9m1d7s74g",
+    "image_attribution": {
+      "author": "Christmas w/a K",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:American_Eskimo_Dog_1.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "malamute": {
+    "dog_api_id": "5328d59b-b4e4-48e9-98ec-0545c66c4385",
+    "name": "Alaskan Malamute",
+    "description": "The Alaskan Malamute is a large and powerful sled dog from Alaska. They are strong and hardworking, yet friendly and loyal. Alaskan Malamutes have a thick, double coat that can be any color. They are active and require plenty of exercise and mental stimulation to stay healthy and happy.",
+    "life_years": {
+      "min": 10,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 32,
+      "max": 39
+    },
+    "height_cm": {
+      "min": 56,
+      "max": 66
+    },
+    "origin": {
+      "country": "United States",
+      "region": "Alaska (Kotzebue Sound, Arctic)"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "gray and white",
+        "black and white",
+        "sable and white",
+        "red and white",
+        "white"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 4,
+      "trainability": 3,
+      "exercise_minutes": 90,
+      "temperament": [
+        "affectionate",
+        "friendly",
+        "loyal",
+        "dignified",
+        "playful",
+        "devoted"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/2x4puka837evdo37b3c1al0wiacf",
+    "image_attribution": {
+      "author": "SCMW",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alaskan_Malamute.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "affenpinscher": {
+    "dog_api_id": "036feed0-da8a-42c9-ab9a-57449b530b13",
+    "name": "Affenpinscher",
+    "description": "The Affenpinscher is a small and playful breed of dog that was originally bred in Germany for hunting small game. They are intelligent, energetic, and affectionate, and make excellent companion dogs.",
+    "life_years": {
+      "min": 14,
+      "max": 16
+    },
+    "weight_kg": {
+      "min": 4,
+      "max": 6
+    },
+    "height_cm": {
+      "min": 23,
+      "max": 29
+    },
+    "origin": {
+      "country": "Germany",
+      "region": "Central Europe"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "short",
+      "colors": [
+        "black",
+        "gray",
+        "silver",
+        "red",
+        "black and tan"
+      ]
+    },
+    "hypoallergenic": true,
+    "traits": {
+      "energy": 3,
+      "grooming": 3,
+      "trainability": 3,
+      "exercise_minutes": 30,
+      "temperament": [
+        "confident",
+        "curious",
+        "stubborn",
+        "playful",
+        "alert",
+        "mischievous"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/f57sae5b2xqi6pxdq6r8tw1h4c8t",
+    "image_attribution": {
+      "author": "Futurebreak",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Affenpinscher_breed.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "basenji": {
+    "dog_api_id": "edf3d596-e83b-4ba1-972b-d1144a39cf3c",
+    "name": "Basenji",
+    "description": "The Basenji is a small and agile breed of dog that was originally bred in Africa for hunting small game. They are intelligent, independent, and alert, and make excellent companion dogs.",
+    "life_years": {
+      "min": 14,
+      "max": 16
+    },
+    "weight_kg": {
+      "min": 9,
+      "max": 11
+    },
+    "height_cm": {
+      "min": 38,
+      "max": 43
+    },
+    "origin": {
+      "country": "Democratic Republic of the Congo",
+      "region": "Central Africa"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "chestnut red and white",
+        "black and white",
+        "tricolor (black, chestnut red and white)",
+        "brindle and white"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 1,
+      "trainability": 3,
+      "exercise_minutes": 45,
+      "temperament": [
+        "independent",
+        "alert",
+        "energetic",
+        "curious",
+        "affectionate with family",
+        "reserved with strangers"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/ivnkrl6jjoo9ec396fjbik591trj",
+    "image_attribution": {
+      "author": "Niko Herlin",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2008-05-01_a_Basenji_03.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "pug": {
+    "dog_api_id": "a6ea38ed-f692-478e-af29-378d0e2cc270",
+    "name": "Pug",
+    "description": "The Pug is a small, playful breed that is known for its comical expression, charming personality, and loyalty. This breed is native to China, where it was originally kept as a companion and lapdog by the imperial court.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 6,
+      "max": 8
+    },
+    "height_cm": {
+      "min": 25,
+      "max": 36
+    },
+    "origin": {
+      "country": "China",
+      "region": "East Asia"
+    },
+    "coat": {
+      "type": "smooth",
+      "length": "short",
+      "colors": [
+        "fawn",
+        "black",
+        "silver",
+        "apricot"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 2,
+      "grooming": 2,
+      "trainability": 3,
+      "exercise_minutes": 30,
+      "temperament": [
+        "charming",
+        "mischievous",
+        "loving",
+        "stubborn",
+        "playful"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/n44lx3lu0kjwd6ugnwnl7fj2rh2h",
+    "image_attribution": {
+      "author": "OxfordCommaNerd",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Black_pug_with_longer_legs.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "leonberg": {
+    "dog_api_id": "0780919e-5b5d-4883-9c09-c6d150e224ce",
+    "name": "Leonberger",
+    "description": "The Leonberger is a large and powerful breed of dog that was originally bred in Germany for working on farms. They are intelligent, gentle, and loyal, and make excellent family pets.",
+    "life_years": {
+      "min": 7,
+      "max": 9
+    },
+    "weight_kg": {
+      "min": 45,
+      "max": 77
+    },
+    "height_cm": {
+      "min": 65,
+      "max": 80
+    },
+    "origin": {
+      "country": "Germany",
+      "region": "Leonberg, Baden-Württemberg"
+    },
+    "coat": {
+      "type": "double",
+      "length": "long",
+      "colors": [
+        "lion-yellow",
+        "golden",
+        "red",
+        "reddish-brown",
+        "sandy",
+        "cream",
+        "black mask"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 4,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "intelligent",
+        "friendly",
+        "gentle",
+        "vigilant",
+        "self-assured",
+        "playful"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/uycbf0sgyl7qb2b56hm2tt7a5omy",
+    "image_attribution": {
+      "author": "Charlie Mitchell",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sand-coloured_Leonberger.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "newfoundland": {
+    "dog_api_id": "3f5ec130-8f1e-41fb-b614-26dda736375f",
+    "name": "Newfoundland",
+    "description": "The Newfoundland is a large and muscular breed of dog that was originally bred for working on boats and in the water. They are gentle and intelligent, and make excellent family pets.",
+    "life_years": {
+      "min": 8,
+      "max": 10
+    },
+    "weight_kg": {
+      "min": 45,
+      "max": 68
+    },
+    "height_cm": {
+      "min": 66,
+      "max": 71
+    },
+    "origin": {
+      "country": "Canada",
+      "region": "Island of Newfoundland"
+    },
+    "coat": {
+      "type": "double",
+      "length": "long",
+      "colors": [
+        "black",
+        "brown",
+        "gray",
+        "black and white (Landseer)"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 4,
+      "trainability": 4,
+      "exercise_minutes": 45,
+      "temperament": [
+        "sweet-tempered",
+        "gentle",
+        "patient",
+        "devoted",
+        "calm",
+        "dignified"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/aakcrmzsvetqrac6uma33oa828ck",
+    "image_attribution": {
+      "author": "Flickr user DanDee Shots",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Newfoundland_dog_Smoky.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "great-pyrenees": {
+    "dog_api_id": "9aafa721-a86d-4df6-880f-75fa117ee468",
+    "name": "Great Pyrenees",
+    "description": "The Great Pyrenees is a large and powerful breed of dog that was originally bred in the Pyrenees Mountains for herding and guarding livestock. They are intelligent, loyal, and protective, and make excellent working dogs.",
+    "life_years": {
+      "min": 10,
+      "max": 12
+    },
+    "weight_kg": {
+      "min": 39,
+      "max": 73
+    },
+    "height_cm": {
+      "min": 64,
+      "max": 81
+    },
+    "origin": {
+      "country": "France",
+      "region": "Pyrenees Mountains (France-Spain border)"
+    },
+    "coat": {
+      "type": "double",
+      "length": "long",
+      "colors": [
+        "white",
+        "white with badger markings",
+        "white with gray markings",
+        "white with tan markings"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 2,
+      "grooming": 3,
+      "trainability": 2,
+      "exercise_minutes": 30,
+      "temperament": [
+        "calm",
+        "independent",
+        "protective",
+        "gentle",
+        "confident",
+        "watchful"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/gmz2wlys2k30llhdm0ijqpu7qw5g",
+    "image_attribution": {
+      "author": "Phoenix887788",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Esemplare_italiano_dal_mantello_bianco.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "samoyed": {
+    "dog_api_id": "e3046d15-8fae-4cbb-a6df-4afe80490bbd",
+    "name": "Samoyed",
+    "description": "The Samoyed is a large and fluffy breed of dog that was originally bred in Siberia for herding and guarding livestock. They are intelligent, friendly, and playful, and make excellent family pets.",
+    "life_years": {
+      "min": 12,
+      "max": 14
+    },
+    "weight_kg": {
+      "min": 16,
+      "max": 30
+    },
+    "height_cm": {
+      "min": 48,
+      "max": 60
+    },
+    "origin": {
+      "country": "Russia",
+      "region": "Siberia"
+    },
+    "coat": {
+      "type": "double",
+      "length": "long",
+      "colors": [
+        "white",
+        "white and biscuit",
+        "cream",
+        "biscuit"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 5,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "friendly",
+        "gentle",
+        "alert",
+        "playful",
+        "adaptable",
+        "loyal"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/ya3u75hy81gixftinn2gqp3aj4pz",
+    "image_attribution": {
+      "author": "Alexander Patrikeev",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:11.10.2015_Samoyed_(cropped).jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "pomeranian": {
+    "dog_api_id": "b7211a59-787d-4b34-b390-77b9b0dc5b9d",
+    "name": "Pomeranian",
+    "description": "The Pomeranian is a small and playful breed of dog that was originally bred in Germany as a companion dog. They are intelligent, affectionate, and loyal, and make excellent family pets.",
+    "life_years": {
+      "min": 12,
+      "max": 16
+    },
+    "weight_kg": {
+      "min": 1,
+      "max": 3
+    },
+    "height_cm": {
+      "min": 18,
+      "max": 24
+    },
+    "origin": {
+      "country": "Germany",
+      "region": "Pomerania"
+    },
+    "coat": {
+      "type": "double",
+      "length": "long",
+      "colors": [
+        "orange",
+        "red",
+        "cream",
+        "white",
+        "black",
+        "blue",
+        "brown",
+        "sable",
+        "black and tan",
+        "parti-color"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 4,
+      "trainability": 3,
+      "exercise_minutes": 30,
+      "temperament": [
+        "extroverted",
+        "bold",
+        "lively",
+        "intelligent",
+        "alert",
+        "playful"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/vuatb9j5usgasd8bp4hflwcibrp6",
+    "image_attribution": {
+      "author": "Blackoranges",
+      "license": "Public domain",
+      "license_url": null,
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pomeranian.JPG"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "chow": {
+    "dog_api_id": "03c728a4-258a-4c31-8a1e-5c5e89455cdb",
+    "name": "Chow Chow",
+    "description": "The Chow Chow is a medium-sized breed of dog that originated in China. It is an independent and loyal breed that is known for its distinctive blue-black tongue. The Chow Chow stands between 17-20 inches at the shoulder and has a dense, long coat that can come in various colors.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 20,
+      "max": 32
+    },
+    "height_cm": {
+      "min": 43,
+      "max": 51
+    },
+    "origin": {
+      "country": "China",
+      "region": "Northern China"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "red",
+        "black",
+        "blue",
+        "cinnamon",
+        "cream"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 2,
+      "grooming": 4,
+      "trainability": 2,
+      "exercise_minutes": 30,
+      "temperament": [
+        "independent",
+        "dignified",
+        "aloof",
+        "loyal",
+        "stubborn",
+        "reserved"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/blik7dqt0m6xlk7v8drx72nshmr3",
+    "image_attribution": {
+      "author": "Luigi Borromeo",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:03_Bokeh_the_Chow.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "keeshond": {
+    "dog_api_id": "df58876a-a3b9-4737-8b0e-90b422e9aa6b",
+    "name": "Keeshond",
+    "description": "The Keeshond is a medium-sized breed of dog that was originally bred in the Netherlands for guarding and protecting property. They are intelligent, friendly, and playful, and make excellent companion dogs.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 15,
+      "max": 20
+    },
+    "height_cm": {
+      "min": 41,
+      "max": 48
+    },
+    "origin": {
+      "country": "Netherlands",
+      "region": "Holland"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "gray",
+        "black",
+        "cream"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 4,
+      "trainability": 3,
+      "exercise_minutes": 60,
+      "temperament": [
+        "friendly",
+        "alert",
+        "intelligent",
+        "playful",
+        "lively",
+        "watchful"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/4tovv47omb0q25w224wax936lty8",
+    "image_attribution": {
+      "author": "dancing with wolves",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Keeshond_Majic_standing_cropped.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "brabancon-griffon": {
+    "dog_api_id": "7193b618-726e-4f55-afc8-7ed1cba665c4",
+    "name": "Brussels Griffon",
+    "description": "The Brussels Griffon is a small, playful breed that is known for its intelligence, comical expression, and affectionate nature. This breed is native to Belgium, where it was originally kept as a companion and lapdog.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 4,
+      "max": 5
+    },
+    "height_cm": {
+      "min": null,
+      "max": null
+    },
+    "origin": {
+      "country": "Belgium",
+      "region": "Brussels"
+    },
+    "coat": {
+      "type": "wire",
+      "length": "medium",
+      "colors": [
+        "red",
+        "black",
+        "black and tan",
+        "belge (black and reddish-brown mix)"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 3,
+      "trainability": 3,
+      "exercise_minutes": 30,
+      "temperament": [
+        "alert",
+        "affectionate",
+        "sensitive",
+        "self-important",
+        "intelligent",
+        "watchful"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/ssbr2wv8d5r37fan63wg5oq5o8m7",
+    "image_attribution": {
+      "author": "The original uploader was Dan9186 at English Wikipedia.",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Brussels_Griffon_Rembrant_(jpg_format).jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "pembroke": {
+    "dog_api_id": "2a4b364b-ec99-467c-b86c-516415601771",
+    "name": "Pembroke Welsh Corgi",
+    "description": "The Pembroke Welsh Corgi is a small breed that originated in Wales. They have a short, thick coat, and come in a variety of colors. They are an intelligent and active breed, and need plenty of exercise and mental stimulation. They are loyal and devoted to their owners, and make good family companions.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 9,
+      "max": 12
+    },
+    "height_cm": {
+      "min": 25,
+      "max": 30
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "Pembrokeshire, Wales"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "Red",
+        "Sable",
+        "Fawn",
+        "Black and Tan",
+        "Black-headed tri-color",
+        "Red-headed tri-color"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 3,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "Alert",
+        "Bold",
+        "Outgoing",
+        "Friendly",
+        "Intelligent",
+        "Devoted"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/xh16wsapuo72js9xv752f6kyavo3",
+    "image_attribution": {
+      "author": "Huoadg5888Minor edits made by Subsidiary account",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fawn_and_white_Welsh_Corgi_puppy_standing_on_rear_legs_and_sticking_out_the_tongue.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "cardigan": {
+    "dog_api_id": "84070958-0e6d-46e8-8c20-ee8b4f136b78",
+    "name": "Cardigan Welsh Corgi",
+    "description": "The Cardigan Welsh Corgi is a medium-sized herding breed of dog that originated in Wales. It is one of two breeds known as Welsh Corgi, the other being the Pembroke Welsh Corgi. Cardigans are known for their long, low-set bodies and short legs. They have strong bodies, with a deep chest and strong legs. They have a medium-length tail that is usually docked, and their coat is long and dense. Cardigans have a friendly and cheerful personality, and they make excellent family dogs. They are loyal and intelligent, and they enjoy being active.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 11,
+      "max": 17
+    },
+    "height_cm": {
+      "min": 27,
+      "max": 32
+    },
+    "origin": {
+      "country": "United Kingdom",
+      "region": "Cardiganshire, Wales"
+    },
+    "coat": {
+      "type": "double",
+      "length": "medium",
+      "colors": [
+        "red",
+        "sable",
+        "brindle",
+        "black",
+        "black and tan",
+        "blue merle"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 3,
+      "grooming": 3,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "intelligent",
+        "alert",
+        "loyal",
+        "affectionate",
+        "adaptable",
+        "watchful"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/8n5uor1vj7oiskpt7xw0wudvpcuq",
+    "image_attribution": {
+      "author": "FatFairfax",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Welsh_Corgi_Cardigan_Dog_Frontal.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "toy-poodle": {
+    "dog_api_id": "780895fe-5194-4ace-a365-f95dfdcde4c2",
+    "name": "Poodle (Toy)",
+    "description": "The Toy Poodle is a small and intelligent breed of dog that was originally bred in Germany for hunting waterfowl. They are playful, energetic, and affectionate, and make excellent companion dogs.",
+    "life_years": {
+      "min": 14,
+      "max": 18
+    },
+    "weight_kg": {
+      "min": 3,
+      "max": 4
+    },
+    "height_cm": {
+      "min": 24,
+      "max": 25
+    },
+    "origin": {
+      "country": "Germany",
+      "region": "also strongly associated with France"
+    },
+    "coat": {
+      "type": "curly",
+      "length": "medium",
+      "colors": [
+        "white",
+        "black",
+        "apricot",
+        "cream",
+        "red",
+        "silver",
+        "blue",
+        "gray",
+        "brown"
+      ]
+    },
+    "hypoallergenic": true,
+    "traits": {
+      "energy": 4,
+      "grooming": 5,
+      "trainability": 5,
+      "exercise_minutes": 30,
+      "temperament": [
+        "Intelligent",
+        "Alert",
+        "Active",
+        "Trainable",
+        "Elegant",
+        "Proud"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/udnbql1k3g7lvwxgl1ibhz60ulwe",
+    "image_attribution": {
+      "author": "B. Schöner (Flying Spark at de.wikipedia)",
+      "license": "Public domain",
+      "license_url": null,
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pudel_Grossschwarz.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "miniature-poodle": {
+    "dog_api_id": "3f17b92b-bd0c-499a-bc84-da8f2a206bab",
+    "name": "Poodle (Miniature)",
+    "description": "The Miniature Poodle is a small and agile breed of dog that was originally bred in Germany for hunting waterfowl. They are intelligent, friendly, and eager to please, and make excellent companion dogs.",
+    "life_years": {
+      "min": 14,
+      "max": 16
+    },
+    "weight_kg": {
+      "min": 4,
+      "max": 7
+    },
+    "height_cm": {
+      "min": 25,
+      "max": 38
+    },
+    "origin": {
+      "country": "Germany",
+      "region": "also claimed by France"
+    },
+    "coat": {
+      "type": "curly",
+      "length": "medium",
+      "colors": [
+        "black",
+        "white",
+        "brown",
+        "gray",
+        "cream",
+        "apricot",
+        "red",
+        "silver",
+        "blue",
+        "cafe-au-lait"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 5,
+      "trainability": 5,
+      "exercise_minutes": 45,
+      "temperament": [
+        "intelligent",
+        "active",
+        "alert",
+        "faithful",
+        "proud",
+        "elegant"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/y3uvclkzp9nh08er3uvrmwdtyhrg",
+    "image_attribution": {
+      "author": "Tim Wilson from Blaine, MN, USA",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Full_attention_(8067543690).jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "standard-poodle": {
+    "dog_api_id": "710ba3fe-c4ee-4d7c-b5cc-1cb19a4815fc",
+    "name": "Poodle (Standard)",
+    "description": "The Standard Poodle is a large and graceful dog breed from Germany. They are intelligent, active, and loyal, and make great family pets. Standard Poodles have a thick, curly coat that can be any color. They are easy to train and require plenty of exercise and mental stimulation to stay healthy and happy.",
+    "life_years": {
+      "min": 12,
+      "max": 15
+    },
+    "weight_kg": {
+      "min": 20,
+      "max": 30
+    },
+    "height_cm": {
+      "min": 45,
+      "max": 62
+    },
+    "origin": {
+      "country": "France",
+      "region": null
+    },
+    "coat": {
+      "type": "curly",
+      "length": "medium",
+      "colors": [
+        "black",
+        "white",
+        "brown",
+        "grey (blue)",
+        "apricot",
+        "red",
+        "silver",
+        "cream",
+        "café-au-lait"
+      ]
+    },
+    "hypoallergenic": false,
+    "traits": {
+      "energy": 4,
+      "grooming": 5,
+      "trainability": 5,
+      "exercise_minutes": 60,
+      "temperament": [
+        "intelligent",
+        "active",
+        "elegant",
+        "proud",
+        "dignified",
+        "alert"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/r7tes2b5qpdzmkqv9roxuqr119fq",
+    "image_attribution": {
+      "author": null,
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cafe-au-lait_standard_poodle.jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  },
+  "mexican-hairless": {
+    "dog_api_id": "43cdadb4-851b-4a3a-99c1-5f63d08d97f8",
+    "name": "Xoloitzcuintli",
+    "description": "The Xoloitzcuintli, also known as the Mexican Hairless Dog, is a small and intelligent breed of dog that was originally bred in Mexico for hunting and guarding. They are loyal, alert, and affectionate, and make excellent companion dogs.",
+    "life_years": {
+      "min": 13,
+      "max": 18
+    },
+    "weight_kg": {
+      "min": 14,
+      "max": 25
+    },
+    "height_cm": {
+      "min": 46,
+      "max": 58
+    },
+    "origin": {
+      "country": "Mexico",
+      "region": "Mesoamerica"
+    },
+    "coat": {
+      "type": "hairless",
+      "length": "hairless",
+      "colors": [
+        "black",
+        "gray",
+        "bronze",
+        "red",
+        "brindle",
+        "sable",
+        "spotted"
+      ]
+    },
+    "hypoallergenic": true,
+    "traits": {
+      "energy": 3,
+      "grooming": 2,
+      "trainability": 4,
+      "exercise_minutes": 60,
+      "temperament": [
+        "calm",
+        "alert",
+        "loyal",
+        "intelligent",
+        "aloof",
+        "affectionate"
+      ]
+    },
+    "image_url": "https://images.dogapi.dog/wet6sk7i2hu1sok1wktqmuw3pc7s",
+    "image_attribution": {
+      "author": "Alfredo&amp;Sara Aguirre",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "wikimedia_commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Behold_The_Xoloitzcuintle..jpg"
+    },
+    "provider": "Stratonauts Dog API",
+    "provider_url": "https://dogapi.dog/"
+  }
+}

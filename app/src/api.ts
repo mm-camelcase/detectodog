@@ -1,6 +1,6 @@
 import { Platform } from "react-native";
 
-import type { Prediction } from "./types";
+import type { BreedInfo, Prediction } from "./types";
 
 const API_URL = process.env.EXPO_PUBLIC_API_URL;
 
@@ -25,4 +25,11 @@ export async function identifyDog(uri: string): Promise<Prediction> {
     throw new Error(message?.detail ?? "We couldn't finish the match.");
   }
   return response.json() as Promise<Prediction>;
+}
+
+export async function getBreedInfo(breedId: string): Promise<BreedInfo> {
+  if (!API_URL) throw new Error("DetectoDog API URL has not been configured.");
+  const response = await fetch(`${API_URL}/v1/breeds/${encodeURIComponent(breedId)}`);
+  if (!response.ok) throw new Error("Breed details are not available right now.");
+  return response.json() as Promise<BreedInfo>;
 }

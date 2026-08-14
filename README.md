@@ -37,6 +37,8 @@ The notebooks and training scripts cover data preparation, augmentation, transfe
 
 Photos are processed in memory and are not stored by the API.
 
+Breed profiles are supplied by the free [Stratonauts Dog API](https://dogapi.dog/). The API service fetches current details by breed and keeps a versioned local fallback, so the app still works if the provider is temporarily unavailable.
+
 [![View the training notebook in nbviewer](https://img.shields.io/badge/View%20Notebook-nbviewer-orange)](https://nbviewer.org/github/mm-camelcase/detectodog/blob/main/detectodog_final_structured.ipynb)
 
 ## ☁️ AWS
@@ -83,7 +85,7 @@ npm run verify
 
 ## 🔮 Current limits
 
-- Breed profiles are placeholders.
+- Breed profiles depend on third-party data and may not cover every model label.
 - Results are visual estimates, not genetic tests.
 - Mixed breeds and breeds outside the trained 120 may return a low-confidence result.
 - Dog detection is a visual estimate and can still make mistakes.
