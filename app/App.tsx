@@ -355,6 +355,10 @@ export default function App() {
                   ["Energy", breedInfo.traits.energy ? `${breedInfo.traits.energy}/5` : "Not listed"],
                   ["Grooming", breedInfo.traits.grooming ? `${breedInfo.traits.grooming}/5` : "Not listed"],
                   ["Trainability", breedInfo.traits.trainability ? `${breedInfo.traits.trainability}/5` : "Not listed"],
+                  ["Coat", [breedInfo.coat.type, breedInfo.coat.length].filter(Boolean).join(" · ") || "Not listed"],
+                  ["Coat colours", breedInfo.coat.colors.length > 0 ? breedInfo.coat.colors.join(", ") : "Not listed"],
+                  ["Hypoallergenic", breedInfo.hypoallergenic == null ? "Not listed" : breedInfo.hypoallergenic ? "Yes" : "No"],
+                  ["Daily exercise", breedInfo.traits.exercise_minutes ? `${breedInfo.traits.exercise_minutes} minutes` : "Not listed"],
                 ].map(([label, value]) => <View key={label} style={styles.fact}><Text style={styles.factLabel}>{label}</Text><Text style={styles.factValue}>{value}</Text></View>)}
               </View>
               {breedInfo.traits.temperament.length > 0 && <View style={styles.note}><Ionicons name="heart-outline" size={18} color={theme.accent} /><Text style={styles.noteText}>{breedInfo.traits.temperament.join(" · ")}</Text></View>}
